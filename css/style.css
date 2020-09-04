@@ -38,7 +38,7 @@
 }
 
 .menu_options {
-	margin: 20px;
+	margin: 2%;
 }
 .show-menu-btn,.hide-menu-btn{
   transition: 0.4s;
@@ -69,6 +69,11 @@
   width: 100vw;
   height: 100vh;
   background: url('../IMG/glass-4108085_1920.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
 .content img{
   width: 100%;
@@ -130,6 +135,32 @@
     color:white;
 }
 
+/* PRODUCTS------------------------------------------------------------------------------ 1*/
+/* PRODUCTS------------------------------------------------------------------------------ 1*/
+/* PRODUCTS------------------------------------------------------------------------------ 1*/
+
+#products {
+
+  background: url('../IMG/glass-4108085_1920.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+#content_products {
+
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  top: 35%;
+  background-color: grey;
+
+}
 
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');

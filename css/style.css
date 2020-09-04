@@ -177,11 +177,14 @@ section .section-title {
 #footer {
     background: #A7AA8C !important;
 }
+
+#footer div {
+
+}
 #footer h5{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
+   
     color:#ffffff;
 }
 #footer a {
@@ -217,26 +220,18 @@ section .section-title {
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
 }
-#footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
+
+
+#footer ul.quick-links a:hover   {
+    font-weight: bold;
 }
 
-@media (max-width:767px){
-	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+i {
+  color: black;
+  margin-right: 10px;
 }
-}
+
+
 
 /* MEDIA */
 
@@ -261,6 +256,7 @@ section .section-title {
   .menu a{
     display: block;
     padding: 20px;
+
   }
   .hide-menu-btn{
     position: absolute;
@@ -270,4 +266,9 @@ section .section-title {
   #chk:checked ~ .menu{
     right: 0;
   }
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
 }

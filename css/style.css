@@ -1,3 +1,24 @@
+/*---------------------- FONTS ------------------------*/
+
+@font-face{
+  font-family: Title;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+
+  
+  
+}
+
+@font-face{
+  font-family: Text;
+  src: url("../fonts/Raleway-ExtraBold.ttf");
+
+  
+  
+}
+
+
+
 /*  TOP MENU */
 
 *{
@@ -162,15 +183,47 @@ h2{
 
 #content_products {
 
+
   position: relative;
   width: 100vw;
   height: 40vh;
   top: 35%;
   background-color: #A7AA8C;
+  color: white;
 
 }
 
+.title {
+  position: relative;
+  font-family: 'Title';
+  font-size: 20px;
+ 
+  
 
+}
+
+.text {
+  font-family: 'Text';
+  
+  font-size: 35px;
+  
+
+}
+
+.title-div {
+  position: absolute;
+  width: 300px;
+  height: 4px;
+  top: 125px;
+  left: 90px;
+}
+
+.text-div {
+  position: absolute;
+  width: 675px;
+  left: 500px;
+  top: 110px;
+}
 
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');

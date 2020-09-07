@@ -24,6 +24,14 @@
   
 }
 
+@font-face{
+  font-family: Text-options;
+  src: url("../fonts/DroidSerif-Bold.ttf");
+
+  
+  
+}
+
 
 
 /*  TOP MENU */
@@ -339,6 +347,111 @@ h2{
   top: 28%;
 }
 
+/* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
+/* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
+/* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
+
+
+#news-options {
+  display:table;
+  height: 100vh;
+  width: 100vw;
+}
+
+#sophim {
+display: inline-block; 
+height: 100%;
+width: 50%;
+background: url('../IMG/image-sophim.jpg');
+background-position: center center;
+background-repeat: no-repeat;
+
+background-size: cover;
+
+
+}
+
+#sophim-text {
+  position: absolute;
+  background-color: #8F9FA9;
+  color: white;
+  width: 28%;
+  height: 48%;
+  top: 425%;
+  left: 11%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#aloe-vera {
+display: inline-block;
+left: 50%;
+height: 100%;
+width: 50%;
+background: url('../IMG/deo_img.png');
+background-position: center center;
+background-repeat: no-repeat;
+
+background-size: cover;
+
+
+}
+
+#aloe-text{
+  position: absolute;
+  background-color: white;
+  color: #898988;
+  width: 28%;
+  height: 48%;
+  top: 425%;
+  left: 61%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title-options {
+  position: relative;
+  font-family: 'Text';
+  font-size: 30px;
+  top: 10%;
+ 
+  
+
+}
+
+.text-options {
+  position: relative;
+  font-family: 'Text-options';
+  font-size: 15px;
+  line-height: 40px;
+  top: 20%;
+  margin-right: 20px;
+  margin-left: 20px;
+
+
+}
+
+#aloe-margin {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#plus-btn {
+  position: absolute;
+  border-radius: 50%;
+  border-style: none;
+  height: 50px;
+  width: 50px;
+  top: 482%;
+  left: 23.5%;
+background: url('../IMG/plus.png');
+
+background-position: center center;
+background-repeat: no-repeat;
+
+background-size: cover;
+}
 /*--//PRODUCTS-2----------------------------->*/
 /*--//PRODUCTS-2----------------------------->*/
 /*--//PRODUCTS-2----------------------------->*/

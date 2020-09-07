@@ -336,7 +336,46 @@ h2{
   top: 28%;
 }
 
-/* Footer */
+/*--//PRODUCTS-2----------------------------->*/
+/*--//PRODUCTS-2----------------------------->*/
+/*--//PRODUCTS-2----------------------------->*/
+
+#container_products{
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.photo_products {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.photo_products:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#option1{
+  background: url('../IMG/olive-oil-968657_1920.jpg');
+
+}
+
+#option2{
+  background: url('../IMG/beurre-de-karite-sophim.jpg');
+}
+
+#option3 {
+  background: url('../IMG/water-life-crop.jpg');
+}
+
+/*--//FOOTER----------------------------->*/
+/*--//FOOTER----------------------------->*/
+/*--//FOOTER----------------------------->*/
+
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
     padding: 10px 0;

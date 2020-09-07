@@ -202,6 +202,7 @@ section .section-title {
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    padding-left: 15px;
 }
 #footer ul.social li{
 	padding: 3px 0;

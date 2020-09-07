@@ -228,7 +228,7 @@ h2{
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 60px 0;
+    padding: 10px 0;
 }
 
 section .section-title {
@@ -255,6 +255,7 @@ section .section-title {
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    padding-left: 15px;
 }
 #footer ul.social li{
 	padding: 3px 0;

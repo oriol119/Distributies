@@ -1,3 +1,24 @@
+/*---------------------- FONTS ------------------------*/
+
+@font-face{
+  font-family: Title;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+
+  
+  
+}
+
+@font-face{
+  font-family: Text;
+  src: url("../fonts/Raleway-ExtraBold.ttf");
+
+  
+  
+}
+
+
+
 /*  TOP MENU */
 
 *{
@@ -162,14 +183,28 @@ h2{
 
 #content_products {
 
+
   position: relative;
   width: 100vw;
   height: 40vh;
   top: 35%;
   background-color: #A7AA8C;
+  color: white;
 
 }
 
+.title {
+
+  font-family: 'Title';
+  font-size: 15px;
+
+}
+
+.text {
+  font-family: 'Text';
+  margin-left: 30%;
+  font-size: 35px;
+}
 
 
 /* Footer */

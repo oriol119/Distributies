@@ -194,18 +194,36 @@ h2{
 }
 
 .title {
-
+  position: relative;
   font-family: 'Title';
-  font-size: 15px;
+  font-size: 20px;
+ 
+  
 
 }
 
 .text {
   font-family: 'Text';
-  margin-left: 30%;
+  
   font-size: 35px;
+  
+
 }
 
+.title-div {
+  position: absolute;
+  width: 300px;
+  height: 4px;
+  top: 125px;
+  left: 90px;
+}
+
+.text-div {
+  position: absolute;
+  width: 675px;
+  left: 500px;
+  top: 110px;
+}
 
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');

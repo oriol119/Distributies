@@ -32,6 +32,14 @@
   
 }
 
+@font-face{
+  font-family: Text-choices;
+  src: url("../fonts/Raleway-SemiBold.ttf");
+
+  
+  
+}
+
 
 
 /*  TOP MENU */
@@ -377,7 +385,7 @@ background-size: cover;
   color: white;
   width: 28%;
   height: 48%;
-  top: 425%;
+  top: 525%;
   left: 11%;
   justify-content: center;
   align-items: center;
@@ -404,7 +412,7 @@ background-size: cover;
   color: #898988;
   width: 28%;
   height: 48%;
-  top: 425%;
+  top: 525%;
   left: 61%;
   justify-content: center;
   align-items: center;
@@ -443,7 +451,7 @@ background-size: cover;
   border-style: none;
   height: 50px;
   width: 50px;
-  top: 482%;
+  top: 582%;
   left: 23.5%;
 background: url('../IMG/plus.png');
 
@@ -516,27 +524,33 @@ background-size: cover;
 }
 
 #emulsifiers{
+  font-size: 25px;
+  font-family: "Text-choices";
   color: white;
   position: absolute;
   top: 380%;
-  left: 10%;
+  left: 7%;
   z-index: 2;
 
 }
 
 #textured {
+  font-size: 25px;
+  font-family: "Text-choices";
   color: white;
   position: absolute;
   top: 380%;
-  left: 40%;
+  left: 43%;
   z-index: 2;
 }
 
 #fixers {
+  font-size: 25px;
+  font-family: "Text-choices";
   color: white;
   position: absolute;
   top: 380%;
-  left: 80%;
+  left: 78%;
   z-index: 2;
   
 }

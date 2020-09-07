@@ -32,6 +32,14 @@
   
 }
 
+@font-face{
+  font-family: Text-choices;
+  src: url("../fonts/Raleway-SemiBold.ttf");
+
+  
+  
+}
+
 
 
 /*  TOP MENU */
@@ -517,27 +525,33 @@ background-size: cover;
 }
 
 #emulsifiers{
+  font-size: 25px;
+  font-family: "Text-choices";
   color: white;
   position: absolute;
   top: 380%;
-  left: 10%;
+  left: 7%;
   z-index: 2;
 
 }
 
 #textured {
+  font-size: 25px;
+  font-family: "Text-choices";
   color: white;
   position: absolute;
   top: 380%;
-  left: 40%;
+  left: 43%;
   z-index: 2;
 }
 
 #fixers {
+  font-size: 25px;
+  font-family: "Text-choices";
   color: white;
   position: absolute;
   top: 380%;
-  left: 80%;
+  left: 78%;
   z-index: 2;
   
 }

@@ -13,6 +13,13 @@
   font-family: Text;
   src: url("../fonts/Raleway-ExtraBold.ttf");
 
+    
+}
+
+@font-face{
+  font-family: Subtext;
+  src: url("../fonts/Montserrat-Light.otf");
+
   
   
 }
@@ -163,7 +170,65 @@ h2{
     
     color:white;
 }
+/* WHO WE ARE------------------------------------------------------------------------------ 1*/
+/* WHO WE ARE------------------------------------------------------------------------------ 1*/
+/* WHO WE ARE------------------------------------------------------------------------------ 1*/
 
+#who-div {
+    background: url('../IMG/inspired-by-clouds-min-ss.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+} 
+
+.title-div-who {
+  position: absolute;
+  width: 300px;
+  height: 4px;
+  top: 26%;
+  left: 10%;
+  opacity: 40%;
+}
+
+.text-div-who {
+  position: absolute;
+  width: 675px;
+  left: 35%;
+  top: 20%;
+}
+
+.subtext-div-who {
+  position: absolute;
+  width: 675px;
+  left: 35%;
+  top: 45%;
+}
+
+
+#content_who {
+
+
+  position: relative;
+  width: 100vw;
+  height: 65vh;
+  top: 10%;
+  background-color: white;
+  color: black;
+
+}
+
+.subtext {
+  font-family: 'Subtext';
+  
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 65%;
+
+}
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
@@ -214,15 +279,61 @@ h2{
   position: absolute;
   width: 300px;
   height: 4px;
-  top: 125px;
-  left: 90px;
+  top: 34%;
+  left: 10%;
 }
 
 .text-div {
   position: absolute;
   width: 675px;
-  left: 500px;
-  top: 110px;
+  left: 35%;
+  top: 28%;
+}
+
+/* NEWS------------------------------------------------------------------------------ 1*/
+/* NEWS------------------------------------------------------------------------------ 1*/
+/* NEWS------------------------------------------------------------------------------ 1*/
+
+#news {
+
+  background: url('../IMG/summer-4246927_1920.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+#content_news {
+
+
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  top: 7%;
+  background-color: #8F9FA9;
+  color: white;
+
+}
+
+
+
+.title-div-news {
+  position: absolute;
+  width: 300px;
+  height: 4px;
+  top: 34%;
+  left: 10%;
+}
+
+.text-div-news {
+  position: absolute;
+  width: 675px;
+  left: 35%;
+  top: 28%;
 }
 
 /*--//PRODUCTS-2----------------------------->*/

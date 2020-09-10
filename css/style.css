@@ -59,6 +59,11 @@ h2{
   color: white;
   font-weight: bold;
   font-size: 40px;
+}  
+
+h3{
+  color: #9d9d9d;
+  font-size: 40px;
 
 }
 .header{
@@ -632,12 +637,89 @@ background-size: cover;
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
+
+#container_nat_emul {
+
+  background: url('../IMG/cream-3496778_1920.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+#content_natural {
+
+
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  top: 5%;
+  background-color: #FFFFFF;
+  color: white;
+  opacity: 85%;
+
+}
+
+#natural_emulsions {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  right: 0;
+  color: grey;
+  font-family: 'Title';
+  font-size: 13px;
+}
+
+#escualan {
+
+  position: absolute;
+  top: 20%;
+  left: 27%;
+  color: black;
+  font-weight: bold;
+  font-family: 'Title';
+  font-size: 35px;
+}
+
+#text_escualan{
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  color: #9d9d9d;
+  font-size: 13px;
+  font-family: 'Text-options';
+}
+
+
+
+
+
+
+
+
 #phy {
   display: inline-block; 
 height: 100%;
 width: 50%;
   display: inline-block;
   background: url('../IMG/biophytosebum-sophim-2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+}
+
+#insapolive {
+  display: inline-block; 
+height: 100%;
+width: 50%;
+  display: inline-block;
+  background: url('../IMG/sophim-007.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   

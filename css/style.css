@@ -83,7 +83,7 @@ h3{
     height: 100%;
     z-index: 9999;
    
-    opacity: .8;
+   
 }
 
 
@@ -801,12 +801,82 @@ i {
 
 .container{
 
-  width: 20px;
+  width: 100vw;
   height: 450px;
+  display: flex;
+  justify-content: center;
+
 
 } 
 
 
+
+.footer-list {
+
+  position: relative;
+
+  top: 30px;
+
+  list-style:none;
+
+  color: white;
+}
+
+.footer-list > .title   {
+  font-size: 22px;
+  font-family: 'Text-choices';
+}
+
+
+#list1 {
+ width: auto;
+ height: auto;
+ position: relative;
+ left: -10% ;
+ top: 15%;
+}
+
+#list2 {
+   width: auto;
+ height: auto;
+ position: relative;
+ left: 90px;
+ top: 15%;
+}
+
+#list3 {
+  position: relative;
+ left: 150px;
+ top: 15%;
+   width: auto;
+ height: auto;
+}
+
+#list4 {
+   width: auto;
+ height: auto;
+ position: relative;
+ left: 210px;
+ top: 15%;
+ 
+}
+
+#list5 {
+   width: auto;
+ height: auto;
+ position: relative;
+ left: 270px;
+ top: 15%;
+ 
+}
+
+
+ul {
+  
+  flex-direction: column;
+
+
+}
 /* MEDIA */
 
 

@@ -88,5 +88,4 @@ $('#option3').click(function(){
 	$( "#option3" ).addClass( "clear-photo" );
 
 	document.getElementById('container_products').style.background = "#BCAE72";
-	
 })

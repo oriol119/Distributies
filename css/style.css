@@ -580,12 +580,69 @@ background-size: cover;
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
+
+#container_nat_emul {
+
+  background: url('../IMG/cream-3496778_1920.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+#content_natural {
+
+
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  top: 7%;
+  background-color: #FFFFFF;
+  color: white;
+  opacity: 85%;
+
+}
+
+#natural_emulsions {
+
+  color: grey;
+  font-family: 'Title';
+  font-size: 13px;
+}
+#escualan {
+
+  color: black;
+  font-family: 'Title';
+  font-size: 35px;
+}
+
+
+
+
+
+
 #phy {
   display: inline-block; 
 height: 100%;
 width: 50%;
   display: inline-block;
   background: url('../IMG/biophytosebum-sophim-2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+}
+
+#insapolive {
+  display: inline-block; 
+height: 100%;
+width: 50%;
+  display: inline-block;
+  background: url('../IMG/sophim-007.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   

@@ -12,6 +12,23 @@ $('#back-btn').click(function(){
 	$( "#option3" ).removeClass( "clear-photo" );
 
 	
+	$('#option1').animate({width:"33.3vw", height:"100vh"}, 1000);
+	$('#option2').animate({width:"33.3vw", height:"100vh"}, 1000);
+	$('#option3').animate({width:"33.3vw", height:"100vh"}, 1000);
+	$('#side_options').animate({left:"-30vw"}, 1000);
+setTimeout(function(){ 
+
+
+	document.getElementById('option1').style.display = 'inline-block';
+	document.getElementById('option2').style.display = 'inline-block';
+	document.getElementById('option3').style.display = 'inline-block';
+
+
+
+
+	}, 1000);
+
+	
 })
 
 $('#option1').click(function(){
@@ -71,4 +88,5 @@ $('#option3').click(function(){
 	$( "#option3" ).addClass( "clear-photo" );
 
 	document.getElementById('container_products').style.background = "#BCAE72";
+	
 })

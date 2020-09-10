@@ -604,8 +604,8 @@ background-size: cover;
 
   position: relative;
   width: 100vw;
-  height: 30vh;
-  top: 7%;
+  height: 40vh;
+  top: 5%;
   background-color: #FFFFFF;
   color: white;
   opacity: 85%;
@@ -613,7 +613,9 @@ background-size: cover;
 }
 
 #natural_emulsions {
-  position: relative;
+  position: absolute;
+  top: 30%;
+  left: 5%;
   right: 0;
   color: grey;
   font-family: 'Title';
@@ -623,14 +625,21 @@ background-size: cover;
 #escualan {
 
   position: absolute;
+  top: 20%;
+  left: 27%;
   color: black;
+  font-weight: bold;
   font-family: 'Title';
   font-size: 35px;
 }
 
 #text_escualan{
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 27%;
   color: #9d9d9d;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Text-options';
 }
 

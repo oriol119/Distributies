@@ -470,7 +470,7 @@ background-size: cover;
   background-repeat: no-repeat;
   
   background-size: cover;
-
+  cursor: pointer;
   width: 100vw;
   height: 100vh;
 }
@@ -514,6 +514,7 @@ background-size: cover;
 
 #option3 {
   background: url('../IMG/SOPHIM/water-life-crop.jpg');
+
   background-position: center center;
   background-repeat: no-repeat;
   
@@ -553,6 +554,42 @@ background-size: cover;
   left: 78%;
   z-index: 2;
   
+}
+
+/*--//CONTACT----------------------------->*/
+/*--//CONTACT----------------------------->*/
+/*--/CONTACT----------------------------->*/
+
+#contact {
+
+  background-color: blue;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--//EMULSIONES----------------------------->*/
+/*--//EMULSIONES----------------------------->*/
+/*--//EMULSIONES----------------------------->*/
+#phy {
+  display: inline-block; 
+height: 100%;
+width: 50%;
+  display: inline-block;
+  background: url('../IMG/biophytosebum-sophim-2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
 }
 
 /*--//FOOTER----------------------------->*/
@@ -631,6 +668,7 @@ i {
 .container{
 
   width: 20px;
+  height: 450px;
 
 } 
 

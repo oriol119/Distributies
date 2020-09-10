@@ -196,6 +196,7 @@ h2{
   background-repeat: no-repeat;
   
   background-size: cover;
+  background-attachment: fixed;
 
   width: 100vw;
   height: 100vh;
@@ -254,7 +255,7 @@ h2{
   background: url('../IMG/glass-4108085_1920.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;
   background-size: cover;
 
   width: 100vw;
@@ -273,6 +274,7 @@ h2{
   color: white;
 
 }
+
 
 .title {
   position: relative;
@@ -307,6 +309,17 @@ h2{
 }
 
 
+#side_options {
+  background-color: #BCAE72;
+  height: 100vh;
+  width: 25vw;
+  z-index: 10;
+ position: absolute;
+  left: 0;
+  top: 400;
+}
+
+
 
 
 /* NEWS------------------------------------------------------------------------------ 1*/
@@ -318,7 +331,7 @@ h2{
   background: url('../IMG/summer-4246927_1920.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;
   background-size: cover;
 
   width: 100vw;
@@ -363,7 +376,8 @@ h2{
 #news-options {
   display:table;
   height: 100vh;
-  width: 100vw;
+  width: 100vw; 
+  padding: 0;
 }
 
 #sophim {
@@ -485,6 +499,16 @@ background-size: cover;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+
+#container_products {
+
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+
+
+
 }
 
 #option1{

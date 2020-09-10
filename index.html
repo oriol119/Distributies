@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" style="overflow-x: hidden;">
+<html lang="es" dir="ltr" style="overflow-x: hidden;">
 
   <head>
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   </head>
   <body style="overflow-x: hidden;">
 
@@ -19,6 +19,11 @@
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-ellipsis-h"></i>
     </label>
+
+
+    <!--//GIF CARGA-->
+   
+   <div class="loader"><img src="IMG/loader.gif" style="width: 100vw;height: 100vh;"alt="Loading..."></div>
 
     <!--//BLOQUE COOKIES-->
 <div id="barraaceptacion" style="display: block;">
@@ -45,15 +50,18 @@
   </div>
 
 
-<div class="content">
+<section class="content">
   
-</div>
+</section>
+
 
 <!--//PRODUCTS----------------------------->
 <!--//PRODUCTS----------------------------->
 <!--//PRODUCTS----------------------------->
 
-<div id="who-div">
+
+<section id="who-div">
+
   <div id="content_who">
     
     <div id="who_sentence">
@@ -71,14 +79,14 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
       
     </div>
   </div>
-</div>
+</section>
 
 <!--//PRODUCTS----------------------------->
 <!--//PRODUCTS----------------------------->
 <!--//PRODUCTS----------------------------->
 
 
-<div id="products">
+<section id="products">
   <div id="content_products">
     
     <div id="product_sentence">
@@ -91,7 +99,7 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
       
     </div>
   </div>
-</div>
+</section>
 
 
 <!--//PRODUCTS-2----------------------------->
@@ -99,20 +107,27 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 <!--//PRODUCTS-2----------------------------->
 
 
-  <div id=container_products>
+  <section id=container_products>
     <h3 id="emulsifiers" >EMULSIONANTES</h3>
     <h3 id="textured">TEXTURIZADOS</h3>
     <h3 id="fixers">FIJADORES</h3>
 
+    
     <span id="option1"class="photo_products" onclick="location.href='emulsiones.html'"></span>
+
     <span id="option2"class="photo_products"></span>
     <span id="option3"class="photo_products"></span>
+
+    <span id="side_options"> <button id="back-btn"> </button></span>
   
-  </div>
+  </section>
   
 
+<!--//NEWS----------------------------->
+<!--//NEWS----------------------------->
+<!--//NEWS----------------------------->
 
-<div id="news">
+<section id="news">
   <div id="content_news">
     
     <div id="news_sentence">
@@ -125,10 +140,10 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
       
     </div>
   </div>
-</div>
+</section>
 
 
-<div id="news-options">
+<section id="news-options">
   <span id="sophim">
 
     <span id="sophim-text">
@@ -147,9 +162,9 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
     </span>
 
   </span>
-</div>
-<div id="contact">
-</div>
+</section>
+<section id="contact">
+</section>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12751.822182905275!2d-2.2145377656198715!3d36.96311852388053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7abe69b2894ced%3A0x2eb7e85cea95eff3!2s04100%20N%C3%ADjar%2C%20Almeria!5e0!3m2!1sca!2ses!4v1599493507664!5m2!1sca!2ses"  style="width: 100vw; height: 50vh;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </body>
@@ -219,8 +234,12 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
     </div>
   </section>
   <!-- ./Footer -->
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+ 
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/cookies.js"></script>
-  <script type="text/javascript" src="js/open_options.js"></script>
+  <script type="text/javascript" src="js/open_option.js"></script>
+   <script type="text/javascript" src="js/gif_carga.js"></script>
+
 
 </html>

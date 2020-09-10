@@ -309,15 +309,7 @@ h2{
 }
 
 
-#side_options {
-  background-color: #BCAE72;
-  height: 100vh;
-  width: 25vw;
-  z-index: 10;
- position: absolute;
-  left: 0;
-  top: 400;
-}
+
 
 
 
@@ -487,6 +479,7 @@ background-size: cover;
   cursor: pointer;
   width: 100vw;
   height: 100vh;
+   padding: 0;
 }
 
 .photo_products {
@@ -501,14 +494,28 @@ background-size: cover;
   filter: grayscale(0%);
 }
 
-#container_products {
+.clear-photo {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
 
+#side_options {
+  background-color: #BCAE72;
   height: 100vh;
-  width: 100vw;
-  padding: 0;
+  width: 30vw;
+  z-index: 10;
+ position: absolute;
+  left: -60vh;
+  top: 400;
+}
 
-
-
+#back-btn {
+ background: url('../IMG/back-arrow.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
 }
 
 #option1{

@@ -931,6 +931,8 @@ i {
   color: white;
 
   line-height: 28px;;
+
+  min-width: 230px;
 }
 
 .footer-list > .title   {
@@ -948,43 +950,43 @@ i {
 
 
 #list1 {
- width: auto;
+ width: 200px;
  height: 180px;
  position: relative;
- left: -17% ;
+ left: 10% ;
  top: 15%;
 }
 
 #list2 {
-   width: auto;
+   width: 200px;
  height: 200px;
  position: relative;
- left: -10%;
+ left: 10%;
  top: 15%;
 }
 
 #list3 {
   position: relative;
- left: -3%;
+ left: 12%;
  top: 15%;
-   width: auto;
+   width: 200px;
  height: 180px;
 }
 
 #list4 {
-   width: auto;
+   width: 200px;
  height: 180px;
  position: relative;
- left: 4%;
+ left: 10%;
  top: 15%;
  
 }
 
 #list5 {
-   width: auto;
+   width: 200px;
  height: 180px;
  position: relative;
- left: 14%;
+ left: 20%;
  top: 15%;
  
 }

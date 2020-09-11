@@ -94,6 +94,40 @@ h3{
    
 }
 
+#menu-round {
+
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5px;
+
+  cursor: pointer;
+  
+
+  height: 60px;
+  width: 60px;
+
+  border-radius: 50%;
+
+  background-color: #959C7F;
+
+  top: 25px;
+  right: 50px;
+
+}
+
+.menu-round_transition {
+  height: 50%;
+  width: 50%;
+
+  left: 50%;
+}
+
 
 .logo{
   line-height: 100px;

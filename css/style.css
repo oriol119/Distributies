@@ -40,6 +40,14 @@
   
 }
 
+@font-face{
+  font-family: Footer-titles;
+  src: url("../fonts/Raleway-Medium.ttf");
+
+  
+  
+}
+
 
 
 /*  TOP MENU */
@@ -83,7 +91,41 @@ h3{
     height: 100%;
     z-index: 9999;
    
-    opacity: .8;
+   
+}
+
+#menu-round {
+
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5px;
+
+  cursor: pointer;
+  
+
+  height: 60px;
+  width: 60px;
+
+  border-radius: 50%;
+
+  background-color: #959C7F;
+
+  top: 25px;
+  right: 50px;
+
+}
+
+.menu-round_transition {
+  height: 50%;
+  width: 50%;
+
+  left: 50%;
 }
 
 
@@ -288,7 +330,7 @@ h3{
   width: 100vw;
   height: 40vh;
   top: 35%;
-  background-color: #A7AA8C;
+  background-color: #959C7F;
   color: white;
 
 }
@@ -788,12 +830,13 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: #959C7F;
+    
     margin-bottom: 50px;
     text-transform: uppercase;
 }
 #footer {
-    background: #A7AA8C !important;
+    background: #959C7F!important;
 }
 
 #footer div {
@@ -852,12 +895,92 @@ i {
 
 .container{
 
-  width: 20px;
+  width: 100vw;
   height: 450px;
+  display: flex;
+  justify-content: center;
+
 
 } 
 
 
+
+.footer-list {
+
+  position: relative;
+
+  top: 30px;
+
+  list-style:none;
+
+  color: white;
+
+  line-height: 28px;;
+}
+
+.footer-list > .title   {
+  font-size: 22px;
+  font-family: 'Footer-titles';
+  
+}
+
+.footer-elements {
+  font-size: 14px;
+  font-family: 'Footer-titles';
+  position: relative;
+  left: 25%;
+}
+
+
+#list1 {
+ width: auto;
+ height: 180px;
+ position: relative;
+ left: -17% ;
+ top: 15%;
+}
+
+#list2 {
+   width: auto;
+ height: 200px;
+ position: relative;
+ left: -10%;
+ top: 15%;
+}
+
+#list3 {
+  position: relative;
+ left: -3%;
+ top: 15%;
+   width: auto;
+ height: 180px;
+}
+
+#list4 {
+   width: auto;
+ height: 180px;
+ position: relative;
+ left: 4%;
+ top: 15%;
+ 
+}
+
+#list5 {
+   width: auto;
+ height: 180px;
+ position: relative;
+ left: 14%;
+ top: 15%;
+ 
+}
+
+
+ul {
+  
+  flex-direction: column;
+
+
+}
 /* MEDIA */
 
 

@@ -1,3 +1,22 @@
+
+/*
+$(window).scroll(function() {
+
+   
+
+    if($(window).scrollTop() >= 50){
+        $("#who-div").addClass('transition');
+        $("#who-div").removeClass('transition2');
+
+    } else {
+        $("#who-div").removeClass('transition');
+        $("#who-div").addClass('transition2');
+    }
+    
+
+  });
+  */
+
 $('#menu-round').click(function(){
 
     $('#menu-round').animate({width:"50vw", height:"50vw", top:'4.5vh', right:'25%'}, 1000);
@@ -52,3 +71,4 @@ function scroll1() {
 function scroll2() {
     document.getElementById('news-options').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  }
+

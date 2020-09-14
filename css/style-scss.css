@@ -266,6 +266,149 @@ h3 {
   left: 35%;
   top: 28%; }
 
+/* ARROW 1*/
+#arrow1 {
+  position: absolute;
+  top: 295%;
+  left: 45%;
+  width: 90px;
+  height: 90px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #FFFFFF; }
+
+#circle_arrow {
+  position: absolute;
+  transition: .5s ease;
+  width: 35px;
+  height: 35px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #959C7F;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer; }
+
+#circle_arrow:hover {
+  transition: .5s ease;
+  width: 40px;
+  height: 40px; }
+
+body {
+  background-color: #282828; }
+
+div.arrow {
+  width: 16px;
+  display: inline-block;
+  height: 16px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(135deg); }
+  div.arrow::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: 3px 3px 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0; }
+  div.arrow:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 3px 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    transform-origin: 100% 0;
+    transition: .2s ease; }
+
+/* ARROW 2*/
+#arrow2 {
+  position: absolute;
+  top: 507vh;
+  left: 45%;
+  width: 90px;
+  height: 90px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #FFFFFF; }
+
+#circle_arrow2 {
+  position: absolute;
+  transition: .5s ease;
+  width: 35px;
+  height: 35px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #8F9FA9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer; }
+
+#circle_arrow2:hover {
+  transition: .5s ease;
+  width: 40px;
+  height: 40px; }
+
+body {
+  background-color: #282828; }
+
+div.arrow2 {
+  width: 16px;
+  display: inline-block;
+  height: 16px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(135deg); }
+  div.arrow2::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: 3px 3px 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0; }
+  div.arrow2:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 3px 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    transform-origin: 100% 0;
+    transition: .2s ease; }
 
 /* NEWS------------------------------------------------------------------------------ 1*/
 /* NEWS------------------------------------------------------------------------------ 1*/
@@ -490,103 +633,9 @@ h3 {
 /*--//CONTACT----------------------------->*/
 /*--/CONTACT----------------------------->*/
 #contact {
-
-
-  
-  background: url('../IMG/lab-217043_1280.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: blue;
   height: 100vh;
-  width: 100vw;
-}
-
-.contact_inputs {
-  width: 65%;
-  position: relative;
-  left: 15%;
-  
-}
-
-#company {
-  
-  top: 3vh;
-}
-
-#company_web {
-   top: 5vh;
-
-}
-
-#city{
-  top: 7vh;
-
-}
-
-#adress{
-  top: 9vh;
-}
-
-#postal_code{
-  top: 11vh;
-
-}
-
-#country {
-  top: 13vh;
-
-}
-
-#name{
-  top:19vh;
-
-}
-
-#e-mail{
-  top: 21vh;
-}
-
-#phone_number {
-
-  top: 23vh;
-}
-
-#message {
-  top: 29vh;
-  width: 65%;
-  position: relative;
-  left: 15%;
-  height: 20vh;
-
-}
-
-#button{
-  width:60px;
-  height:60px;
-  background-color:#03800b;
-  margin: 5px;
-  padding:10px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  font-size:11px;
-  line-height:32px;
-  text-transform: uppercase;
-  float:left;
-}
-#button:hover{
-  opacity: 0.50;
-  -moz-opacity: .50;
-  filter:alpha (opacity=50);
-}
-#button a{
-  color:#fff;
-  text-decoration:none;
-  padding:5px 5px 5px 0;
-}
-
-
+  width: 100vw; }
 
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
@@ -675,13 +724,11 @@ h3 {
   filter: grayscale(0%); }
 
 #insapolive {
-
-  display: inline-block; 
-height: 100%;
-width: 50%;
-  background: url('../IMG/sophim-007.jpg');
-
-
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  background: url("../IMG/sophim-007.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -863,4 +910,4 @@ ul {
     padding-bottom: 0px;
     margin-bottom: 10px; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-scss.css.map */

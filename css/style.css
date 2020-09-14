@@ -130,18 +130,25 @@ h3{
 
 
 .logo{
+
+  background: url('../IMG/logo_white.png');
+ 
   line-height: 100px;
   float: left;
   text-transform: uppercase;
-  color: black;
   margin-top: 15px;
   margin-left: 50px;
+
+  height: 100px;
+  width: 100px;
 }
 
 .menu{
-  margin-left: 600px;
+  float: right;
+  margin-right: 100px;
   margin-top: 15px;
   line-height: 100px;
+  width: 720px;
 }
 .menu a{
   color: black;

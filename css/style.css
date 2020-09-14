@@ -65,10 +65,81 @@ h3 {
   cursor: pointer;
   height: 60px;
   width: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius:50%;
   border-radius: 50%;
   background-color: #959C7F;
   top: 25px;
-  right: 50px; }
+  right: 50px;
+ }
+
+  #list_round {
+    
+    color: white;
+    font-size: 0px;
+  }
+
+  .nav > li {
+    float:left;
+    
+    
+  }
+  
+  .nav li a {
+    
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    font-size: 20px;
+    
+    
+  }
+  
+  .nav li a:hover {
+    color:#434343;
+    
+  }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    line-height: 5px;
+    
+  }
+  
+  .nav li:hover > ul {
+    
+    display:block;
+    
+    
+  }
+  
+  .nav li ul li {
+    
+    position:relative;
+  }
+  
+  .nav li ul li ul {
+    right:-140px;
+    top:0px;
+  }
+
+
+  #list_round > li {
+    color: white;
+    list-style:none;
+    width: 420px;
+    margin-top: 30px;
+  }
+
+  #list_round > li:hover {
+    background-color: white;
+    color: #959C7F;
+  }
+
+  
 
 .menu-round_transition {
   height: 50%;
@@ -177,6 +248,22 @@ h3 {
 
 .inner a.info:hover {
   color: white; }
+
+#close-btn {
+  display: none;
+  background: url("../IMG/close_img.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: none;
+  position: absolute; 
+  top: 9.5vh; left: 30vw; 
+  z-index: 900; 
+  width: 70px; height: 70px; 
+  border-radius: 50%;
+
+}
 
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/

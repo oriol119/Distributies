@@ -65,10 +65,81 @@ h3 {
   cursor: pointer;
   height: 60px;
   width: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius:50%;
   border-radius: 50%;
   background-color: #959C7F;
   top: 25px;
-  right: 50px; }
+  right: 50px;
+ }
+
+  #list_round {
+    
+    color: white;
+    font-size: 0px;
+  }
+
+  .nav > li {
+    float:left;
+    
+    
+  }
+  
+  .nav li a {
+    
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    font-size: 20px;
+    
+    
+  }
+  
+  .nav li a:hover {
+    color:#434343;
+    
+  }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    line-height: 5px;
+    
+  }
+  
+  .nav li:hover > ul {
+    
+    display:block;
+    
+    
+  }
+  
+  .nav li ul li {
+    
+    position:relative;
+  }
+  
+  .nav li ul li ul {
+    right:-140px;
+    top:0px;
+  }
+
+
+  #list_round > li {
+    color: white;
+    list-style:none;
+    width: 420px;
+    margin-top: 30px;
+  }
+
+  #list_round > li:hover {
+    background-color: white;
+    color: #959C7F;
+  }
+
+  
 
 .menu-round_transition {
   height: 50%;
@@ -178,11 +249,27 @@ h3 {
 .inner a.info:hover {
   color: white; }
 
+#close-btn {
+  display: none;
+  background: url("../IMG/close_img.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: none;
+  position: absolute; 
+  top: 9.5vh; left: 30vw; 
+  z-index: 900; 
+  width: 70px; height: 70px; 
+  border-radius: 50%;
+
+}
+
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 #who-div {
-  background: url("../IMG/inspired-by-clouds-min-ss.jpg");
+  background: url("../IMG/olivo-3728377_1920.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,7 +283,7 @@ h3 {
   height: 4px;
   top: 26%;
   left: 10%;
-  opacity: 40%; }
+  }
 
 .text-div-who {
   position: absolute;
@@ -215,14 +302,14 @@ h3 {
   width: 100vw;
   height: 65vh;
   top: 10%;
-  background-color: white;
-  color: black; }
+  background-color: #CCBA76;
+  color: white; }
 
 .subtext {
   font-family: 'Subtext';
   font-size: 15px;
   line-height: 25px;
-  opacity: 65%; }
+  }
 
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
@@ -324,7 +411,7 @@ h3 {
   color: white;
   width: 28%;
   height: 48%;
-  top: 525%;
+  top: 545%;
   left: 11%;
   justify-content: center;
   align-items: center;
@@ -346,7 +433,7 @@ h3 {
   color: #898988;
   width: 28%;
   height: 48%;
-  top: 525%;
+  top: 545%;
   left: 61%;
   justify-content: center;
   align-items: center;
@@ -377,7 +464,7 @@ h3 {
   border-style: none;
   height: 50px;
   width: 50px;
-  top: 582%;
+  top: 600%;
   left: 23.5%;
   background: url("../IMG/plus.png");
   background-position: center center;

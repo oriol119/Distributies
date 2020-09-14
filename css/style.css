@@ -93,14 +93,15 @@ h3 {
   width: 720px; }
 
 .menu a {
-  color: black;
+  color: #7da2b9;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 10px;
   transition: 0.4s; }
 
 .menu_options {
-  margin: 1%; }
+  margin: 1%;
+  color: #8E9EA8; }
 
 .show-menu-btn, .hide-menu-btn {
   transition: 0.4s;

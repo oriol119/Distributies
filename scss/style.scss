@@ -151,7 +151,7 @@
     width: 720px;
   }
   .menu a{
-    color: black;
+    color: rgb(125, 162, 185);
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 10px;
@@ -160,6 +160,7 @@
   
   .menu_options {
       margin: 1%;
+      color: #8E9EA8;
   }
   .show-menu-btn,.hide-menu-btn{
     transition: 0.4s;
@@ -1180,6 +1181,7 @@ div.arrow2 {
   
   
   }
+  
   /* MEDIA */
   
   
@@ -1199,10 +1201,12 @@ div.arrow2 {
       padding: 80px 0;
       line-height: normal;
       transition: 0.7s;
+    
     }
     .menu a{
       display: block;
       padding: 20px;
+      
   
     }
     .hide-menu-btn{

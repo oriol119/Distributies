@@ -269,7 +269,7 @@ h3 {
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 #who-div {
-  background: url("../IMG/inspired-by-clouds-min-ss.jpg");
+  background: url("../IMG/olivo-3728377_1920.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,7 +283,7 @@ h3 {
   height: 4px;
   top: 26%;
   left: 10%;
-  opacity: 40%; }
+  }
 
 .text-div-who {
   position: absolute;
@@ -302,14 +302,14 @@ h3 {
   width: 100vw;
   height: 65vh;
   top: 10%;
-  background-color: white;
-  color: black; }
+  background-color: #CCBA76;
+  color: white; }
 
 .subtext {
   font-family: 'Subtext';
   font-size: 15px;
   line-height: 25px;
-  opacity: 65%; }
+  }
 
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
 /* PRODUCTS------------------------------------------------------------------------------ 1*/

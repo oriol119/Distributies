@@ -492,7 +492,7 @@ align-items: center; }
 
 .title-options {
   position: relative;
-  font-family: 'Text';
+  font-family: 'Regular';
   font-size: 30px;
   top: 10%; }
 
@@ -654,7 +654,7 @@ align-items: center; }
  color: white;
   
 }
-::-webkit-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;} 
+::-webkit-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px; } 
 
 ::-moz-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;} 
 

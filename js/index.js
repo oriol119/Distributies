@@ -18,11 +18,18 @@ $(window).scroll(function() {
   */
 
 $('#menu-round').click(function(){
+    setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 300);
+    document.getElementById("menu-txt").style.display = "none";
 
+    
     $('#menu-round').animate({width:"50vw", height:"50vw", top:'4.5vh', right:'25%'}, 1000);
-    $('#list_round').css("font-size", "40px");
+    
    
     setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 800);
+
+    $('#list_round').css("display", "block");
+
+    
     
     
 })
@@ -45,7 +52,8 @@ $('#close-btn').click(function(){
     $('#menu-round').animate({width:"60px", height:"60px", top:'25px', right:'50px'}, 1000);
     $('#close-btn').css( 'display','none');
     $('#list_round').css("font-size", "0px");
-
+    $('#list_round').css("display", "none");
+    document.getElementById("menu-txt").style.display = "block";
 })
 
 $('#circle_arrow').click(function(){
@@ -59,6 +67,7 @@ $('#circle_arrow2').click(function(){
     scroll2();
 
 })
+
 
 
 

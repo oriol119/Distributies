@@ -315,6 +315,19 @@ align-items: center; }
 
 }
 
+#portfolio{
+  cursor: pointer;
+  width: 15%;
+  height: 5%;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  z-index: 2;
+  color: #8F9FA9;
+  font-size: 12px;
+  background-color: white;
+}
+
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
@@ -422,7 +435,8 @@ align-items: center; }
   height: 30vh;
   top: 7%;
   background-color: #8F9FA9;
-  color: white; }
+  color: white;
+   }
 
 .title-div-news {
   position: absolute;
@@ -607,7 +621,7 @@ align-items: center; }
 
 #emulsifiers {
   font-size: 25px;
-  font-family: "Text-choices";
+  font-family: "Title";
   color: white;
   position: absolute;
   top: 415%;
@@ -616,7 +630,7 @@ align-items: center; }
 
 #textured {
   font-size: 25px;
-  font-family: "Text-choices";
+  font-family: "Title";
   color: white;
   position: absolute;
   top: 415%;
@@ -625,7 +639,7 @@ align-items: center; }
 
 #fixers {
   font-size: 25px;
-  font-family: "Text-choices";
+  font-family: "Title";
   color: white;
   position: absolute;
   top: 415%;
@@ -715,7 +729,7 @@ textarea:focus, input:focus, input[type]:focus {
   height: 20vh;
   background-color:#8F9FA9;
   border-color: transparent;
-  
+  color: white;
 
 
 }

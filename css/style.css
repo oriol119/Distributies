@@ -8,17 +8,20 @@
   font-family: Text;
   src: url("../fonts/Raleway-ExtraBold.ttf"); }
 @font-face {
-  font-family: Subtext;
-  src: url("../fonts/Montserrat-Light.otf"); }
+  font-family: Subtext; 
+  src: url("../fonts/Montserrat-Light.otf"); }  /* treure*/
 @font-face {
   font-family: Text-options;
-  src: url("../fonts/DroidSerif-Bold.ttf"); }
+  src: url("../fonts/DroidSerif-Bold.ttf"); } /* treure*/
 @font-face {
   font-family: Text-choices;
   src: url("../fonts/Raleway-SemiBold.ttf"); }
 @font-face {
   font-family: Footer-titles;
   src: url("../fonts/Raleway-Medium.ttf"); }
+  @font-face {
+    font-family: Regular;
+    src: url("../fonts/Raleway-Regular.ttf"); }
 /*  TOP MENU */
 * {
   margin: 0;
@@ -39,7 +42,7 @@ h3 {
   font-size: 40px; }
 
 .header {
-  height: 100px;
+  height: 120px;
   width: 100vw;
   background: white;
   position: absolute;
@@ -52,6 +55,24 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: 9999; }
+
+  .zoom {
+    height: 100vh;
+    width: 100vw;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+  }
+
+  .transition {
+    background-size: 200vw ;
+}
+.transition2 {
+  background-size: 100vw ;
+    
+}
 
 #menu-round {
   position: fixed;
@@ -69,7 +90,7 @@ h3 {
   -moz-border-radius:50%;
   border-radius: 50%;
   background-color: #959C7F;
-  top: 25px;
+  top: 40px;
   right: 50px;
  }
 
@@ -151,7 +172,7 @@ h3 {
   line-height: 100px;
   float: left;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 42px;
   margin-left: 65px;
   height: 50px;
   width: 45px; }
@@ -159,9 +180,10 @@ h3 {
 .menu {
   float: right;
   margin-right: 100px;
-  margin-top: 15px;
+  margin-top: 22px;
   line-height: 100px;
-  width: 720px; }
+  width: 720px;
+font-size: 15px; }
 
 .menu a {
   color: #7da2b9;
@@ -172,7 +194,8 @@ h3 {
 
 .menu_options {
   margin: 1%;
-  color: #8E9EA8; }
+  color: #8E9EA8; 
+  font-family: 'Text-choices';}
 
 .show-menu-btn, .hide-menu-btn {
   transition: 0.4s;
@@ -189,7 +212,10 @@ h3 {
 .menu a:hover,
 .show-menu-btn:hover,
 .hide-menu-btn:hover {
-  color: #3498db; }
+  background-color: #146397; 
+  color: white;
+  text-decoration: none;  
+}
 
 #chk {
   position: absolute;
@@ -199,10 +225,14 @@ h3 {
 .content {
   width: 100vw;
   height: 100vh;
+  background-image: url('../IMG/1x/Recurso\ 1.png');
   background-color: #F6F6F3;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+text-align: center;
+justify-content: center;
+align-items: center; }
 
 .content img {
   margin: 20px 0; }
@@ -257,7 +287,7 @@ h3 {
   background-size: cover;
 
   border: none;
-  position: absolute; 
+  position: fixed; 
   top: 9.5vh; left: 30vw; 
   z-index: 900; 
   width: 70px; height: 70px; 
@@ -411,7 +441,7 @@ h3 {
   color: white;
   width: 28%;
   height: 48%;
-  top: 545%;
+  top: 575%;
   left: 11%;
   justify-content: center;
   align-items: center;
@@ -433,7 +463,7 @@ h3 {
   color: #898988;
   width: 28%;
   height: 48%;
-  top: 545%;
+  top: 575%;
   left: 61%;
   justify-content: center;
   align-items: center;
@@ -462,14 +492,21 @@ h3 {
   position: absolute;
   border-radius: 50%;
   border-style: none;
+  cursor: pointer;
   height: 50px;
   width: 50px;
-  top: 600%;
+  top: 630%;
   left: 23.5%;
   background: url("../IMG/plus.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+  #plus-btn:hover {
+    transition: 0.7s ease-in-out;
+    height: 51px;
+    width: 51px;
+  }
 
 /*--//PRODUCTS-2----------------------------->*/
 /*--//PRODUCTS-2----------------------------->*/
@@ -667,7 +704,7 @@ textarea:focus, input:focus, input[type]:focus {
   width:60px;
   height:60px;
   background-color:#959C7F;
- 
+ cursor: pointer;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -699,6 +736,7 @@ textarea:focus, input:focus, input[type]:focus {
 /*--//EMULSIONES----------------------------->*/
 #container_nat_emul {
   background: url("../IMG/cream-3496778_1920.jpg");
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -894,6 +932,7 @@ i {
   font-size: 14px;
   font-family: 'Footer-titles';
   position: relative;
+  cursor: pointer;
   left: 25%; }
 
 #list1 {
@@ -933,6 +972,14 @@ i {
 
 ul {
   flex-direction: column; }
+
+
+  .newClass {
+    height: 120vh;
+    width: 120vw;
+  }
+
+
 
 /* MEDIA */
 @media screen and (max-width: 800px) {

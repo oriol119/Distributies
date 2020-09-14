@@ -694,52 +694,87 @@ background-size: cover;
 }
 
 .contact_inputs {
+  width: 65%;
   position: relative;
-  left: 10%;
+  left: 15%;
   
 }
 
 #company {
   
-  top: 50px;
+  top: 3vh;
 }
 
 #company_web {
-   top: 100px;
+   top: 5vh;
 
 }
 
 #city{
-  top: 150px;
+  top: 7vh;
 
 }
 
 #adress{
-  top: 200px;
+  top: 9vh;
 }
 
 #postal_code{
-  top: 250px;
+  top: 11vh;
 
 }
 
 #country {
-  top: 300px;
+  top: 13vh;
 
 }
 
 #name{
-  top: 350px;
+  top:19vh;
 
 }
 
 #e-mail{
-  top: 400px;
+  top: 21vh;
 }
 
 #phone_number {
 
-  top: 450px;
+  top: 23vh;
+}
+
+#message {
+  top: 29vh;
+  width: 65%;
+  position: relative;
+  left: 15%;
+  height: 20vh;
+
+}
+
+#button{
+  width:60px;
+  height:60px;
+  background-color:#03800b;
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:11px;
+  line-height:32px;
+  text-transform: uppercase;
+  float:left;
+}
+#button:hover{
+  opacity: 0.50;
+  -moz-opacity: .50;
+  filter:alpha (opacity=50);
+}
+#button a{
+  color:#fff;
+  text-decoration:none;
+  padding:5px 5px 5px 0;
 }
 
 

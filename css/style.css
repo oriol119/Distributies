@@ -149,7 +149,7 @@ h3 {
 
 
   #list_round > li {
-    color: white;
+    color: #444428;
     list-style:none;
     width: 420px;
     margin-top: 30px;
@@ -183,7 +183,8 @@ h3 {
   margin-top: 22px;
   line-height: 100px;
   width: 720px;
-font-size: 15px; }
+font-size: 15px;
+ }
 
 .menu a {
   color: #7da2b9;
@@ -195,7 +196,21 @@ font-size: 15px; }
 .menu_options {
   margin: 1%;
   color: #8E9EA8; 
-  font-family: 'Text-choices';}
+  font-family: 'Text-choices';
+  text-align: left;
+margin-left: 15px;}
+
+.menu_options2 {
+  margin: 1%;
+  color: #8E9EA8; 
+  font-family: 'Text-choices';
+  text-align: left;
+margin-left: 15px;}
+
+.menu_options2:hover {
+  padding-left: 30px; 
+}
+
 
 .show-menu-btn, .hide-menu-btn {
   transition: 0.4s;
@@ -214,7 +229,8 @@ font-size: 15px; }
 .hide-menu-btn:hover {
   background-color: #146397; 
   color: white;
-  text-decoration: none;  
+  text-decoration: none;
+   
 }
 
 #chk {
@@ -285,8 +301,9 @@ align-items: center; }
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  border: none;
+  cursor: pointer;
+  border-style: none;
+  outline:none;
   position: fixed; 
   top: 9.5vh; left: 30vw; 
   z-index: 900; 
@@ -513,7 +530,8 @@ align-items: center; }
   background: url("../IMG/plus.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover; 
+  border-style: none;}
 
   #plus-btn:hover {
     transition: 0.7s ease-in-out;
@@ -645,11 +663,11 @@ align-items: center; }
  color: white;
   
 }
-::-webkit-input-placeholder { color: white; } 
+::-webkit-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;} 
 
-::-moz-placeholder { color: white; } 
+::-moz-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;} 
 
-::-ms-input-placeholder { color: white; }
+::-ms-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;}
 
 textarea:focus, input:focus, input[type]:focus {
     outline: 0 none;
@@ -704,7 +722,7 @@ textarea:focus, input:focus, input[type]:focus {
   position: relative;
   left: 15%;
   height: 20vh;
-  background-color:#959C7F;
+  background-color:#8F9FA9;
   border-color: transparent;
   color: white;
 

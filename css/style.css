@@ -139,9 +139,11 @@ h3{
 }
 
 .menu{
-  margin-left: 600px;
+  float: right;
+  margin-right: 100px;
   margin-top: 15px;
   line-height: 100px;
+  width: 720px;
 }
 .menu a{
   color: black;

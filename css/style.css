@@ -490,9 +490,6 @@ h3 {
 /*--//CONTACT----------------------------->*/
 /*--/CONTACT----------------------------->*/
 #contact {
-
-
-  
   background: url('../IMG/lab-217043_1280.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -506,7 +503,19 @@ h3 {
   width: 65%;
   position: relative;
   left: 15%;
+  background-color: #959C7F;
+  border-color: transparent;
+ color: white;
   
+}
+::-webkit-input-placeholder { color: white; } 
+
+::-moz-placeholder { color: white; } 
+
+::-ms-input-placeholder { color: white; }
+
+textarea:focus, input:focus, input[type]:focus {
+    outline: 0 none;
 }
 
 #company {
@@ -515,65 +524,70 @@ h3 {
 }
 
 #company_web {
-   top: 5vh;
+   top: 4vh;
 
 }
 
 #city{
-  top: 7vh;
+  top: 5vh;
 
 }
 
 #adress{
-  top: 9vh;
+  top: 6vh;
 }
 
 #postal_code{
-  top: 11vh;
+  top: 7vh;
 
 }
 
 #country {
-  top: 13vh;
+  top: 8vh;
 
 }
 
 #name{
-  top:19vh;
+  top:14vh;
 
 }
 
 #e-mail{
-  top: 21vh;
+  top: 15vh;
 }
 
 #phone_number {
 
-  top: 23vh;
+  top: 16vh;
 }
 
 #message {
-  top: 29vh;
+  top: 22vh;
   width: 65%;
   position: relative;
   left: 15%;
   height: 20vh;
+  background-color:#959C7F;
+  border-color: transparent;
+
 
 }
 
 #button{
+  position: relative;
+  top: 28%; 
+  left:45%;
   width:60px;
   height:60px;
-  background-color:#03800b;
-  margin: 5px;
-  padding:10px;
+  background-color:#959C7F;
+ 
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
   font-size:11px;
   line-height:32px;
   text-transform: uppercase;
-  float:left;
+  
 }
 #button:hover{
   opacity: 0.50;
@@ -581,9 +595,14 @@ h3 {
   filter:alpha (opacity=50);
 }
 #button a{
+  position: relative;
+  top: 25%;
+  left: 17%;
   color:#fff;
   text-decoration:none;
-  padding:5px 5px 5px 0;
+  font-family: 'Text-choices';
+  
+  
 }
 
 

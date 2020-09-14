@@ -683,13 +683,64 @@ background-size: cover;
 
 #contact {
 
-  background-color: blue;
+  
+  background: url('../IMG/lab-217043_1280.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
 }
 
+.contact_inputs {
+  position: relative;
+  left: 10%;
+  
+}
 
+#company {
+  
+  top: 50px;
+}
 
+#company_web {
+   top: 100px;
+
+}
+
+#city{
+  top: 150px;
+
+}
+
+#adress{
+  top: 200px;
+}
+
+#postal_code{
+  top: 250px;
+
+}
+
+#country {
+  top: 300px;
+
+}
+
+#name{
+  top: 350px;
+
+}
+
+#e-mail{
+  top: 400px;
+}
+
+#phone_number {
+
+  top: 450px;
+}
 
 
 
@@ -814,7 +865,6 @@ width: 50%;
   display: inline-block; 
 height: 100%;
 width: 50%;
-  display: inline-block;
   background: url('../IMG/sophim-007.jpg');
   background-position: center center;
   background-repeat: no-repeat;

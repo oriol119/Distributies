@@ -46,6 +46,36 @@ $('#product-menu').mouseout(function(){
 
 })
 
+$('#sophim').mouseover(function(){
+
+    $('#sophim').css("filter",'grayscale(0%)');
+    $('#plus-btn').css("display",'block');
+
+})
+
+$('#sophim').mouseout(function(){
+
+    $('#sophim').css("filter",'grayscale(100%)');
+    $('#plus-btn').css("display",'none');
+
+})
+
+$('#aloe-vera').mouseover(function(){
+
+    $('#aloe-vera').css("filter",'grayscale(0%)');
+    $('#plus-btn2').css("display",'block');
+
+
+})
+
+$('#aloe-vera').mouseout(function(){
+
+    $('#aloe-vera').css("filter",'grayscale(100%)');
+    $('#plus-btn2').css("display",'none');
+
+})
+
+
 
 $('#close-btn').click(function(){
     

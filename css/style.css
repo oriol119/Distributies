@@ -475,6 +475,7 @@ align-items: center; }
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: grayscale(100%);
    }
 
 #sophim-text {
@@ -498,12 +499,14 @@ position: relative;
   background: url("../IMG/deo_img.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  filter: grayscale(100%);
+ }
 
 #aloe-text {
   position: absolute;
-  background-color: white;
-  color: #898988;
+  background-color: #BCAE72;
+  color: white;
   width: 55%;
   height: 58%;
   top: 20%;
@@ -533,6 +536,7 @@ position: relative;
 
 #plus-btn {
   position: absolute;
+  display: none;
   border-radius: 50%;
   border-style: none;
   cursor: pointer;
@@ -544,7 +548,25 @@ position: relative;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; 
-  border-style: none;}
+  border-style: none;
+outline: none;}
+
+  #plus-btn2 {
+    position: absolute;
+    display: none;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    top: 85%;
+    right: 46%;
+    background: url("../IMG/plus.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-style: none;
+  outline: none;}
 
   #plus-btn:hover {
     transition: 0.7s ease-in-out;

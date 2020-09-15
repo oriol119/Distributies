@@ -18,7 +18,7 @@ $(window).scroll(function() {
   */
 
 $('#menu-round').click(function(){
-    setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 300);
+    setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     

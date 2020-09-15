@@ -66,6 +66,10 @@ h3 {
     -ms-transition: all .2s ease-in-out;
   }
 
+  #content {
+    position: relative;
+  }
+
   .transition {
     background-size: 200vw ;
 }
@@ -383,6 +387,7 @@ align-items: center; }
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
   width: 100vw;
   height: 100vh; }
 
@@ -426,6 +431,7 @@ align-items: center; }
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
   width: 100vw;
   height: 100vh; }
 
@@ -462,6 +468,7 @@ align-items: center; }
 
 #sophim {
   display: inline-block;
+  position: relative;
   height: 100%;
   width: 50%;
   background: url("../IMG/image-sophim.jpg");
@@ -474,17 +481,18 @@ align-items: center; }
   position: absolute;
   background-color: #8F9FA9;
   color: white;
-  width: 28%;
-  height: 48%;
-  top: 575%;
-  left: 11%;
+  width: 55%;
+  height: 58%;
+  top: 20%;
+  left: 22.5%;
   justify-content: center;
   align-items: center;
   text-align: center; }
 
 #aloe-vera {
   display: inline-block;
-  left: 50%;
+position: relative;
+ 
   height: 100%;
   width: 50%;
   background: url("../IMG/deo_img.png");
@@ -496,10 +504,10 @@ align-items: center; }
   position: absolute;
   background-color: white;
   color: #898988;
-  width: 28%;
-  height: 48%;
-  top: 575%;
-  left: 61%;
+  width: 55%;
+  height: 58%;
+  top: 20%;
+  left: 22.5%;
   justify-content: center;
   align-items: center;
   text-align: center; }
@@ -512,7 +520,7 @@ align-items: center; }
 
 .text-options {
   position: relative;
-  font-family: 'Text-options';
+  font-family: 'Regular';
   font-size: 15px;
   line-height: 40px;
   top: 20%;
@@ -530,8 +538,8 @@ align-items: center; }
   cursor: pointer;
   height: 50px;
   width: 50px;
-  top: 630%;
-  left: 23.5%;
+  top: 85%;
+  left: 46%;
   background: url("../IMG/plus.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -598,6 +606,7 @@ align-items: center; }
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
+  position: relative;
   width: 33.3%;
   height: 100%; }
 
@@ -607,6 +616,7 @@ align-items: center; }
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
+  position: relative;
   width: 33.3%;
   height: 100%; }
 
@@ -616,6 +626,7 @@ align-items: center; }
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
+  position: relative;
   width: 33.3%;
   height: 100%; }
 
@@ -948,6 +959,7 @@ i {
   margin-right: 10px; }
 
 .container {
+  position: relative;
   width: 100vw;
   height: 450px;
   display: flex;
@@ -976,19 +988,19 @@ i {
   width: 200px;
   height: 180px;
   position: relative;
-  left: 10%;
+  left: 0%;
   top: 15%; }
 
 #list2 {
   width: 200px;
   height: 200px;
   position: relative;
-  left: 10%;
+  
   top: 15%; }
 
 #list3 {
   position: relative;
-  left: 12%;
+  
   top: 15%;
   width: 200px;
   height: 180px; }
@@ -997,14 +1009,14 @@ i {
   width: 200px;
   height: 180px;
   position: relative;
-  left: 10%;
+  
   top: 15%; }
 
 #list5 {
   width: 200px;
   height: 180px;
   position: relative;
-  left: 20%;
+  left: 10%;
   top: 15%; }
 
 ul {

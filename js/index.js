@@ -18,7 +18,7 @@ $(window).scroll(function() {
   */
 
 $('#menu-round').click(function(){
-    setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 300);
+    setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
@@ -45,6 +45,36 @@ $('#product-menu').mouseout(function(){
     $('#news-menu').css("margin-top",'25px');
 
 })
+
+$('#sophim').mouseover(function(){
+
+    $('#sophim').css("filter",'grayscale(0%)');
+    $('#plus-btn').css("display",'block');
+
+})
+
+$('#sophim').mouseout(function(){
+
+    $('#sophim').css("filter",'grayscale(100%)');
+    $('#plus-btn').css("display",'none');
+
+})
+
+$('#aloe-vera').mouseover(function(){
+
+    $('#aloe-vera').css("filter",'grayscale(0%)');
+    $('#plus-btn2').css("display",'block');
+
+
+})
+
+$('#aloe-vera').mouseout(function(){
+
+    $('#aloe-vera').css("filter",'grayscale(100%)');
+    $('#plus-btn2').css("display",'none');
+
+})
+
 
 
 $('#close-btn').click(function(){

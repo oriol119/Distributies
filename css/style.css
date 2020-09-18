@@ -197,6 +197,7 @@ font-size: 15px;
   color: #7da2b9;
   text-transform: uppercase;
   text-decoration: none;
+  
   padding: 0 10px;
   transition: 0.4s; }
 
@@ -601,7 +602,7 @@ outline: none;}
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%); }
-
+/*  SIDE OPTIONS  */
 #side_options {
   background-color: #BCAE72;
   height: 100vh;
@@ -609,8 +610,52 @@ outline: none;}
   z-index: 10;
   position: absolute;
   left: -60vh;
-  top: 400; }
+  top: 400; 
+cursor: default;}
 
+#side_list {
+  position: relative;
+  top: 35%;
+  
+}
+
+#side_title {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-family: "Footer-titles";
+  font-size: 25.45pt;
+}
+
+#side_option1 {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  
+  left: 25%;
+}
+#side_option1:hover {
+  color: #BCAE72;
+  background-color: white;
+}
+#side_option2 {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+ top: 15px;
+  left: 25%;
+}
+#side_option2:hover {
+  color: #BCAE72;
+  background-color: white;
+}
+
+
+/*  /SIDE OPTIONS */
 #back-btn {
   background: url("../IMG/back-arrow.png");
   background-position: center center;

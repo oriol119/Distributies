@@ -101,7 +101,6 @@ $('#circle_arrow2').click(function(){
 
 
 
-
 function scroll1() {
     document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  }

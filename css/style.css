@@ -66,6 +66,16 @@ h3 {
     -ms-transition: all .2s ease-in-out;
   }
 
+  .zoom_img {
+    webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+
+  }
+
+ 
   #content {
     position: relative;
   }
@@ -197,6 +207,7 @@ font-size: 15px;
   color: #7da2b9;
   text-transform: uppercase;
   text-decoration: none;
+  
   padding: 0 10px;
   transition: 0.4s; }
 
@@ -348,6 +359,7 @@ align-items: center; }
   width: 100vw;
   height: 100vh; }
 
+ 
 .title-div-who {
   position: absolute;
   width: 300px;
@@ -605,7 +617,7 @@ outline: none;}
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%); }
-
+/*  SIDE OPTIONS  */
 #side_options {
   background-color: #BCAE72;
   height: 100vh;
@@ -613,8 +625,52 @@ outline: none;}
   z-index: 10;
   position: absolute;
   left: -60vh;
-  top: 400; }
+  top: 400; 
+cursor: default;}
 
+#side_list {
+  position: relative;
+  top: 35%;
+  
+}
+
+#side_title {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-family: "Footer-titles";
+  font-size: 25.45pt;
+}
+
+#side_option1 {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  
+  left: 25%;
+}
+#side_option1:hover {
+  color: #BCAE72;
+  background-color: white;
+}
+#side_option2 {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+ top: 15px;
+  left: 25%;
+}
+#side_option2:hover {
+  color: #BCAE72;
+  background-color: white;
+}
+
+
+/*  /SIDE OPTIONS */
 #back-btn {
   background: url("../IMG/back-arrow.png");
   background-position: center center;
@@ -1054,6 +1110,69 @@ ul {
     width: 120vw;
   }
 
+
+
+
+  /*slider*/
+
+  
+  .slider {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider .slide {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 0.3s left ease-in-out;
+    
+  }
+  
+  .slider .item {
+    margin-right: 10px;
+  }
+  
+  .slider .item:last-child {
+    margin-right: 0;
+  }
+  
+  .ctrl {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .ctrl-btn {
+    padding: 20px 20px;
+    min-width: 50px;
+    background: #fff;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+  
+    position: absolute;
+    top: 50%;
+    margin-top: -27.5px;
+  }
+  
+  .ctrl-btn.pro-prev {
+    left: 0;
+  }
+  
+  .ctrl-btn.pro-next {
+    right: 0;
+  }
+  
 
 
 /* MEDIA */

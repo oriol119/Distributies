@@ -1,8 +1,3 @@
-function emulsionantesOpen(){
-
-
-}
-
 
 $('#back-btn').click(function(){
 
@@ -49,6 +44,7 @@ $('#option1').click(function(){
 
 	$('#side_options').animate({left:"0"}, 1000);
 
+	
 
 })
 
@@ -67,8 +63,12 @@ $('#option2').click(function(){
 
 
 	$( "#option2" ).addClass( "clear-photo" );
+	document.getElementById('side_options').style.background = "#959C7F";
+	document.getElementById('container_products').style.background = "#959C7F";
+	document.getElementById("side_title").innerHTML = "HEEEEEEE";
+	document.getElementById("side_option1").innerHTML = "HEEEEEEE";
+	document.getElementById("side_option2").innerHTML = "HEEEEEEE";
 
-	document.getElementById('container_products').style.background = "#BCAE72";
 })
 
 
@@ -87,5 +87,10 @@ $('#option3').click(function(){
 
 	$( "#option3" ).addClass( "clear-photo" );
 
-	document.getElementById('container_products').style.background = "#BCAE72";
+	document.getElementById('side_options').style.background = "#8F9FA9";
+	document.getElementById('container_products').style.background = "#8F9FA9";
+	document.getElementById("side_title").innerHTML = "AHHHHHHH";
+	document.getElementById("side_option1").innerHTML = "AAAAAAH";
+	document.getElementById("side_option2").innerHTML = "AAAAAAAAAAH";
+
 })

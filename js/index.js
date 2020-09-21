@@ -1,22 +1,4 @@
 
-/*
-$(window).scroll(function() {
-
-   
-
-    if($(window).scrollTop() >= 50){
-        $("#who-div").addClass('transition');
-        $("#who-div").removeClass('transition2');
-
-    } else {
-        $("#who-div").removeClass('transition');
-        $("#who-div").addClass('transition2');
-    }
-    
-
-  });
-  */
-
 $('#menu-round').click(function(){
     setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
@@ -102,6 +84,8 @@ $('#circle_arrow2').click(function(){
 
 
 
+
+
 function scroll1() {
     document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  }
@@ -111,3 +95,109 @@ function scroll2() {
     document.getElementById('news-options').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  }
 
+
+// MIRAR SCROLL (NO FUNCIONA) IMPORTANT
+ $(window).scroll(function(event) {
+    var scrollTop = $(window).scrollTop();
+    console.log("Vertical "+scrollTop);
+
+    if (scrollTop > 94) {
+        $('.zoom_img').css({
+            width: (100 + scroll/5) + "%"
+        })
+    } else if (scrollTop > 885){
+        $('#go_top').fadeOut(100);
+        }
+  });
+
+//FUNCIONA PERO HAARIA D'ANAR L'ALTRE
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    $(".zoom_img").css({
+        width: (100 + scroll/5) + "%"
+    })
+})
+
+
+/*
+$(window).scroll(function() {
+
+   
+
+    if($(window).scrollTop() >= 50){
+        $("#who-div").addClass('transition');
+        $("#who-div").removeClass('transition2');
+
+    } else {
+        $("#who-div").removeClass('transition');
+        $("#who-div").addClass('transition2');
+    }
+    
+
+  });
+  */
+
+
+  /*SLIDER*/
+
+ "use strict";
+
+ productScroll();
+ 
+ function productScroll() {
+   let slider = document.getElementById("slider");
+   let next = document.getElementsByClassName("pro-next");
+   let prev = document.getElementsByClassName("pro-prev");
+   let slide = document.getElementById("slide");
+   let item = document.getElementById("slide");
+ 
+   for (let i = 0; i < next.length; i++) {
+     //refer elements by class name
+ 
+     let position = 0; //slider postion
+ 
+     prev[i].addEventListener("click", function() {
+       //click previos button
+       if (position > 0) {
+         //avoid slide left beyond the first item
+         position -= 1;
+         translateX(position); //translate items
+       }
+     });
+ 
+     next[i].addEventListener("click", function() {
+       if (position >= 0 && position < hiddenItems()) {
+         //avoid slide right beyond the last item
+         position += 1;
+         translateX(position); //translate items
+       }
+     });
+   }
+ 
+   function hiddenItems() {
+     //get hidden items
+     let items = getCount(item, false);
+     let visibleItems = slider.offsetWidth / 210;
+     return items - Math.ceil(visibleItems);
+   }
+ }
+ 
+ function translateX(position) {
+   //translate items
+   slide.style.left = position * -210 + "px";
+ }
+ 
+ function getCount(parent, getChildrensChildren) {
+   //count no of items
+   let relevantChildren = 0;
+   let children = parent.childNodes.length;
+   for (let i = 0; i < children; i++) {
+     if (parent.childNodes[i].nodeType != 3) {
+       if (getChildrensChildren)
+         relevantChildren += getCount(parent.childNodes[i], true);
+       relevantChildren++;
+     }
+   }
+   return relevantChildren;
+ }
+ 

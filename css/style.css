@@ -347,6 +347,33 @@ align-items: center; }
   background-color: white;
 }
 
+#linkedin_lateral {
+  position: fixed; 
+  top: 35vh; 
+  right: 65px; 
+  width: 26px;
+}
+
+#follow_lateral {
+
+  position: fixed;
+  top: 49vh; 
+  right: 30px; 
+  transform: rotate(-90deg); 
+  font-family: 'Footer-titles'; 
+  font-size: 15px; 
+  color: #959C7F ;
+
+}
+
+#plus_lateral{
+  position: fixed; 
+  top: 57vh; 
+  right: 70px; 
+  width: 20px;
+
+}
+
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/

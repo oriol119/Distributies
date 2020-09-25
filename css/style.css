@@ -389,7 +389,7 @@ align-items: center; }
  
 .title-div-who {
   position: absolute;
-  width: 300px;
+  width: 50%;
   height: 4px;
   top: 26%;
   left: 10%;
@@ -397,13 +397,13 @@ align-items: center; }
 
 .text-div-who {
   position: absolute;
-  width: 675px;
+  width: 60%;
   left: 35%;
   top: 20%; }
 
 .subtext-div-who {
   position: absolute;
-  width: 675px;
+  width: 60%;
   left: 35%;
   top: 45%; }
 
@@ -1210,8 +1210,22 @@ ul {
 
  }
 
+ .title-div-who{
 
+  top: 10%;
  
+}
+
+.text-div-who {
+
+  left: 10%;
+  width: 80%;
+}
+
+.subtext-div-who {
+  left: 10%;
+  width: 80%;
+}
 }
 
 
@@ -1221,5 +1235,33 @@ ul {
     visibility: hidden;
   }
   
+  #content_who {
+
+    height: 80%;
+
+
+  }
+
+  .subtext{
+    font-size: 14px;
+    
+  }
+  .subtext-div-who {
+    top: 47%;
+  }
+
+  .text{
+    font-size: 33px;;
+  }
+}
+@media screen and (max-width: 560px){
+
+  .subtext{
+    font-size: 12px;
+    
+  }
+
+
+
 
 }

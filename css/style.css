@@ -1,0 +1,1198 @@
+/*---------------------- FONTS ------------------------*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+  font-family: Title;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold; }
+@font-face {
+  font-family: Text;
+  src: url("../fonts/Raleway-ExtraBold.ttf"); }
+@font-face {
+  font-family: Subtext; 
+  src: url("../fonts/Montserrat-Light.otf"); }  /* treure*/
+@font-face {
+  font-family: Text-options;
+  src: url("../fonts/DroidSerif-Bold.ttf"); } /* treure*/
+@font-face {
+  font-family: Text-choices;
+  src: url("../fonts/Raleway-SemiBold.ttf"); }
+@font-face {
+  font-family: Footer-titles;
+  src: url("../fonts/Raleway-Medium.ttf"); }
+  @font-face {
+    font-family: Regular;
+    src: url("../fonts/Raleway-Regular.ttf"); }
+/*  TOP MENU */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif; }
+
+h1 {
+  color: white;
+  font-size: 20px; }
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px; }
+
+h3 {
+  color: #9d9d9d;
+  font-size: 40px; }
+
+.header {
+  height: 120px;
+  width: 100vw;
+  background: white;
+  position: absolute;
+  color: #fff; }
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; }
+
+  .zoom {
+    height: 100vh;
+    width: 100vw;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+  }
+
+  .zoom_img {
+    webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+
+  }
+
+ 
+  #content {
+    position: relative;
+  }
+
+  .transition {
+    background-size: 200vw ;
+}
+.transition2 {
+  background-size: 100vw ;
+    
+}
+
+#menu-round {
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius:50%;
+  border-radius: 50%;
+  background-color: #959C7F;
+  top: 50px;
+  right: 50px;
+ }
+
+  #list_round {
+    
+    color: white;
+    font-size: 0px;
+    display: none;
+    position: relative;
+    left: 20%;
+  }
+
+  .nav > li {
+    float:left;
+    
+    
+  }
+  
+  .nav li a {
+    
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    font-size: 20px;
+    
+    
+  }
+  
+  .nav li a:hover {
+    color:#434343;
+    
+  }
+  
+  .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    line-height: 5px;
+    
+  }
+  
+  .nav li:hover > ul {
+    
+    display:block;
+    
+    
+  }
+  
+  .nav li ul li {
+    
+    position:relative;
+  }
+  
+  .nav li ul li ul {
+    right:-140px;
+    top:0px;
+  }
+
+
+  #list_round > li {
+    color: #444428;
+    list-style:none;
+    width: 420px;
+    margin-top: 30px;
+  }
+
+  #list_round > li:hover {
+    background-color: white;
+    color: #959C7F;
+  }
+
+  
+
+.menu-round_transition {
+  height: 50%;
+  width: 50%;
+  left: 50%; }
+
+.logo {
+  background-image: url("../IMG/logo_white_red2.png");
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+  margin-top: 42px;
+  margin-left: 65px;
+  height: 50px;
+  width: 45px; }
+
+.menu {
+  float: right;
+  margin-right: 200px;
+  margin-top: 22px;
+  line-height: 100px;
+  width: 720px;
+font-size: 15px;
+ }
+
+.menu a {
+  color: #7da2b9;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  padding: 0 10px;
+  transition: 0.4s; }
+
+.menu_options {
+  display: inline;
+  padding: 3px;
+  margin: 1%;
+  color: #8E9EA8; 
+  font-family: 'Text-choices';
+  text-align: left;
+margin-left: 5px;}
+
+.menu_options2 {
+  margin: 1%;
+  color: #8E9EA8; 
+  font-family: 'Text-choices';
+  text-align: left;
+margin-left: 15px;}
+
+.menu_options2:hover {
+  padding-left: 30px; 
+}
+
+
+.show-menu-btn, .hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none; }
+
+.show-menu-btn {
+  float: right; }
+
+.show-menu-btn i {
+  line-height: 100px; }
+
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+  background-color: #146397; 
+  color: white;
+  text-decoration: none;
+   
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111; }
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../IMG/1x/Recurso\ 1.png');
+  background-color: #F6F6F3;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+text-align: center;
+justify-content: center;
+align-items: center; }
+
+.content img {
+  margin: 20px 0; }
+
+.content p {
+  text-align: justify; }
+
+
+
+/* COOKIES*/
+#barraaceptacion {
+  display: none;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  min-height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 99999; }
+
+.inner {
+  width: 100%;
+  position: absolute;
+  padding-left: 5px;
+  font-family: verdana;
+  font-size: 12px;
+  top: 30%; }
+
+.inner a.ok {
+  padding: 4px;
+  color: #C6B406;
+  text-decoration: none; }
+
+.inner a.info {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #C6B406; }
+
+.inner a.ok:hover {
+  color: white; }
+
+.inner a.info:hover {
+  color: white; }
+
+#close-btn {
+  display: none;
+  background: url("../IMG/4x/close@4x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  border-style: none;
+  outline:none;
+  position: fixed; 
+  top: 9.5vh; left: 30vw; 
+  z-index: 900; 
+  width: 70px; height: 70px; 
+  border-radius: 50%;
+
+}
+
+#portfolio{
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  z-index: 2;
+  color: #8F9FA9;
+  font-size: 12px;
+  background-color: white;
+}
+
+/* WHO WE ARE------------------------------------------------------------------------------ 1*/
+/* WHO WE ARE------------------------------------------------------------------------------ 1*/
+/* WHO WE ARE------------------------------------------------------------------------------ 1*/
+#who-div {
+  background: url("../IMG/olivo-3728377_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh; }
+
+ 
+.title-div-who {
+  position: absolute;
+  width: 300px;
+  height: 4px;
+  top: 26%;
+  left: 10%;
+  }
+
+.text-div-who {
+  position: absolute;
+  width: 675px;
+  left: 35%;
+  top: 20%; }
+
+.subtext-div-who {
+  position: absolute;
+  width: 675px;
+  left: 35%;
+  top: 45%; }
+
+#content_who {
+  position: relative;
+  width: 100vw;
+  height: 65vh;
+  top: 10%;
+  background-color: #CCBA76;
+  color: white; }
+
+.subtext {
+  font-family: 'Subtext';
+  font-size: 15px;
+  line-height: 25px;
+  }
+
+/* PRODUCTS------------------------------------------------------------------------------ 1*/
+/* PRODUCTS------------------------------------------------------------------------------ 1*/
+/* PRODUCTS------------------------------------------------------------------------------ 1*/
+#products {
+  background: url("../IMG/glass-4108085_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh; }
+
+#content_products {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  top: 35%;
+  background-color: #959C7F;
+  color: white; }
+
+.title {
+  position: relative;
+  font-family: 'Title';
+  font-size: 20px; }
+
+.text {
+  font-family: 'Text';
+  font-size: 35px; }
+
+.title-div {
+  position: absolute;
+  width: 300px;
+  height: 4px;
+  top: 34%;
+  left: 10%; }
+
+.text-div {
+  position: absolute;
+  width: 675px;
+  left: 35%;
+  top: 28%; }
+
+
+/* NEWS------------------------------------------------------------------------------ 1*/
+/* NEWS------------------------------------------------------------------------------ 1*/
+/* NEWS------------------------------------------------------------------------------ 1*/
+#news {
+  background: url("../IMG/summer-4246927_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh; }
+
+#content_news {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  top: 7%;
+  background-color: #8F9FA9;
+  color: white;
+   }
+
+.title-div-news {
+  position: absolute;
+  width: 300px;
+  height: 4px;
+  top: 34%;
+  left: 10%; }
+
+.text-div-news {
+  position: absolute;
+  width: 675px;
+  left: 35%;
+  top: 28%; }
+
+/* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
+/* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
+/* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
+#news-options {
+  display: table;
+  height: 100vh;
+  width: 100vw;
+  padding: 0; }
+
+#sophim {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background: url("../IMG/image-sophim.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+   }
+
+#sophim-text {
+  position: absolute;
+  background-color: #8F9FA9;
+  color: white;
+  width: 55%;
+  height: 58%;
+  top: 20%;
+  left: 22.5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+#aloe-vera {
+  display: inline-block;
+position: relative;
+ 
+  height: 100%;
+  width: 50%;
+  background: url("../IMG/deo_img.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+ }
+
+#aloe-text {
+  position: absolute;
+  background-color: #BCAE72;
+  color: white;
+  width: 55%;
+  height: 58%;
+  top: 20%;
+  left: 22.5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.title-options {
+  position: relative;
+  font-family: 'Regular';
+  font-size: 30px;
+  top: 10%; }
+
+.text-options {
+  position: relative;
+  font-family: 'Regular';
+  font-size: 15px;
+  line-height: 40px;
+  top: 20%;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+#aloe-margin {
+  margin-left: 60px;
+  margin-right: 60px; }
+
+#plus-btn {
+  position: absolute;
+  display: none;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  top: 85%;
+  left: 46%;
+  background: url("../IMG/plus.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  border-style: none;
+outline: none;}
+
+  #plus-btn2 {
+    position: absolute;
+    display: none;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    top: 85%;
+    right: 46%;
+    background: url("../IMG/plus.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-style: none;
+  outline: none;}
+
+  #plus-btn:hover {
+    transition: 0.7s ease-in-out;
+    height: 51px;
+    width: 51px;
+  }
+
+/*--//PRODUCTS-2----------------------------->*/
+/*--//PRODUCTS-2----------------------------->*/
+/*--//PRODUCTS-2----------------------------->*/
+#container_products {
+  display: table;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 100vw;
+  height: 100vh;
+  padding: 0; }
+
+.photo_products {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.photo_products:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%); }
+
+.clear-photo {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%); }
+/*  SIDE OPTIONS  */
+#side_options {
+  background-color: #BCAE72;
+  height: 100vh;
+  width: 30vw;
+  z-index: 10;
+  position: absolute;
+  left: -60vh;
+  top: 400; 
+cursor: default;}
+
+#side_list {
+  position: relative;
+  top: 35%;
+  
+}
+
+#side_title {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-family: "Footer-titles";
+  font-size: 25.45pt;
+}
+
+#side_option1 {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  
+  left: 25%;
+}
+#side_option1:hover {
+  color: #BCAE72;
+  background-color: white;
+}
+#side_option2 {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+ top: 15px;
+  left: 25%;
+}
+#side_option2:hover {
+  color: #BCAE72;
+  background-color: white;
+}
+
+
+/*  /SIDE OPTIONS */
+#back-btn {
+  background: url("../IMG/back-arrow.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  margin-top: 30px;
+  margin-left: 10px; }
+
+#option1 {
+  background: url("../IMG/olive-oil-968657_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  width: 33.3%;
+  height: 100%; }
+
+#option2 {
+  background: url("../IMG/SOPHIM/beurre-de-karite-sophim.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  width: 33.3%;
+  height: 100%; }
+
+#option3 {
+  background: url("../IMG/SOPHIM/water-life-crop.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  width: 33.3%;
+  height: 100%; }
+
+#emulsifiers {
+  font-size: 25px;
+  font-family: "Title";
+  color: white;
+  position: absolute;
+  top: 415%;
+  left: 7%;
+  z-index: 2; }
+
+#textured {
+  font-size: 25px;
+  font-family: "Title";
+  color: white;
+  position: absolute;
+  top: 415%;
+  left: 43%;
+  z-index: 2; }
+
+#fixers {
+  font-size: 25px;
+  font-family: "Title";
+  color: white;
+  position: absolute;
+  top: 415%;
+  left: 78%;
+  z-index: 2; }
+
+/*--//CONTACT----------------------------->*/
+/*--//CONTACT----------------------------->*/
+/*--/CONTACT----------------------------->*/
+#contact {
+  background: url('../IMG/lab-217043_1280.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contact_inputs {
+  width: 65%;
+  position: relative;
+  left: 15%;
+  background-color: #959C7F;
+  border-color: transparent;
+ color: white;
+  
+}
+::-webkit-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px; } 
+
+::-moz-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;} 
+
+::-ms-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;}
+
+textarea:focus, input:focus, input[type]:focus {
+    outline: 0 none;
+}
+
+#company {
+  
+  top: 3vh;
+}
+
+#company_web {
+   top: 4vh;
+
+}
+
+#city{
+  top: 5vh;
+
+}
+
+#adress{
+  top: 6vh;
+}
+
+#postal_code{
+  top: 7vh;
+
+}
+
+#country {
+  top: 8vh;
+
+}
+
+#name{
+  top:14vh;
+
+}
+
+#e-mail{
+  top: 15vh;
+}
+
+#phone_number {
+
+  top: 16vh;
+}
+
+#message {
+  top: 22vh;
+  width: 65%;
+  position: relative;
+  left: 15%;
+  height: 20vh;
+  background-color:#8F9FA9;
+  border-color: transparent;
+  color: white;
+
+
+}
+
+#button{
+  position: relative;
+  top: 28%; 
+  left:45%;
+  width:60px;
+  height:60px;
+  background-color:#959C7F;
+ cursor: pointer;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:11px;
+  line-height:32px;
+  text-transform: uppercase;
+  
+}
+#button:hover{
+  opacity: 0.50;
+  -moz-opacity: .50;
+  filter:alpha (opacity=50);
+}
+#button a{
+  position: relative;
+  top: 25%;
+  left: 17%;
+  color:#fff;
+  text-decoration:none;
+  font-family: 'Text-choices';
+  
+  
+}
+
+
+
+/*--//EMULSIONES----------------------------->*/
+/*--//EMULSIONES----------------------------->*/
+/*--//EMULSIONES----------------------------->*/
+#container_nat_emul {
+  background: url("../IMG/cream-3496778_1920.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; }
+
+#content_natural {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  top: 5%;
+  background-color: #FFFFFF;
+  color: white;
+  opacity: 85%; }
+
+#natural_emulsions {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  right: 0;
+  color: grey;
+  font-family: 'Title';
+  font-size: 13px; }
+
+#escualan {
+  position: absolute;
+  top: 20%;
+  left: 27%;
+  color: black;
+  font-weight: bold;
+  font-family: 'Title';
+  font-size: 35px; }
+
+#text_escualan {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  color: #9d9d9d;
+  font-size: 13px;
+  font-family: 'Text-options'; }
+
+#phy {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  background: url("../IMG/biophytosebum-sophim-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#phytosqualan-content {
+  position: absolute;
+  background-color: #8F9FA9;
+  color: white;
+  width: 28%;
+  height: 48%;
+  top: 525%;
+  left: 11%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2; }
+
+#phy_text {
+  top: 25%;
+  position: absolute;
+  height: auto;
+  font-size: 12px; }
+
+.photos_grey {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.photos_grey:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%); }
+
+#insapolive {
+
+  display: inline-block; 
+height: 100%;
+width: 50%;
+  background: url('../IMG/sophim-007.jpg');
+
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#insapolive-content {
+  position: absolute;
+  background-color: white;
+  color: #898988;
+  width: 28%;
+  height: 48%;
+  top: 525%;
+  left: 61%;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+#insa_text {
+  line-height: 35px;
+  top: 25%;
+  position: absolute;
+  height: auto;
+  font-size: 12px; }
+
+/*--//FOOTER----------------------------->*/
+/*--//FOOTER----------------------------->*/
+/*--//FOOTER----------------------------->*/
+section {
+  padding: 10px 0; }
+
+section .section-title {
+  text-align: center;
+  color: #959C7F;
+  margin-bottom: 50px;
+  text-transform: uppercase; }
+
+#footer {
+  background: #959C7F !important; }
+
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  color: #ffffff; }
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  padding-left: 15px; }
+
+#footer ul.social li {
+  padding: 3px 0; }
+
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease; }
+
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px; }
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+  color: #ffffff; }
+
+#footer ul.social li a:hover {
+  color: #eeeeee; }
+
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease; }
+
+#footer ul.quick-links a:hover {
+  font-weight: bold; }
+
+i {
+  color: black;
+  margin-right: 10px; }
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 450px;
+  display: flex;
+  justify-content: center; }
+
+.footer-list {
+  position: relative;
+  top: 30px;
+  list-style: none;
+  color: white;
+  line-height: 28px;
+  min-width: 230px; }
+
+.footer-list > .title {
+  font-size: 22px;
+  font-family: 'Footer-titles'; }
+
+.footer-elements {
+  font-size: 14px;
+  font-family: 'Footer-titles';
+  position: relative;
+  cursor: pointer;
+  left: 25%; }
+
+#list1 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 0%;
+  top: 15%; }
+
+#list2 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  
+  top: 15%; }
+
+#list3 {
+  position: relative;
+  
+  top: 15%;
+  width: 200px;
+  height: 180px; }
+
+#list4 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  
+  top: 15%; }
+
+#list5 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 10%;
+  top: 15%; }
+
+ul {
+  flex-direction: column; }
+
+
+  .newClass {
+    height: 120vh;
+    width: 120vw;
+  }
+
+
+
+
+  /*slider*/
+
+  
+  .slider {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider .slide {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 0.3s left ease-in-out;
+    
+  }
+  
+  .slider .item {
+    margin-right: 10px;
+  }
+  
+  .slider .item:last-child {
+    margin-right: 0;
+  }
+  
+  .ctrl {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .ctrl-btn {
+    padding: 20px 20px;
+    min-width: 50px;
+    background: #fff;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+  
+    position: absolute;
+    top: 50%;
+    margin-top: -27.5px;
+  }
+  
+  .ctrl-btn.pro-prev {
+    left: 0;
+  }
+  
+  .ctrl-btn.pro-next {
+    right: 0;
+  }
+  
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1100px) {
+ .menu_options {
+   visibility: hidden;
+
+ }
+
+
+ 
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .logo{
+    visibility: hidden;
+  }
+  
+
+}

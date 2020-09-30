@@ -55,6 +55,13 @@ $('#option1').click(function(){
 
 
 $('#option2').click(function(){
+
+	$('#side_option1').attr('href', "phytowax.html");
+	$('#side_option2').attr('href', "vegeline.html");
+	$('#side_option3').attr('href', "mc30-mc300.html");
+	$('#side_option4').attr('href', '#');
+	$('#side_option5').attr('href', '#');
+
 	document.getElementById('option1').style.display = 'none';
 	document.getElementById('option3').style.display = 'none';
 	document.getElementById('option4').style.display = 'none';
@@ -72,14 +79,22 @@ $('#option2').click(function(){
 	$( "#option2" ).addClass( "clear-photo" );
 	document.getElementById('side_options').style.background = "#959C7F";
 	document.getElementById('container_products').style.background = "#959C7F";
-	document.getElementById("side_title").innerHTML = "HEEEEEEE";
-	document.getElementById("side_option1").innerHTML = "HEEEEEEE";
-	document.getElementById("side_option2").innerHTML = "HEEEEEEE";
+	document.getElementById("side_title").innerHTML = "Texturizados";
+	document.getElementById("side_option1").innerHTML = "Phytowax";
+	document.getElementById("side_option2").innerHTML = "Vegeline";
+	document.getElementById("side_option3").innerHTML = "MC30-MC300";
+	document.getElementById("side_option4").innerHTML = "";
+	document.getElementById("side_option5").innerHTML = "";
+	
+	
 
 })
 
 
 $('#option3').click(function(){
+
+	
+
 	document.getElementById('option1').style.display = 'none';
 	document.getElementById('option2').style.display = 'none';
 	document.getElementById('option4').style.display = 'none';
@@ -98,15 +113,27 @@ $('#option3').click(function(){
 
 	document.getElementById('side_options').style.background = "#8F9FA9";
 	document.getElementById('container_products').style.background = "#8F9FA9";
-	document.getElementById("side_title").innerHTML = "AHHHHHHH";
-	document.getElementById("side_option1").innerHTML = "AAAAAAH";
-	document.getElementById("side_option2").innerHTML = "AAAAAAAAAAH";
+	document.getElementById("side_title").innerHTML = "ACEITES Y MANTECAS";
+	document.getElementById("side_option1").innerHTML = "Aceites";
+	document.getElementById("side_option2").innerHTML = "Mantecas";
+	document.getElementById("side_option3").innerHTML = "";
+	document.getElementById("side_option4").innerHTML = "";
+	document.getElementById("side_option5").innerHTML = "";
+
+	
 
 })
 
 
 
 $('#option4').click(function(){
+
+	$('#side_option1').attr('href', "phytosqualan.html");
+	$('#side_option2').attr('href', "insapolive.html");
+	$('#side_option3').attr('href', "biophytosebum.html");
+	$('#side_option4').attr('href', 'squapure.html');
+	$('#side_option5').attr('href', 'sophiderm.html');
+
 	document.getElementById('option1').style.display = 'none';
 	document.getElementById('option2').style.display = 'none';
 	document.getElementById('option3').style.display = 'none';
@@ -125,8 +152,14 @@ $('#option4').click(function(){
 
 	document.getElementById('side_options').style.background = "#8F9FA9";
 	document.getElementById('container_products').style.background = "#8F9FA9";
-	document.getElementById("side_title").innerHTML = "AHHHHHHH";
-	document.getElementById("side_option1").innerHTML = "AAAAAAH";
-	document.getElementById("side_option2").innerHTML = "AAAAAAAAAAH";
+	document.getElementById("side_title").innerHTML = "EMULIENTES";
+	document.getElementById("side_option1").innerHTML = "Phytosqualan";
+	document.getElementById("side_option2").innerHTML = "Insapolive";
+	document.getElementById("side_option3").innerHTML = "Biophytosebum";
+	document.getElementById("side_option4").innerHTML = "Squapure";
+	document.getElementById("side_option5").innerHTML = "Sophiderm";
+
+	
+
 
 })

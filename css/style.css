@@ -1255,6 +1255,13 @@ ul {
 
 @media screen and (max-width: 800px) {
 
+
+  
+  .header {
+
+    height: 90px;
+  }
+  
   .logo{
     visibility: hidden;
   }
@@ -1283,6 +1290,11 @@ ul {
   .subtext{
     font-size: 12px;
     
+  }
+
+  #title_who_resp {
+
+    font-size: 15px;
   }
 
 

@@ -716,7 +716,7 @@ cursor: default;}
   background-size: cover;
   display: inline-block;
   position: relative;
-  width: 33.3%;
+  width: 25%;
   height: 100%; }
 
 #option2 {
@@ -726,7 +726,7 @@ cursor: default;}
   background-size: cover;
   display: inline-block;
   position: relative;
-  width: 33.3%;
+  width: 25%;
   height: 100%; }
 
 #option3 {
@@ -736,8 +736,18 @@ cursor: default;}
   background-size: cover;
   display: inline-block;
   position: relative;
-  width: 33.3%;
+  width: 25%;
   height: 100%; }
+
+  #option4 {
+    background: url("../IMG/SOPHIM/beurre-de-karite-sophim.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    height: 100%; }
 
 #emulsifiers {
   font-size: 25px;
@@ -745,7 +755,7 @@ cursor: default;}
   color: white;
   position: absolute;
   top: 415%;
-  left: 7%;
+  left: 6%;
   z-index: 2; }
 
 #textured {
@@ -754,7 +764,7 @@ cursor: default;}
   color: white;
   position: absolute;
   top: 415%;
-  left: 43%;
+  left: 31%;
   z-index: 2; }
 
 #fixers {
@@ -763,8 +773,16 @@ cursor: default;}
   color: white;
   position: absolute;
   top: 415%;
-  left: 78%;
+  left: 53.2%;
   z-index: 2; }
+#oliva {
+    font-size: 25px;
+    font-family: "Title";
+    color: white;
+    position: absolute;
+    top: 415%;
+    left: 85%;
+    z-index: 2; }
 
 /*--//CONTACT----------------------------->*/
 /*--//CONTACT----------------------------->*/

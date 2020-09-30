@@ -352,6 +352,7 @@ align-items: center; }
   top: 35vh; 
   right: 65px; 
   width: 26px;
+  z-index: 9;
 }
 
 #follow_lateral {
@@ -363,6 +364,7 @@ align-items: center; }
   font-family: 'Footer-titles'; 
   font-size: 15px; 
   color: #959C7F ;
+  z-index: 9;
 
 }
 
@@ -371,7 +373,7 @@ align-items: center; }
   top: 57vh; 
   right: 70px; 
   width: 20px;
-
+  z-index: 9;
 }
 
 /* WHO WE ARE------------------------------------------------------------------------------ 1*/
@@ -754,8 +756,9 @@ cursor: default;}
   font-family: "Title";
   color: white;
   position: absolute;
-  top: 415%;
-  left: 6%;
+ width: 100%;
+  text-align: center;
+  bottom: 110px;
   z-index: 2; }
 
 #textured {
@@ -763,8 +766,9 @@ cursor: default;}
   font-family: "Title";
   color: white;
   position: absolute;
-  top: 415%;
-  left: 31%;
+  width: 100%;
+  text-align: center;
+  bottom: 110px;
   z-index: 2; }
 
 #fixers {
@@ -772,16 +776,18 @@ cursor: default;}
   font-family: "Title";
   color: white;
   position: absolute;
-  top: 415%;
-  left: 53.2%;
+  width: 100%;
+  text-align: center;
+  bottom: 110px;
   z-index: 2; }
 #oliva {
     font-size: 25px;
     font-family: "Title";
     color: white;
     position: absolute;
-    top: 415%;
-    left: 85%;
+    width: 100%;
+  text-align: center;
+  bottom: 110px;
     z-index: 2; }
 
 /*--//CONTACT----------------------------->*/

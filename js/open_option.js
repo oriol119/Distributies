@@ -31,6 +31,12 @@ setTimeout(function(){
 
 $('#option1').click(function(){
 
+	$('#side_option1').attr('href', "phytosqualan.html");
+	$('#side_option2').attr('href', "insapolive.html");
+	$('#side_option3').attr('href', "biophytosebum.html");
+	$('#side_option4').attr('href', 'phytowax.html');
+
+
 	document.getElementById('option2').style.display = 'none';
 	document.getElementById('option3').style.display = 'none';
 	document.getElementById('option4').style.display = 'none';
@@ -59,8 +65,7 @@ $('#option2').click(function(){
 	$('#side_option1').attr('href', "phytowax.html");
 	$('#side_option2').attr('href', "vegeline.html");
 	$('#side_option3').attr('href', "mc30-mc300.html");
-	$('#side_option4').attr('href', '#');
-	$('#side_option5').attr('href', '#');
+
 
 	document.getElementById('option1').style.display = 'none';
 	document.getElementById('option3').style.display = 'none';
@@ -94,6 +99,8 @@ $('#option2').click(function(){
 $('#option3').click(function(){
 
 	
+	
+	
 
 	document.getElementById('option1').style.display = 'none';
 	document.getElementById('option2').style.display = 'none';
@@ -120,6 +127,7 @@ $('#option3').click(function(){
 	document.getElementById("side_option4").innerHTML = "";
 	document.getElementById("side_option5").innerHTML = "";
 
+	disableHref();
 	
 
 })
@@ -163,3 +171,6 @@ $('#option4').click(function(){
 
 
 })
+
+
+

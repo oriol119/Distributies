@@ -45,7 +45,7 @@
       <li class="menu_options"><a class=" menu_mediaQ" href="#">Contacto</a></li>
       <li class="menu_options" ><h5 class="menu_options menu_mediaQ es_fr" href="#" style="margin-right: 0; cursor:default " ><a class="es_fr" href="#es" style="margin-left: 0;">ES</a> |<a  class="es_fr" href="#fr" style="margin-left: 0;">Fr</a></h5></li>
       <label for="chk" class="hide-menu-btn">
-        <i id= "suspension"class="fas fa-times"></i>
+        <i id="suspension" class="fas fa-times"></i>
       </label>
     </ul>
   </div>
@@ -70,17 +70,19 @@
 <section class="content">
 
 
-  <img  src="IMG/4x/linkedin_green@4x.png" style="position: absolute; top: 25vh; left: 42vw; width: 20px; " >
-   <img  src="IMG/4x/plus_green@4x.png"style="position: absolute; top: 25vh; left: 42vw; width: 20px;">
+  <img id="linkedin_lateral" src="IMG/4x/linkedin_green@4x.png">
+  <h5 id="follow_lateral" >Síguenos en -</h5>
+  <img id="plus_lateral" src="IMG/4x/plus_green@4x.png">
+  
    
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-      <img src="IMG/4x/logo@4x.png" style="display: block; margin: auto; margin-top: 200px; width: 150px;">
+   
+  <img src="IMG/4x/logo@4x.png" style="display: block; margin: auto; margin-top: 200px; width: 150px;">
       
-      <img src="IMG/4x/distributies@4x.png" style="display: block; margin: auto; margin-top: 40px;  width: 450px;">
-      <img src="IMG/4x/text_distributies@4x.png" style="display: block; margin: auto; margin-top: 20px; width: 280px;">
+  <img src="IMG/4x/distributies@4x.png" style="display: block; margin: auto; margin-top: 40px;  width: 450px;">
+  <img src="IMG/4x/text_distributies@4x.png" style="display: block; margin: auto; margin-top: 20px; width: 280px;">
       
-      <button id="portfolio">DESCARGAR PORTFOLIO</button>
-    </div>
+  <button id="portfolio">DESCARGAR PORTFOLIO</button>
+   
   
 
 
@@ -100,7 +102,7 @@
   <div id="content_who"  >
     
     <div id="who_sentence">
-      <span class="title-div-who">
+      <span id="title_div_who" class="title-div-who">
       <h1 class="title">QUIENES SOMOS </h1>
     </span>
     <span class="text-div-who">
@@ -148,18 +150,6 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 
 
 
-   <section style="width: 100vw; height: 100vh;">
-    <div class="slider" id="slider">
-      <div class="slide" id="slide">
-        <img class="item" src="http://via.placeholder.com/800x800?text=Product1">
-        <img class="item" src="http://via.placeholder.com/200x200?text=Product1">
-        <img class="item" src="http://via.placeholder.com/200x200?text=Product1">
-        <img class="item" src="http://via.placeholder.com/200x200?text=Product1">
-      </div>
-      <button class="ctrl-btn pro-prev">Prev</button>
-      <button class="ctrl-btn pro-next">Next</button>
-    </div>
-   </section>
 
 <br><br>
 <br>
@@ -172,24 +162,35 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 
 
   <section id=container_products>
-    <h3 id="emulsifiers" >EMULSIONANTES</h3>
-    <h3 id="textured">TEXTURIZADOS</h3>
-    <h3 id="fixers">FIJADORES</h3>
+    
+    
+    
 
     
 
-    <span id="option1"class="photo_products" ></span>
+    <span id="option1"class="photo_products" >
+      <h3 id="oliva">OLIVA</h3>
+    </span>
 
-    <span id="option2"class="photo_products"></span>
-    <span id="option3"class="photo_products"></span>
+    <span id="option2"class="photo_products">
+      <h3 id="textured">TEXTURIZADOS</h3>
+    </span>
+    <span id="option3"class="photo_products">
+      <h3 id="fixers">ACEITES Y MANTECAS</h3>
+    </span>
+    <span id="option4"class="photo_products">
+      <h3 id="emulsifiers" >EMOLIENTES</h3>
+    </span>
 
     <span id="side_options"> 
       
       <!--<button id="back-btn"> </button>-->
-      <h1 id="side_title">EMULSIONES<br>NATURALES</h1>
+      <h1 id="side_title">DE LA OLIVA</h1>
       <ul id="side_list">
-      <li><a id="side_option1">ESCUALAN NATURAL</a></li>
-      <li><a id="side_option2">ALTERNATIVAS NATURALES<br>A LAS SILICONAS</a></li>
+      <li><a id="side_option1"  >Phytosqualan</a></li>
+      <li><a id="side_option2" >Insapolive</a></li>
+      <li><a id="side_option3" >Biophytosebum</a></li>
+      <li><a id="side_option4" >Phytowax</a></li>
       </ul>
      
 

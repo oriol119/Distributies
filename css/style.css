@@ -647,6 +647,111 @@ outline: none;}
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%); }
 /*  SIDE OPTIONS  */
+#side_options_as {
+  background-color: #BCAE72;
+  height: 100vh;
+  width: 30vw;
+  z-index: 10;
+  position: absolute;
+  left: -60vh;
+  top: 600; 
+cursor: default;
+}
+
+#side_list_as {
+  position: relative;
+  top: 35%;
+  
+  
+}
+
+#side_title_as  {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-family: "Footer-titles";
+  font-size: 25.45pt;
+}
+
+#side_option1_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  text-decoration:none;
+  left: 25%;
+}
+#side_option1_as:hover {
+  color: black;
+  background-color: white;
+}
+#side_option2_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  top: 12px;
+  text-decoration:none;
+  left: 25%;
+}
+#side_option2_as:hover {
+  color: black;
+  background-color: white;
+}
+
+#side_option3_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  top: 24px;
+  text-decoration:none;
+  left: 25%;
+}
+#side_option3_as:hover {
+  color: black;
+  background-color: white;
+
+}
+
+#side_option4_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  top: 36px;
+  text-decoration:none;
+  left: 25%;
+}
+#side_option4_as:hover {
+  color: black;
+  background-color: white;
+
+}
+
+#side_option5_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+ top: 48px;
+ text-decoration:none;
+  left: 25%;
+}
+#side_option5_as:hover {
+  color: black;
+  background-color: white;
+
+}
+
+
+/* SIDE OPTIONS ALOE-VERA Y SOPHIM */
+
 #side_options {
   background-color: #BCAE72;
   height: 100vh;
@@ -748,8 +853,6 @@ cursor: default;
   background-color: white;
 
 }
-
-
 
 /*  /SIDE OPTIONS */
 #back-btn {
@@ -927,6 +1030,13 @@ textarea:focus, input:focus, input[type]:focus {
   border-color: transparent;
   color: white;
 
+
+}
+
+#captcha {
+  position: relative;
+  top: 26vh;
+  left: 15%;
 
 }
 

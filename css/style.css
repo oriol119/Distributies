@@ -749,6 +749,14 @@ cursor: default;
 
 }
 
+.side_text-class {
+  display: none;
+  width: 64%;
+  margin-left: 30px;
+  
+}
+
+
 
 /* SIDE OPTIONS ALOE-VERA Y SOPHIM */
 
@@ -786,6 +794,12 @@ cursor: default;
   cursor: pointer;
   text-decoration:none;
   left: 25%;
+  
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
 }
 #side_option1:hover {
   color: black;
@@ -800,6 +814,10 @@ cursor: default;
   top: 12px;
   text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option2:hover {
   color: black;
@@ -815,6 +833,10 @@ cursor: default;
   top: 24px;
   text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option3:hover {
   color: black;
@@ -831,6 +853,10 @@ cursor: default;
   top: 36px;
   text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option4:hover {
   color: black;
@@ -847,11 +873,19 @@ cursor: default;
  top: 48px;
  text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option5:hover {
   color: black;
   background-color: white;
 
+}
+
+.side_li {
+    width: 80%;
 }
 
 /*  /SIDE OPTIONS */

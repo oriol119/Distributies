@@ -1151,11 +1151,11 @@ i {
   justify-content: center; }
 
 .footer-list {
-  position: relative;
+  position: absolute;
   top: 30px;
   list-style: none;
   color: white;
-  line-height: 28px;
+  
   min-width: 230px; }
 
 .footer-list > .title {
@@ -1167,25 +1167,25 @@ i {
   font-family: 'Footer-titles';
   position: relative;
   cursor: pointer;
-  left: 25%; }
+  left: 50px; }
 
 #list1 {
   width: 200px;
   height: 180px;
-  position: relative;
+  position: absolute;
   left: 0%;
   top: 15%; }
 
 #list2 {
   width: 200px;
   height: 200px;
-  position: relative;
-  
+  position: absolute;
+  left: 18%;
   top: 15%; }
 
 #list3 {
-  position: relative;
-  
+  position: absolute;
+  left: 40%;
   top: 15%;
   width: 200px;
   height: 180px; }
@@ -1193,15 +1193,15 @@ i {
 #list4 {
   width: 200px;
   height: 180px;
-  position: relative;
-  
+  position: absolute;
+  left:55%;
   top: 15%; }
 
 #list5 {
   width: 200px;
   height: 180px;
-  position: relative;
-  left: 10%;
+  position: absolute;
+  left: 80%;
   top: 15%; }
 
 ul {

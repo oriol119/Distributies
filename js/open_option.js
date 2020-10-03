@@ -35,6 +35,7 @@ $('#option1').click(function(){
 	$('#side_option2').attr('href', "insapolive.html");
 	$('#side_option3').attr('href', "biophytosebum.html");
 	$('#side_option4').attr('href', 'phytowax.html');
+	
 
 
 	document.getElementById('option2').style.display = 'none';
@@ -56,7 +57,7 @@ $('#option1').click(function(){
 	$('#side_options').animate({left:"0"}, 1000);
 
 	
-
+	document.getElementById("side_option5").innerHTML = "";
 })
 
 
@@ -254,3 +255,64 @@ $('#aloevera').click(function(){
 	
 
 })
+
+$('#side_option1').mouseover(function(){
+
+	$('#side_text1').css('display', 'block');
+  
+  })
+  
+  $('#side_option1').mouseout(function(){
+  
+	$('#side_text1').css('display', 'none');
+  
+  })
+  
+  $('#side_option2').mouseover(function(){
+  
+	$('#side_text2').css('display', 'block');
+  
+  })
+  
+  $('#side_option2').mouseout(function(){
+  
+	$('#side_text2').css('display', 'none');
+  
+  })
+  
+  $('#side_option3').mouseover(function(){
+  
+	$('#side_text3').css('display', 'block');
+  
+  })
+  
+  $('#side_option3').mouseout(function(){
+  
+	$('#side_text3').css('display', 'none');
+  
+  })
+  
+  $('#side_option4').mouseover(function(){
+  
+	$('#side_text4').css('display', 'block');
+  
+  })
+  
+  $('#side_option4').mouseout(function(){
+  
+	$('#side_text4').css('display', 'none');
+  
+  })
+  
+  $('#side_option5').mouseover(function(){
+  
+	$('#side_text5').css('display', 'block');
+  
+  })
+  
+  $('#side_option5').mouseout(function(){
+  
+	$('#side_text5').css('display', 'none');
+  
+  })
+  

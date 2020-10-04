@@ -201,3 +201,25 @@ $(window).scroll(function() {
    return relevantChildren;
  }
  
+ $('#who_menu').click(function(){
+  
+  document.getElementById('who-div').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+
+ });
+
+ $('#product-menu').click(function(){
+  document.getElementById('products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+ });
+
+ $('#news-menu').click(function(){
+  document.getElementById('news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+ });
+
+ $('#news-menu').click(function(){
+  document.getElementById('contents_news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+ });
+
+ 
+

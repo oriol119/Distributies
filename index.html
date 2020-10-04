@@ -24,7 +24,7 @@
 
     <!--//GIF CARGA-->
    
-   <div class="loader"><img src="IMG/loader.gif" style="width: 110vw;height: 110vh; position: absolute; top: -10px; left: 0;"alt="Loading..."></div>
+   <div class="loader" style="background-color: white; height: 100%; width: 100%; text-align:center; vertical-align:middle;"><img src="IMG/loading_ok.gif" style="margin: auto; display:block; text-align:center; margin-top: 25%;"alt="Loading..."></div>
 
     <!--//BLOQUE COOKIES-->
 <div id="barraaceptacion" style="display: block;">
@@ -53,13 +53,13 @@
   <button id="close-btn" ></button>
   <span id="menu-round"><h1 id="menu-txt" style="display: block; position: absolute; font-size: 10pt; margin-top: 8px; font-family: 'Text-choices';">Menú</h1>
     <ul id="list_round" class="nav">
-      <li class="menu_options2">QUIENES SOMOS?</li>
+      <li class="menu_options2" id="who_menu">QUIENES SOMOS?</li>
       <li class="menu_options2" id="product-menu" >PRODUCTOS
         <ul style="margin-left: 30px;">
-          <li><a href="emulsiones.html">Emulsionantes Naturales</a></li>
-          <li><a href="">Agentes Texturizados</a></li>
-          <li><a href="">Agentes Fijadores</a></li>
-          <li><a href="">Aceites Vegetales Orgánicos Cosméticos</a>
+          <li id="oliva_menu"><a href="emulsiones.html"> de la oliva</a></li>
+          <li id="textured_menu"><a href="">Agentes Texturizados</a></li>
+          <li id="oil_menu"><a href="">Aceites y Mantecas</a></li>
+          <li id="emolientes"><a href=""> Emolientes</a>
           </ul>
       </li>
       <li class="menu_options2" id="news-menu">NOVEDADES</li>
@@ -187,23 +187,23 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
       <!--<button id="back-btn"> </button>-->
       <h1 id="side_title">DE LA OLIVA</h1>
       <ul id="side_list">
-      <li class="side_li"><a id="side_option1"  >Phytosqualan
+      <li class="side_li"><a id="side_option1"  >Phytosqualan</a>
        
           <li id='side_text1'class="side_text-class">  Emoliente natural de alta calidad que aporta optimo confort a la piel. </li>
-        </a>
+        
       </li>
-      <li class="side_li"><a id="side_option2"  >Insapolive
+      <li class="side_li"><a id="side_option2"  >Insapolive</a>
         <li id='side_text2'class="side_text-class">Fracción insaponificable de la oliva.</li>
-      </a></li>
-      <li class="side_li"><a id="side_option3" >Biophytosebum
+      </li>
+      <li class="side_li"><a id="side_option3" >Biophytosebum</a>
         <li id='side_text3'class="side_text-class"> Emoliente natural activo de características no grasosas. Ofrece un sensorial premium en la piel.  </li>
-      </a></li>
-      <li class="side_li"><a id="side_option4" >Phytowax
+      </li>
+      <li class="side_li"><a id="side_option4" >Phytowax </a>
         <li id='side_text4' class="side_text-class"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas. </li>
-      </a></li>
-      <li class="side_li"><a id="side_option5">Phytowax
+      </li>
+      <li class="side_li"><a id="side_option5">Phytowax</a>
         <li id='side_text5' class="side_text-class"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas.</li>
-      </a></li>
+      </li>
       </ul>
      
 
@@ -252,7 +252,7 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 
 
 <section id="news-options">
-  <span id="sophim">
+  <span id="sophim" class="grey">
 
     <span id="sophim-text">
       <h1 class="title-options">SOPHIM</h1>
@@ -263,7 +263,7 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 
   </span>
 
-  <span id="aloe-vera">
+  <span id="aloe-vera" class="grey">
        <span id="aloe-text">
       <h1 class="title-options">ALOE VERA LINE</h1>
       <h2 class="text-options" id="aloe-margin">La serie DEO ALOE VERA. Linia de formulación basada en Alcohol compuesto orgánico de aloe vera y agua termal, seduce en la muestra de Farma Forum de madrid.</h2>
@@ -276,12 +276,25 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
   <span id="side_options_as"> 
       
     <!--<button id="back-btn"> </button>-->
-    <h1 id="side_title_as">DE LA OLIVA</h1>
+    <h1 id="side_title_as">ALOE VERA</h1>
     <ul id="side_list_as">
-    <li><a id="side_option1_as"  >Phytosqualan</a></li>
-    <li><a id="side_option2_as" >Insapolive</a></li>
-    <li><a id="side_option3_as" >Biophytosebum</a></li>
-    <li><a id="side_option4_as" >Phytowax</a></li>
+    <li class="side_li"><a id="side_option1_as"  >Aloe Vera</a>
+     
+        <li id='side_text1_as'class="side_text-class">  Emoliente natural de alta calidad que aporta optimo confort a la piel. </li>
+      
+    </li>
+    <li class="side_li"><a id="side_option2_as"  >Aloe Vera</a>
+      <li id='side_text2_as'class="side_text-class">Fracción insaponificable de la oliva.</li>
+    </li>
+    <li class="side_li"><a id="side_option3_as" >Biophytosebum</a>
+      <li id='side_text3_as'class="side_text-class"> Emoliente natural activo de características no grasosas. Ofrece un sensorial premium en la piel.  </li>
+    </li>
+    <li class="side_li"><a id="side_option4_as" >Phytowax </a>
+      <li id='side_text4_as' class="side_text-class"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas. </li>
+    </li>
+    <li class="side_li"><a id="side_option5_as">Phytowax</a>
+      <li id='side_text5_as' class="side_text-class"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas.</li>
+    </li>
     </ul>
    
 
@@ -299,7 +312,7 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
     
     <div id="news_sentence">
       <span class="title-div-news">
-        <h1 class="title">CONTACT</h1>
+        <h1 class="title">CONTACTO</h1>
       </span>
       <span class="text-div-news">
         <h2 class="text" style="font-size: 25pt;">No dude en contactarnos

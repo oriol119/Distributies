@@ -520,8 +520,15 @@ align-items: center; }
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
+  
    }
+  .grey{
+    filter: grayscale(100%);
+  }
+
+  .color{
+    filter: grayscale(0%);
+  }
 
 #sophim-text {
   position: absolute;
@@ -545,7 +552,7 @@ position: relative;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
+  
  }
 
 #aloe-text {
@@ -658,6 +665,7 @@ outline: none;}
 cursor: default;
 }
 
+
 #side_list_as {
   position: relative;
   top: 35%;
@@ -665,7 +673,7 @@ cursor: default;
   
 }
 
-#side_title_as  {
+#side_title_as {
   position: relative;
   top: 30%;
   left: 10%;
@@ -681,6 +689,12 @@ cursor: default;
   cursor: pointer;
   text-decoration:none;
   left: 25%;
+  
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
 }
 #side_option1_as:hover {
   color: black;
@@ -695,6 +709,10 @@ cursor: default;
   top: 12px;
   text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option2_as:hover {
   color: black;
@@ -710,6 +728,10 @@ cursor: default;
   top: 24px;
   text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option3_as:hover {
   color: black;
@@ -726,6 +748,10 @@ cursor: default;
   top: 36px;
   text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option4_as:hover {
   color: black;
@@ -742,6 +768,10 @@ cursor: default;
  top: 48px;
  text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option5_as:hover {
   color: black;
@@ -751,9 +781,45 @@ cursor: default;
 
 .side_text-class {
   display: none;
+  position: relative;
   width: 64%;
-  margin-left: 30px;
+  margin-left: 100px;
   
+  
+}
+
+#side_text1_as {
+  margin-top: 15px;
+}
+
+#side_text2_as {
+  margin-top: 23px;
+}
+#side_text3_as {
+  margin-top: 31px;
+}
+#side_text4_as {
+  margin-top: 39px;
+}
+#side_text5_as {
+  margin-top: 47px;
+}
+
+#side_text1 {
+  margin-top: 15px;
+}
+
+#side_text2 {
+  margin-top: 23px;
+}
+#side_text3 {
+  margin-top: 31px;
+}
+#side_text4 {
+  margin-top: 39px;
+}
+#side_text5 {
+  margin-top: 47px;
 }
 
 

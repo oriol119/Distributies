@@ -31,10 +31,10 @@ setTimeout(function(){
 
 $('#option1').click(function(){
 
-	$('#side_option1').attr('href', "phytosqualan.html");
-	$('#side_option2').attr('href', "insapolive.html");
-	$('#side_option3').attr('href', "biophytosebum.html");
-	$('#side_option4').attr('href', 'phytowax.html');
+	$('#side_option1').attr('href', "phytosqualan_ol.html");
+	$('#side_option2').attr('href', "insapolive_ol.html");
+	$('#side_option3').attr('href', "biophytosebum_ol.html");
+	$('#side_option4').attr('href', 'phytowax_ol.html');
 	
 
 
@@ -58,12 +58,17 @@ $('#option1').click(function(){
 
 	
 	document.getElementById("side_option5").innerHTML = "";
+	document.getElementById("side_option1").style.visibility = 'visible';
+	document.getElementById("side_option2").style.visibility = 'visible';
+	document.getElementById("side_option3").style.visibility = 'visible';
+	document.getElementById("side_option4").style.visibility = 'visible';
+	document.getElementById("side_option5").style.visibility = 'hidden';
 })
 
 
 $('#option2').click(function(){
 
-	$('#side_option1').attr('href', "phytowax.html");
+	$('#side_option1').attr('href', "phytowax_vis.html");
 	$('#side_option2').attr('href', "vegeline.html");
 	$('#side_option3').attr('href', "mc30-mc300.html");
 
@@ -91,6 +96,12 @@ $('#option2').click(function(){
 	document.getElementById("side_option3").innerHTML = "MC30-MC300";
 	document.getElementById("side_option4").innerHTML = "";
 	document.getElementById("side_option5").innerHTML = "";
+
+	document.getElementById("side_option1").style.visibility = 'visible';
+	document.getElementById("side_option2").style.visibility = 'visible';
+	document.getElementById("side_option3").style.visibility = 'visible';
+	document.getElementById("side_option4").style.visibility = 'hidden';
+	document.getElementById("side_option5").style.visibility = 'hidden';
 	
 	
 
@@ -100,8 +111,18 @@ $('#option2').click(function(){
 $('#option3').click(function(){
 
 	
+	document.getElementById("option3").style.background = "#000000";
+
+
+	$("#side_option1").on('click', function(){ document.getElementById("option3").style.background = "#000000"; }); 
+	$("#side_option2").on('click', function(){ document.getElementById("option3").style.background = "#FFFFFF"; }); 
 	
-	
+
+	document.getElementById("side_option1").style.visibility = 'visible';
+	document.getElementById("side_option2").style.visibility = 'visible';
+	document.getElementById("side_option3").style.visibility = 'hidden';
+	document.getElementById("side_option4").style.visibility = 'hidden';
+	document.getElementById("side_option5").style.visibility = 'hidden';
 
 	document.getElementById('option1').style.display = 'none';
 	document.getElementById('option2').style.display = 'none';
@@ -129,6 +150,8 @@ $('#option3').click(function(){
 	document.getElementById("side_option5").innerHTML = "";
 
 	disableHref();
+
+	
 	
 
 })
@@ -137,9 +160,9 @@ $('#option3').click(function(){
 
 $('#option4').click(function(){
 
-	$('#side_option1').attr('href', "phytosqualan.html");
-	$('#side_option2').attr('href', "insapolive.html");
-	$('#side_option3').attr('href', "biophytosebum.html");
+	$('#side_option1').attr('href', "phytosqualan_em.html");
+	$('#side_option2').attr('href', "insapolive_em.html");
+	$('#side_option3').attr('href', "biophytosebum_em.html");
 	$('#side_option4').attr('href', 'squapure.html');
 	$('#side_option5').attr('href', 'sophiderm.html');
 
@@ -167,6 +190,11 @@ $('#option4').click(function(){
 	document.getElementById("side_option3").innerHTML = "Biophytosebum";
 	document.getElementById("side_option4").innerHTML = "Squapure";
 	document.getElementById("side_option5").innerHTML = "Sophiderm";
+	document.getElementById("side_option1").style.visibility = 'visible';
+	document.getElementById("side_option2").style.visibility = 'visible';
+	document.getElementById("side_option3").style.visibility = 'visible';
+	document.getElementById("side_option4").style.visibility = 'visible';
+	document.getElementById("side_option5").style.visibility = 'visible';
 
 	
 
@@ -183,76 +211,86 @@ $('#option4').click(function(){
 
 
 
-$('#sophim').click(function(){
+$('#plus-btn').click(function(){
 
-	$('#side_option1').attr('href', "phytosqualan.html");
-	$('#side_option2').attr('href', "insapolive.html");
-	$('#side_option3').attr('href', "biophytosebum.html");
-	$('#side_option4').attr('href', 'phytowax.html');
+	$('#side_option1_as').attr('href', "phytowax.html");
+	$('#side_option2_as').attr('href', "vegeline.html");
+	$('#side_option3_as').attr('href', "mc30-mc300.html");
 
+	$('#sophim').off('mouseover');
 
-	document.getElementById('option2').style.display = 'none';
-	document.getElementById('option3').style.display = 'none';
-	document.getElementById('option4').style.display = 'none';
-
-	document.getElementById('emulsifiers').style.display = 'none';
-	document.getElementById('textured').style.display = 'none';
-	document.getElementById('fixers').style.display = 'none';
-	document.getElementById('oliva').style.display = 'none';
+	
+	$('#aloe-vera').removeClass('grey');
+	$('#aloe-vera').addClass('color');
 	
 
-	$('#option1').animate({width:"100vw", height:"100vh"}, 1000);
+	document.getElementById('aloe-vera').style.display = 'none';
+	document.getElementById('sophim-text').style.display = 'none';
+	document.getElementById('plus-btn').style.display = 'none';
 
-	$( "#option1" ).addClass( "clear-photo" );
 
-	document.getElementById('container_products').style.background = "#BCAE72";
+	$('#sophim').animate({width:"100vw", height:"100vh"}, 1000);
 
-	$('#side_options').animate({left:"0"}, 1000);
-	document.getElementById('container_products').style.background = "#959C7F";
-	document.getElementById("side_title").innerHTML = "Texturizados";
-	document.getElementById("side_option1").innerHTML = "Phytowax";
-	document.getElementById("side_option2").innerHTML = "Vegeline";
-	document.getElementById("side_option3").innerHTML = "MC30-MC300";
-	document.getElementById("side_option4").innerHTML = "";
-	document.getElementById("side_option5").innerHTML = "";
+	$('#side_options_as').animate({left:"0"}, 1000);
 
+
+	$( "#aloe-vera" ).addClass( "clear-photo" );
+	
+	document.getElementById('side_options_as').style.background = "#959C7F";
+	document.getElementById('news-options').style.background = "#959C7F";
+	document.getElementById("side_title_as").innerHTML = "Sophim";
+	document.getElementById("side_option1_as").innerHTML = "Sophim";
+	document.getElementById("side_option2_as").innerHTML = "";
+	document.getElementById("side_option3_as").innerHTML = "";
+	document.getElementById("side_option4_as").innerHTML = "";
+	document.getElementById("side_option5_as").innerHTML = "";
+
+	document.getElementById("side_option1_as").style.visibility = 'visible';
+	document.getElementById("side_option2_as").style.visibility = 'hidden';
+	document.getElementById("side_option3_as").style.visibility = 'hidden';
+	document.getElementById("side_option4_as").style.visibility = 'hidden';
+	document.getElementById("side_option5_as").style.visibility = 'hidden';
+	
 	
 
 })
 
 
-$('#aloevera').click(function(){
+$('#plus-btn2').click(function(){
 
 	$('#side_option1').attr('href', "phytowax.html");
 	$('#side_option2').attr('href', "vegeline.html");
 	$('#side_option3').attr('href', "mc30-mc300.html");
 
+	$('#aloe-vera').removeClass('grey');
+	$('#aloe-vera').addClass('color');
 
-	document.getElementById('option1').style.display = 'none';
-	document.getElementById('option3').style.display = 'none';
-	document.getElementById('option4').style.display = 'none';
+	$('#sophim').off('mouseover');
 
-	document.getElementById('emulsifiers').style.display = 'none';
-	document.getElementById('textured').style.display = 'none';
-	document.getElementById('fixers').style.display = 'none';
-	document.getElementById('oliva').style.display = 'none';
-
-	$('#option2').animate({width:"100vw", height:"100vh"}, 1000);
-
-	$('#side_options').animate({left:"0"}, 1000);
-
-
-	$( "#option2" ).addClass( "clear-photo" );
-	document.getElementById('side_options').style.background = "#959C7F";
-	document.getElementById('container_products').style.background = "#959C7F";
-	document.getElementById("side_title").innerHTML = "Texturizados";
-	document.getElementById("side_option1").innerHTML = "Phytowax";
-	document.getElementById("side_option2").innerHTML = "Vegeline";
-	document.getElementById("side_option3").innerHTML = "MC30-MC300";
-	document.getElementById("side_option4").innerHTML = "";
-	document.getElementById("side_option5").innerHTML = "";
+	document.getElementById('sophim').style.display = 'none';
+	document.getElementById('aloe-text').style.display = 'none';
 	
+
+	$('#aloe-vera').animate({width:"100vw", height:"100vh"}, 1000);
+
+	$('#side_options_as').animate({left:"0"}, 1000);
+
+
+	$( "#aloe-vera" ).addClass( "clear-photo" );
+	document.getElementById('side_options_as').style.background = "#959C7F";
+	document.getElementById('news-options').style.background = "#959C7F";
+	document.getElementById("side_title_as").innerHTML = "Aloe Vera";
+	document.getElementById("side_option1_as").innerHTML = "Aloe Vera";
+	document.getElementById("side_option2_as").innerHTML = "";
+	document.getElementById("side_option3_as").innerHTML = "";
+	document.getElementById("side_option4_as").innerHTML = "";
+	document.getElementById("side_option5_as").innerHTML = "";
 	
+	document.getElementById("side_option1_as").style.visibility = 'visible';
+	document.getElementById("side_option2_as").style.visibility = 'hidden';
+	document.getElementById("side_option3_as").style.visibility = 'hidden';
+	document.getElementById("side_option4_as").style.visibility = 'hidden';
+	document.getElementById("side_option5_as").style.visibility = 'hidden';
 
 })
 

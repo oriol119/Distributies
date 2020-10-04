@@ -75,6 +75,11 @@ h3 {
 
   }
 
+  .es_fr{
+
+    font-size: 14px;
+    font-family: 'Footer-titles';
+  }
  
   #content {
     position: relative;

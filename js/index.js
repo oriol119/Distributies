@@ -208,18 +208,36 @@ $(window).scroll(function() {
 
  });
 
- $('#product-menu').click(function(){
-  document.getElementById('products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
- });
+ 
 
  $('#news-menu').click(function(){
   document.getElementById('news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  });
 
- $('#news-menu').click(function(){
-  document.getElementById('contents_news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+ 
+
+ $('#oliva_menu').click(function(){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  $( "#option1" ).click();
   
  });
 
+ $('#textured_menu').click(function(){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  $( "#option2" ).click();
+  
+ });
+
+ $('#oil_menu').click(function(){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  $( "#option3" ).click();
+  
+ });
+
+ $('#emolientes').click(function(){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  $( "#option4" ).click();
+  
+ });
  
 

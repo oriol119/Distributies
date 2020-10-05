@@ -3,7 +3,7 @@
 @font-face {
   font-family: Title;
   src: url("../fonts/Raleway-Bold.ttf");
-  font-weight: bold; }
+   }
 @font-face {
   font-family: Text;
   src: url("../fonts/Raleway-ExtraBold.ttf"); }
@@ -252,11 +252,11 @@ h3 {
 
 .menu {
   float: right;
-  margin-right: 200px;
+  margin-right: 170px;
   margin-top: 22px;
   line-height: 100px;
   width: 720px;
-font-size: 15px;
+font-size: 7.25pt;
  }
 
 .menu a {
@@ -485,8 +485,8 @@ align-items: center; }
 opacity: 0.9;}
 
 .subtext {
-  font-family: 'Subtext';
-  font-size: 15px;
+  font-family: 'Text-choices';
+  font-size: 11pt;
   line-height: 25px;
   }
 
@@ -514,12 +514,12 @@ opacity: 0.9; }
 
 .title {
   position: relative;
-  font-family: 'Title';
-  font-size: 20px; }
+  font-family: 'Text-choices';
+  font-size: 15pt; }
 
 .text {
   font-family: 'Text';
-  font-size: 35px; }
+  font-size: 25pt; }
 
 .title-div {
   position: absolute;
@@ -646,14 +646,14 @@ position: relative;
 
 .title-options {
   position: relative;
-  font-family: 'Regular';
-  font-size: 30px;
+  font-family: 'Title';
+  font-size: 25pt;
   top: 10%; }
 
 .text-options {
   position: relative;
-  font-family: 'Regular';
-  font-size: 15px;
+  font-family: 'Title';
+  font-size: 11pt;
   line-height: 40px;
   top: 20%;
   margin-right: 20px;
@@ -1099,7 +1099,7 @@ outline: none; }
     height: 100%; }
 
 #emulsifiers {
-  font-size: 25px;
+  font-size: 16.77pt;
   font-family: "Title";
   color: white;
   position: absolute;
@@ -1109,7 +1109,7 @@ outline: none; }
   z-index: 2; }
 
 #textured {
-  font-size: 25px;
+  font-size: 16.77pt;
   font-family: "Title";
   color: white;
   position: absolute;
@@ -1119,7 +1119,7 @@ outline: none; }
   z-index: 2; }
 
 #fixers {
-  font-size: 25px;
+  font-size: 16.77pt;
   font-family: "Title";
   color: white;
   position: absolute;
@@ -1128,7 +1128,7 @@ outline: none; }
   bottom: 110px;
   z-index: 2; }
 #oliva {
-    font-size: 25px;
+    font-size: 16.77pt;
     font-family: "Title";
     color: white;
     position: absolute;
@@ -1157,6 +1157,8 @@ outline: none; }
   background-color: #959C7F;
   border-color: transparent;
  color: white;
+ font-size: 11.75pt;
+ font-family: 'Text-choices'
   
 }
 ::-webkit-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px; } 
@@ -1264,6 +1266,85 @@ textarea:focus, input:focus, input[type]:focus {
   
   
 }
+/*--//PAGINAS----------------------------->*/
+/*--//PAGINAS----------------------------->*/
+/*--//PAGINAS----------------------------->*/
+
+
+.allproducts_title{
+  position: absolute;
+  top: 22%;
+  left: 14%;
+  right: 0;
+  color: white;
+  font-family: 'Text-choices';
+  font-size: 20pt; 
+}
+
+.allproducts_subtitle{
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color:white;
+  font-weight: bold;
+  font-family: 'Text';
+  font-size: 25pt; 
+}
+
+.allproducts_text{
+  width: 50%;
+  position: absolute;
+  top: 42%;
+  left: 35%;
+  color: white;
+  font-size: 11pt;
+  font-family: 'Regular'; 
+  
+}
+.allemul_div{
+  position: relative;
+  width: 100vw;
+  height: 45vh;
+  top: 10%;
+  background-color: #959C7F;
+  color: #959C7F;
+  opacity: 90%; 
+
+}
+
+.green_space {
+
+  position: absolute;
+  top: 75% ;
+  width: 100%;
+  height: 15%;
+  background-color: #959C7F;
+  color: #959C7F;
+  opacity: 80%;
+
+}
+
+#white_logo{
+
+  position: absolute;
+  top: 76%;
+  width: 5%;
+  right: 11%;
+  z-index: 2;
+
+}
+
+.close_all{
+
+  position: absolute;
+  top: 0.1%;
+  width: 5%;
+  right: 47.5%;
+  z-index: 2;
+  cursor: pointer;
+
+
+}
 
 
 
@@ -1288,14 +1369,17 @@ textarea:focus, input:focus, input[type]:focus {
   color: white;
   opacity: 85%; }
 
-#natural_emulsions {
+
+
+  #natural_emulsions {
   position: absolute;
   top: 30%;
   left: 5%;
   right: 0;
   color: grey;
   font-family: 'Title';
-  font-size: 13px; }
+  font-size: 13px; 
+}
 
 #escualan {
   position: absolute;
@@ -1466,8 +1550,8 @@ i {
   font-family: 'Footer-titles'; }
 
 .footer-elements {
-  font-size: 14px;
-  font-family: 'Footer-titles';
+  font-size: 9pt;
+  font-family: 'Regular';
   position: relative;
   cursor: pointer;
   left: 50px; }

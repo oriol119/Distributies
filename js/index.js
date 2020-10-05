@@ -241,3 +241,8 @@ $(window).scroll(function() {
  });
  
 
+
+
+$('.close_all').click(function(){
+  window.history.back();
+ });

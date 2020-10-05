@@ -8,12 +8,12 @@ $('#back-btn').click(function(){
 	$( "#option4" ).removeClass( "clear-photo" );
 
 	
-	$('#option1').animate({width:"33.3vw", height:"100vh"}, 1000);
-	$('#option2').animate({width:"33.3vw", height:"100vh"}, 1000);
-	$('#option3').animate({width:"33.3vw", height:"100vh"}, 1000);
-	$('#option4').animate({width:"33.3vw", height:"100vh"}, 1000);
+	$('#option1').animate({width:"25vw", height:"100vh"}, 0);
+	$('#option2').animate({width:"25vw", height:"100vh"}, 0);
+	$('#option3').animate({width:"25vw", height:"100vh"}, 0);
+	$('#option4').animate({width:"25vw", height:"100vh"}, 0);
 	$('#side_options').animate({left:"-30vw"}, 1000);
-setTimeout(function(){ 
+
 
 
 	document.getElementById('option1').style.display = 'inline-block';
@@ -21,13 +21,42 @@ setTimeout(function(){
 	document.getElementById('option3').style.display = 'inline-block';
 	document.getElementById('option4').style.display = 'inline-block';
 
+	document.getElementById('emulsifiers').style.display = 'block';
+	document.getElementById('textured').style.display = 'block';
+	document.getElementById('fixers').style.display = 'block';
+	document.getElementById('oliva').style.display = 'block';
 
 
-
-	}, 1000);
 
 	
 })
+
+$('#back-btn2').click(function(){
+
+
+	$( "#sophim" ).removeClass( "clear-photo" );
+	$( "#aloe-vera" ).removeClass( "clear-photo" );
+
+
+	
+	$('#sophim').animate({width:"50vw", height:"100vh"}, 0);
+	$('#aloe-vera').animate({width:"50vw", height:"100vh"}, 0);
+
+	$('#side_options_as').animate({left:"-30vw"}, 1000);
+
+
+
+	
+	document.getElementById('aloe-vera').style.display = 'block';
+	document.getElementById('sophim-text').style.display = 'block';
+	document.getElementById('plus-btn').style.display = 'block';
+	document.getElementById('plus-btn2').style.display = 'block';
+
+
+
+	
+})
+
 
 $('#option1').click(function(){
 
@@ -217,9 +246,10 @@ $('#plus-btn').click(function(){
 	$('#side_option2_as').attr('href', "vegeline.html");
 	$('#side_option3_as').attr('href', "mc30-mc300.html");
 
-	$('#sophim').off('mouseover');
+	
 
 	
+
 	$('#aloe-vera').removeClass('grey');
 	$('#aloe-vera').addClass('color');
 	
@@ -227,6 +257,7 @@ $('#plus-btn').click(function(){
 	document.getElementById('aloe-vera').style.display = 'none';
 	document.getElementById('sophim-text').style.display = 'none';
 	document.getElementById('plus-btn').style.display = 'none';
+	document.getElementById('plus-btn2').style.display = 'none';
 
 
 	$('#sophim').animate({width:"100vw", height:"100vh"}, 1000);
@@ -255,7 +286,7 @@ $('#plus-btn').click(function(){
 
 })
 
-
+/*
 $('#plus-btn2').click(function(){
 
 	$('#side_option1').attr('href', "phytowax.html");
@@ -267,8 +298,10 @@ $('#plus-btn2').click(function(){
 
 	$('#sophim').off('mouseover');
 
-	document.getElementById('sophim').style.display = 'none';
-	document.getElementById('aloe-text').style.display = 'none';
+	
+	document.getElementById('sophim-text').style.display = 'none';
+	document.getElementById('plus-btn').style.display = 'none';
+	document.getElementById('plus-btn2').style.display = 'none';
 	
 
 	$('#aloe-vera').animate({width:"100vw", height:"100vh"}, 1000);
@@ -293,7 +326,7 @@ $('#plus-btn2').click(function(){
 	document.getElementById("side_option5_as").style.visibility = 'hidden';
 
 })
-
+*/
 $('#side_option1').mouseover(function(){
 
 	$('#side_text1').css('display', 'block');

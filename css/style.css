@@ -113,6 +113,7 @@ h3 {
   right: 50px;
  }
 
+  
   #list_round {
     
     color: white;
@@ -141,7 +142,7 @@ h3 {
 
   .nav li h3:hover {
     
-    color:black;
+    color:#444428;
     text-decoration:none;
     padding:0px 4px;
     display:block;
@@ -150,9 +151,49 @@ h3 {
     
   }
 
- 
-  
-  
+ #es{
+   font-size: 10pt;
+ }
+ #fr{
+  font-size: 7.5pt;
+}
+  #es:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #fr:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #who_menu_st {
+    cursor: pointer;
+  }
+  #who_products_st {
+    cursor: pointer;
+  }
+  #who_news_st {
+    cursor: pointer;
+  }
+  #who_contact_st {
+    cursor: pointer;
+  }
+
+  #who_menu_st:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #who_products_st:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #who_news_st:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #who_contact_st:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
   
   .nav li ul {
     display:none;
@@ -226,6 +267,11 @@ font-size: 7.25pt;
   padding: 0 10px;
   transition: 0.4s; }
 
+  .menu a:hover {
+    color: white;
+    background-color: #C6B406;
+  }
+
 .menu_options {
   display: inline;
   padding: 3px;
@@ -234,6 +280,10 @@ font-size: 7.25pt;
   font-family: 'Text-choices';
   text-align: left;
 margin-left: 5px;}
+
+.menu_options:hover {
+  
+}
 
 .menu_options2 {
   margin: 1%;
@@ -334,7 +384,7 @@ align-items: center; }
 
 #close-btn {
   display: none;
-  background: url("../IMG/4x/close@4x.png");
+  background: url("../IMG/4x/4x/close_ok@4x.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -360,10 +410,11 @@ align-items: center; }
   color: #8F9FA9;
   font-size: 12px;
   background-color: white;
+  outline: none;
 }
 
 #linkedin_lateral {
-  position: fixed; 
+  position: absolute; 
   top: 35vh; 
   right: 65px; 
   width: 26px;
@@ -372,7 +423,7 @@ align-items: center; }
 
 #follow_lateral {
 
-  position: fixed;
+  position: absolute;
   top: 49vh; 
   right: 30px; 
   transform: rotate(-90deg); 
@@ -384,7 +435,7 @@ align-items: center; }
 }
 
 #plus_lateral{
-  position: fixed; 
+  position: absolute; 
   top: 57vh; 
   right: 70px; 
   width: 20px;
@@ -430,7 +481,8 @@ align-items: center; }
   height: 65vh;
   top: 10%;
   background-color: #CCBA76;
-  color: white; }
+  color: white; 
+opacity: 0.9;}
 
 .subtext {
   font-family: 'Text-choices';
@@ -457,7 +509,8 @@ align-items: center; }
   height: 40vh;
   top: 35%;
   background-color: #959C7F;
-  color: white; }
+  color: white;
+opacity: 0.9; }
 
 .title {
   position: relative;
@@ -502,8 +555,17 @@ align-items: center; }
   top: 7%;
   background-color: #8F9FA9;
   color: white;
+  opacity:0.9;
    }
-
+   #content_news2 {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    top: 7%;
+    background-color: #8F9FA9;
+    color: white;
+     }
+  
 .title-div-news {
   position: absolute;
   width: 300px;
@@ -799,9 +861,11 @@ cursor: default;
   position: relative;
   width: 64%;
   margin-left: 100px;
-  
+  color: white;
+  font-size: 11pt;
   
 }
+
 
 #side_text1_as {
   margin-top: 15px;
@@ -979,7 +1043,20 @@ cursor: default;
   height: 50px;
   border-style: none;
   margin-top: 30px;
-  margin-left: 10px; }
+  margin-left: 10px;
+outline: none; }
+
+  #back-btn2 {
+    background: url("../IMG/back-arrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    margin-top: 30px;
+    margin-left: 10px; 
+  outline: none;}
 
 #option1 {
   background: url("../IMG/olive-oil-968657_1920.jpg");
@@ -1146,6 +1223,7 @@ textarea:focus, input:focus, input[type]:focus {
   background-color:#8F9FA9;
   border-color: transparent;
   color: white;
+  
 
 
 }

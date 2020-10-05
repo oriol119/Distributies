@@ -18,7 +18,7 @@ $('#menu-round').click(function(){
 
 $('#product-menu').mouseover(function(){
 
-    $('#news-menu').css("margin-top",'100px');
+    $('#news-menu').css("margin-top",'150px');
 
 })
 
@@ -77,7 +77,7 @@ $('#circle_arrow').click(function(){
 $('#circle_arrow2').click(function(){
    
     scroll2();
-
+    
 })
 
 
@@ -204,14 +204,15 @@ $(window).scroll(function() {
  $('#who_menu').click(function(){
   
   document.getElementById('who-div').scrollIntoView({ block: 'end',  behavior: 'smooth' });
-  
-
+  $( "#close-btn" ).click();
  });
 
  
 
  $('#news-menu').click(function(){
   document.getElementById('news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  $( "#close-btn" ).click();
+ 
  });
 
  
@@ -237,6 +238,40 @@ $(window).scroll(function() {
  $('#emolientes').click(function(){
   document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
   $( "#option4" ).click();
+  
+ });
+
+
+
+ 
+ $('#contact-menu').on('click', function() {
+  document.getElementById('contact').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  $( "#close-btn" ).click();
+  
+});
+
+ $('#who_menu_st').click(function(){
+  document.getElementById('who-div').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+  
+ });
+
+ $('#who_products_st').click(function(){
+  document.getElementById('products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+  
+  
+ });
+
+ $('#who_news_st').click(function(){
+  document.getElementById('news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+  
+ });
+
+ $('#who_contact_st').click(function(){
+  document.getElementById('contact').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
   
  });
  

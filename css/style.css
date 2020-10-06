@@ -1102,14 +1102,19 @@ cursor: pointer; }
   height: 100%; }
 
 #option3 {
-  background: url("../IMG/SOPHIM/water-life-crop.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
+  
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%; }
+
+  .option3_photo {
+    background-image: url("../IMG/SOPHIM/water-life-crop.jpg");
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 
   #option4 {
     background: url("../IMG/SOPHIM/beurre-de-karite-sophim.jpg");

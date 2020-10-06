@@ -26,6 +26,11 @@ $('#back-btn').click(function(){
 	document.getElementById('fixers').style.display = 'block';
 	document.getElementById('oliva').style.display = 'block';
 
+$('#option3').addClass('option3_photo');
+
+
+	
+
 
 
 	
@@ -152,6 +157,8 @@ $('#option3').click(function(){
 
 	$("#side_option1").on('click', function(){ document.getElementById("option3").style.background = "#000000"; }); 
 	$("#side_option2").on('click', function(){ document.getElementById("option3").style.background = "#FFFFFF"; }); 
+	$("#back-btn").on('click', function(){ 	document.getElementById('option3').setAttribute("style", "background-image: url(IMG/SOPHIM/water-life-crop.jpg);background-position: center center; background-repeat: no-repeat;background-size: cover;"); 
+});
 	
 
 	document.getElementById("side_option1").style.visibility = 'visible';
@@ -188,7 +195,7 @@ $('#option3').click(function(){
 	$('#side_option1').click(function () {return false;});
 	$('#side_option2').click(function () {return false;});
 
-	
+	$("#option3").removeClass('option3_photo');
 	
 
 })

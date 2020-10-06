@@ -77,13 +77,20 @@ $('#option1').click(function(){
 	document.getElementById('oliva').style.display = 'none';
 	
 
-	$('#option1').animate({width:"100vw", height:"100vh"}, 1000);
+	$('#option1').animate({width:"100vw", height:"100vh"}, 600);
 
 	$( "#option1" ).addClass( "clear-photo" );
 
-	document.getElementById('container_products').style.background = "#BCAE72";
+	document.getElementById('side_options').style.background = "#959C7F";
+	document.getElementById('container_products').style.background = "#959C7F";
+	document.getElementById("side_title").innerHTML = "DE LA OLIVA |";
+	document.getElementById("side_option1").innerHTML = "Phytosqualan";
+	document.getElementById("side_option2").innerHTML = "Insapolive";
+	document.getElementById("side_option3").innerHTML = "Biophytosebum";
+	document.getElementById("side_option4").innerHTML = "Phytowax";
+	document.getElementById("side_option5").innerHTML = "";
 
-	$('#side_options').animate({left:"0"}, 1000);
+	$('#side_options').animate({left:"0"}, 600);
 
 	
 	document.getElementById("side_option5").innerHTML = "";
@@ -111,15 +118,15 @@ $('#option2').click(function(){
 	document.getElementById('fixers').style.display = 'none';
 	document.getElementById('oliva').style.display = 'none';
 
-	$('#option2').animate({width:"100vw", height:"100vh"}, 1000);
+	$('#option2').animate({width:"100vw", height:"100vh"}, 600);
 
-	$('#side_options').animate({left:"0"}, 1000);
+	$('#side_options').animate({left:"0"}, 600);
 
 
 	$( "#option2" ).addClass( "clear-photo" );
 	document.getElementById('side_options').style.background = "#959C7F";
 	document.getElementById('container_products').style.background = "#959C7F";
-	document.getElementById("side_title").innerHTML = "Texturizados";
+	document.getElementById("side_title").innerHTML = "TEXTURIZADOS |";
 	document.getElementById("side_option1").innerHTML = "Phytowax";
 	document.getElementById("side_option2").innerHTML = "Vegeline";
 	document.getElementById("side_option3").innerHTML = "MC30-MC300";
@@ -162,23 +169,24 @@ $('#option3').click(function(){
 	document.getElementById('fixers').style.display = 'none';
 	document.getElementById('oliva').style.display = 'none';
 
-	$('#option3').animate({width:"100vw", height:"100vh"}, 1000);
+	$('#option3').animate({width:"100vw", height:"100vh"}, 600);
 
-	$('#side_options').animate({left:"0"}, 1000);
+	$('#side_options').animate({left:"0"}, 600);
 
 
 	$( "#option3" ).addClass( "clear-photo" );
 
 	document.getElementById('side_options').style.background = "#8F9FA9";
 	document.getElementById('container_products').style.background = "#8F9FA9";
-	document.getElementById("side_title").innerHTML = "ACEITES Y MANTECAS";
+	document.getElementById("side_title").innerHTML = "ACEITES Y MANTECAS |";
 	document.getElementById("side_option1").innerHTML = "Aceites";
 	document.getElementById("side_option2").innerHTML = "Mantecas";
 	document.getElementById("side_option3").innerHTML = "";
 	document.getElementById("side_option4").innerHTML = "";
 	document.getElementById("side_option5").innerHTML = "";
 
-	disableHref();
+	$('#side_option1').click(function () {return false;});
+	$('#side_option2').click(function () {return false;});
 
 	
 	
@@ -204,16 +212,16 @@ $('#option4').click(function(){
 	document.getElementById('fixers').style.display = 'none';
 	document.getElementById('oliva').style.display = 'none';
 
-	$('#option4').animate({width:"100vw", height:"100vh"}, 1000);
+	$('#option4').animate({width:"100vw", height:"100vh"}, 600);
 
-	$('#side_options').animate({left:"0"}, 1000);
+	$('#side_options').animate({left:"0"}, 600);
 
 
 	$( "#option4" ).addClass( "clear-photo" );
 
 	document.getElementById('side_options').style.background = "#8F9FA9";
 	document.getElementById('container_products').style.background = "#8F9FA9";
-	document.getElementById("side_title").innerHTML = "EMULIENTES";
+	document.getElementById("side_title").innerHTML = "EMOLIENTES |";
 	document.getElementById("side_option1").innerHTML = "Phytosqualan";
 	document.getElementById("side_option2").innerHTML = "Insapolive";
 	document.getElementById("side_option3").innerHTML = "Biophytosebum";

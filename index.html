@@ -50,7 +50,16 @@
     </ul>
   </div>
 
+  <h6 style="position: absolute; color: wheat; top: 52px; left: 643px; font-size: 6.14pt; font-family: 'Text-choices';">01</h6> 
+  <h6 style="position: absolute; color: wheat; top: 52px; left: 748px; font-size: 6.14pt; font-family: 'Text-choices';">02</h6> 
+  <h6 style="position: absolute; color: wheat; top: 52px; left: 846px; font-size: 6.14pt; font-family: 'Text-choices';">03</h6> 
+  <h6 style="position: absolute; color: wheat; top: 52px; left: 944px; font-size: 6.14pt; font-family: 'Text-choices';">04</h6> 
+  <h6 style="position: absolute; color: wheat; top: 52px; left: 1020px; font-size: 6.14pt; font-family: 'Text-choices';">PAIS</h6> 
+
   <button id="close-btn" ></button>
+  
+    
+  
   <span id="menu-round"><h1 id="menu-txt" style="display: block; position: absolute; font-size: 10pt; margin-top: 8px; font-family: 'Text-choices';">Menú</h1>
     
     <ul id="list_round" class="nav">
@@ -104,7 +113,7 @@
     
     <div id="who_sentence">
       <span id="title_div_who" class="title-div-who">
-      <h1 class="title">QUIENES SOMOS </h1>
+      <h1 class="title">QUIENES SOMOS |</h1>
     </span>
     <span class="text-div-who">
       <h2 class="text">TU PARTNER IDEAL PARA LA ELABORACIÓN DE FÓRMULAS NATURALES Y ECORRESPONSABLES</h2>
@@ -115,6 +124,7 @@
 Distributies se enorgullece de su servicio al cliente, centrándose en la entrega rápida y eficiente de los pedidos con entregas realizadas a tiempo para adaptarse a los requisitos de los clientes. Si necesita muestras, soporte técnico o tiene alguna consulta o pregunta, no dude en llamar a nuestro equipo están a su disposición y aquí para ayudar. <br><br>
 Nuestro negocio principal se basa en la búsqueda de fabricantes de ingredientes innovadores de origen natural para la industria cosmética; elaborados a partir de materias primas renovables siendo respetuosos con el planeta, con el fin de ofrecer a nuestros clientes alternativas naturales y sostenibles para la composición de sus formulaciones.</h2>
     </span>
+  <img src="IMG/white_logo.png" style="position: absolute; width: 40px; height: auto; top: 50%; left:18%;">
       
     </div>
   </div>
@@ -207,6 +217,8 @@ Nuestro negocio principal se basa en la búsqueda de fabricantes de ingredientes
         <li id='side_text5' class="side_text-class"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas.</li>
       </li>
       </ul>
+
+      <img src="IMG/white_logo.png" style="position: absolute; width: 60px; height: auto; float: right; right: 60px; top: 83%;">
      
 
     </span> 
@@ -335,17 +347,18 @@ Nuestro negocio principal se basa en la búsqueda de fabricantes de ingredientes
 
 
 <section id="contact">
-  <div><input id="company" class="contact_inputs" type="text" placeholder="Empresa*" ></div>
-  <div><input id="company_web" class="contact_inputs" type="url" placeholder="Sitio web empresa*"></div>
-  <div><input id="city" class="contact_inputs" type="text" placeholder="Ciudad"></div>
-  <div><input id="adress" class="contact_inputs" type="text" placeholder="Dirección"></div>
-  <div><input id="postal_code" class="contact_inputs" type="text" placeholder="Código postal"></div>
-  <div><input id="country" class="contact_inputs" type="text" placeholder="Pais"></div>
+  <div><input id="company" class="contact_inputs" type="text" placeholder="Empresa*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Empresa*'"></div>
+  <div><input id="company_web" class="contact_inputs" type="url" placeholder="Sitio web empresa*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Sitio web empresa*'"></div>
+  <div><input id="city" class="contact_inputs" type="text" placeholder="Ciudad" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Ciudad'"></div>
+  <div><input id="adress" class="contact_inputs" type="text" placeholder="Dirección" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Dirección'"></div>
+  <div><input id="postal_code" class="contact_inputs" type="text" placeholder="Código postal" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Código postal'"></div>
+  <div><input id="country" class="contact_inputs" type="text" placeholder="Pais" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Pais'"></div>
+
   
-  <div><input id="name" class="contact_inputs" type="text" placeholder="Nombre de contacto*"></div>
-  <div><input id="e-mail" class="contact_inputs" type="email" placeholder="e-mail*"></div>
-  <div><input id="phone_number" class="contact_inputs" type="tel" placeholder="Teléfono*"></div>
-  <div><input id="message" type="text" placeholder="Mensaje" size=300></div>
+  <div><input id="name" class="contact_inputs" type="text" placeholder="Nombre de contacto*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Nombre de contacto'"></div>
+  <div><input id="e-mail" class="contact_inputs" type="email" placeholder="e-mail*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'e-mail*'"></div>
+  <div><input id="phone_number" class="contact_inputs" type="tel" placeholder="Teléfono*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Teléfono*'"></div>
+  <div><input id="message" type="text" placeholder="Mensaje" size=300 onfocus="this.placeholder = ''"onblur="this.placeholder = 'Mensaje'"></div>
   <div class="g-recaptcha" data-sitekey="6LdxpNIZAAAAADCozd0hN-BzJqpATZNcO9um_s1b" id="captcha"></div>
   <div id="button"><a href="#">ENVIAR</a></div>
   

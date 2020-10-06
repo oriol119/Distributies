@@ -4,10 +4,10 @@ $('#menu-round').click(function(){
     document.getElementById("menu-txt").style.display = "none";
 
     
-    $('#menu-round').animate({width:"50vw", height:"50vw", top:'4.5vh', right:'25%'}, 1000);
+    $('#menu-round').animate({width:"50vw", height:"50vw", top:'4.5vh', right:'25%'}, 600);
     
    
-    setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 800);
+    setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 600);
 
     $('#list_round').css("display", "block");
 
@@ -61,7 +61,7 @@ $('#aloe-vera').mouseout(function(){
 
 $('#close-btn').click(function(){
     
-    $('#menu-round').animate({width:"60px", height:"60px", top:'25px', right:'50px'}, 1000);
+    $('#menu-round').animate({width:"60px", height:"60px", top:'25px', right:'50px'}, 600);
     $('#close-btn').css( 'display','none');
     $('#list_round').css("font-size", "0px");
     $('#list_round').css("display", "none");
@@ -281,3 +281,5 @@ $(window).scroll(function() {
 $('.close_all').click(function(){
   window.history.back();
  });
+
+

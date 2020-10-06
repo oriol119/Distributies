@@ -95,6 +95,18 @@ h3 {
   background-size: 100vw ;
     
 }
+#white-round-menu {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 90px;
+  height: 90px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: black;
+  z-index: 99;
+}
 
 #menu-round {
   position: fixed;
@@ -106,14 +118,17 @@ h3 {
   border-style: none;
   color: white;
   cursor: pointer;
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   -webkit-border-radius: 50%;
   -moz-border-radius:50%;
   border-radius: 50%;
   background-color: #959C7F;
   top: 50px;
   right: 50px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: white;
  }
 
   
@@ -756,6 +771,7 @@ cursor: default;
 
 #side_title_as {
   position: relative;
+  color: white;
   top: 30%;
   left: 10%;
   font-family: "Footer-titles";
@@ -922,17 +938,18 @@ cursor: default;
 
 #side_list {
   position: relative;
-  top: 35%;
+  top: 200px;
   
   
 }
 
 #side_title {
   position: relative;
-  top: 30%;
+  top: 170px;
   left: 10%;
   font-family: "Footer-titles";
   font-size: 25.45pt;
+  color: white;
 }
 
 #side_option1 {
@@ -1039,16 +1056,18 @@ cursor: default;
 
 /*  /SIDE OPTIONS */
 #back-btn {
-  background: url("../IMG/back-arrow.png");
+  background: url("../IMG/4x/flecha1@4x.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  position: relative;
   border-style: none;
-  margin-top: 30px;
-  margin-left: 10px;
-outline: none; }
+  top: 120px;
+ left: 20px;
+outline: none;
+cursor: pointer; }
 
   #back-btn2 {
     background: url("../IMG/back-arrow.png");
@@ -1230,7 +1249,7 @@ textarea:focus, input:focus, input[type]:focus {
   width: 65%;
   position: relative;
   left: 15%;
-  height: 20vh;
+  padding-bottom: 20vh;
   background-color:#8F9FA9;
   border-color: transparent;
   color: white;
@@ -1723,7 +1742,46 @@ ul {
     right: 0;
   }
   
-
+.transparent-placeholder {
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+     color: transparent;
+}
+ :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+     color: transparent;
+}
+ ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+     color: transparent;
+}
+ :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+     color: transparent;
+}
+ input::placeholder {
+     color: transparent;
+}
+ textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+     color: transparent;
+}
+ textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+     color: transparent;
+}
+ textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+     color: transparent;
+}
+ textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+     color: transparent;
+}
+ textarea::placeholder {
+     color: transparent;
+}
+}
 
 /* MEDIA */
 

@@ -1376,11 +1376,23 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 #tex_text {
-  top: 45%;
+  top: 46.3%;
 }
 
 #tex_text2 {
-  top: 48.9%;
+  top: 55%;
+}
+
+.r{
+  font-size: 9pt;
+  position:absolute;
+  top: 24%;
+  left: 29% ;
+  color: white;
+  
+}
+.barra{
+  left: 30%;
 }
 
 

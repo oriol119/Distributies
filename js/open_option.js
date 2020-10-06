@@ -77,7 +77,7 @@ $('#option1').click(function(){
 	document.getElementById('oliva').style.display = 'none';
 	
 
-	$('#option1').animate({width:"100vw", height:"100vh"}, 1000);
+	$('#option1').animate({width:"100vw", height:"100vh"}, 600);
 
 	$( "#option1" ).addClass( "clear-photo" );
 
@@ -90,7 +90,7 @@ $('#option1').click(function(){
 	document.getElementById("side_option4").innerHTML = "Phytowax";
 	document.getElementById("side_option5").innerHTML = "";
 
-	$('#side_options').animate({left:"0"}, 1000);
+	$('#side_options').animate({left:"0"}, 600);
 
 	
 	document.getElementById("side_option5").innerHTML = "";
@@ -118,9 +118,9 @@ $('#option2').click(function(){
 	document.getElementById('fixers').style.display = 'none';
 	document.getElementById('oliva').style.display = 'none';
 
-	$('#option2').animate({width:"100vw", height:"100vh"}, 1000);
+	$('#option2').animate({width:"100vw", height:"100vh"}, 600);
 
-	$('#side_options').animate({left:"0"}, 1000);
+	$('#side_options').animate({left:"0"}, 600);
 
 
 	$( "#option2" ).addClass( "clear-photo" );
@@ -169,9 +169,9 @@ $('#option3').click(function(){
 	document.getElementById('fixers').style.display = 'none';
 	document.getElementById('oliva').style.display = 'none';
 
-	$('#option3').animate({width:"100vw", height:"100vh"}, 1000);
+	$('#option3').animate({width:"100vw", height:"100vh"}, 600);
 
-	$('#side_options').animate({left:"0"}, 1000);
+	$('#side_options').animate({left:"0"}, 600);
 
 
 	$( "#option3" ).addClass( "clear-photo" );
@@ -185,7 +185,8 @@ $('#option3').click(function(){
 	document.getElementById("side_option4").innerHTML = "";
 	document.getElementById("side_option5").innerHTML = "";
 
-	disableHref();
+	$('#side_option1').click(function () {return false;});
+	$('#side_option2').click(function () {return false;});
 
 	
 	
@@ -211,9 +212,9 @@ $('#option4').click(function(){
 	document.getElementById('fixers').style.display = 'none';
 	document.getElementById('oliva').style.display = 'none';
 
-	$('#option4').animate({width:"100vw", height:"100vh"}, 1000);
+	$('#option4').animate({width:"100vw", height:"100vh"}, 600);
 
-	$('#side_options').animate({left:"0"}, 1000);
+	$('#side_options').animate({left:"0"}, 600);
 
 
 	$( "#option4" ).addClass( "clear-photo" );

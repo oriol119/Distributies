@@ -1286,6 +1286,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 .allproducts_subtitle{
+  width: 50% ;
   position: absolute;
   top: 20%;
   left: 35%;
@@ -1298,7 +1299,7 @@ textarea:focus, input:focus, input[type]:focus {
 .allproducts_text{
   width: 50%;
   position: absolute;
-  top: 42%;
+  top: 63%;
   left: 35%;
   color: white;
   font-size: 11pt;
@@ -1310,8 +1311,8 @@ textarea:focus, input:focus, input[type]:focus {
   width: 100vw;
   height: 45vh;
   top: 10%;
-  background-color: #959C7F;
-  color: #959C7F;
+  background-color: #293501;
+  color: #293501;
   opacity: 90%; 
 
 }
@@ -1322,8 +1323,8 @@ textarea:focus, input:focus, input[type]:focus {
   top: 75% ;
   width: 100%;
   height: 15%;
-  background-color: #959C7F;
-  color: #959C7F;
+  background-color: #293501;
+  color: #293501;
   opacity: 80%;
 
 }
@@ -1341,13 +1342,61 @@ textarea:focus, input:focus, input[type]:focus {
 .close_all{
 
   position: absolute;
-  top: 0.1%;
-  width: 5%;
-  right: 47.5%;
+  top: 1.5%;
+  width: 4%;
+  right: 48%;
   z-index: 2;
   cursor: pointer;
+}
 
+#text_insa_em {
+  top:47%;
+}
 
+#bio_em_text{
+  top: 55%;
+  width: 50%;
+}
+#emul_divv{
+  background-color: #959C7F;
+}
+
+.emul_div2{
+  background-color: #959C7F;
+}
+#phy_esc_txt {
+  top: 44%;
+}
+#bio_esc_txt {
+  top: 54%;
+}
+
+#tex_divv{
+  background-color: #CCBA76;
+}
+
+.tex_div2{
+  background-color:#CCBA76;
+}
+
+#tex_text {
+  top: 46.3%;
+}
+
+#tex_text2 {
+  top: 55%;
+}
+
+.r{
+  font-size: 9pt;
+  position:absolute;
+  top: 24%;
+  left: 29% ;
+  color: white;
+  
+}
+.barra{
+  left: 30%;
 }
 
 

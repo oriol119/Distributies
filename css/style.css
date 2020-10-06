@@ -22,6 +22,9 @@
 @font-face {
   font-family: Regular;
   src: url("../fonts/Raleway-Regular.ttf"); }
+  @font-face {
+    font-family: Light;
+    src: url("../fonts/Raleway-Light.ttf"); }
     
 /*  TOP MENU */
 * {
@@ -139,7 +142,7 @@ h3 {
     padding:0px 4px;
     display: block;
     font-size: 20px;
-    
+    font-family: 'Light';
     
   }
 

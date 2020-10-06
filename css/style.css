@@ -19,9 +19,10 @@
 @font-face {
   font-family: Footer-titles;
   src: url("../fonts/Raleway-Medium.ttf"); }
-  @font-face {
-    font-family: Regular;
-    src: url("../fonts/Raleway-Regular.ttf"); }
+@font-face {
+  font-family: Regular;
+  src: url("../fonts/Raleway-Regular.ttf"); }
+    
 /*  TOP MENU */
 * {
   margin: 0;
@@ -39,7 +40,9 @@ h2 {
 
 h3 {
   color: #9d9d9d;
-  font-size: 40px; }
+  font-size: 40px;
+  
+ }
 
 .header {
   height: 120px;
@@ -149,7 +152,7 @@ h3 {
     color:#fff;
     text-decoration:none;
     padding:0px 4px;
-    display:block;
+    display: block;
     font-size: 20px;
     
     
@@ -162,6 +165,7 @@ h3 {
     padding:0px 4px;
     display:block;
     font-size: 20px;
+    font-family: 'Text-choices';
     
     
   }
@@ -292,7 +296,7 @@ font-size: 7.25pt;
   padding: 3px;
   margin: 1%;
   color: #8E9EA8; 
-  font-family: 'Text-choices';
+  font-family: 'Title';
   text-align: left;
 margin-left: 5px;}
 
@@ -1193,44 +1197,51 @@ textarea:focus, input:focus, input[type]:focus {
 #company {
   
   top: 3vh;
+  padding-left: 0.2%;
 }
 
 #company_web {
    top: 4vh;
-
+   padding-left: 0.2%;
 }
 
 #city{
   top: 5vh;
-
+  padding-left: 0.2%;
 }
 
 #adress{
   top: 6vh;
+  padding-left: 0.2%;
 }
 
 #postal_code{
   top: 7vh;
+  padding-left: 0.2%;
 
 }
 
 #country {
   top: 8vh;
+  padding-left: 0.2%;
 
 }
 
 #name{
   top:14vh;
+  padding-left: 0.2%;
 
 }
 
 #e-mail{
   top: 15vh;
+  padding-left: 0.2%;
 }
 
 #phone_number {
 
   top: 16vh;
+  padding-left: 0.2%;
 }
 
 #message {

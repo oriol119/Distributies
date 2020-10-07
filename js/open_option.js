@@ -39,13 +39,15 @@ $('#option3').addClass('option3_photo');
 $('#back-btn2').click(function(){
 
 
-	$( "#sophim" ).removeClass( "clear-photo" );
-	$( "#aloe-vera" ).removeClass( "clear-photo" );
+	$( "#sophim" ).removeClass( "color" );
+	$( "#sophim" ).addClass( "grey" );
+	$( "#aloe-vera" ).removeClass( "color" );
+	$( "#aloe-vera" ).addClass( "grey" );
 
 
 	
 	$('#sophim').animate({width:"50vw", height:"100vh"}, 0);
-	$('#aloe-vera').animate({width:"50vw", height:"100vh"}, 0);
+	$('#aloe-vera').animate({width:"50vw", height:"100vh", right:"0", position:"absolute", top:"0"}, 0);
 
 	$('#side_options_as').animate({left:"-30vw"}, 1000);
 
@@ -53,7 +55,7 @@ $('#back-btn2').click(function(){
 
 	
 	document.getElementById('aloe-vera').style.display = 'block';
-	document.getElementById('sophim-text').style.display = 'block';
+	document.getElementById('sophim').style.display = 'block';
 	document.getElementById('plus-btn').style.display = 'block';
 	document.getElementById('plus-btn2').style.display = 'block';
 
@@ -301,7 +303,7 @@ $('#plus-btn').click(function(){
 
 })
 
-/*
+
 $('#plus-btn2').click(function(){
 
 	$('#side_option1').attr('href', "phytowax.html");
@@ -323,7 +325,8 @@ $('#plus-btn2').click(function(){
 
 	$('#side_options_as').animate({left:"0"}, 1000);
 
-
+	document.getElementById('sophim').style.display = "none";
+	document.getElementById('aloe-text').style.display = "none";
 	$( "#aloe-vera" ).addClass( "clear-photo" );
 	document.getElementById('side_options_as').style.background = "#959C7F";
 	document.getElementById('news-options').style.background = "#959C7F";
@@ -341,7 +344,7 @@ $('#plus-btn2').click(function(){
 	document.getElementById("side_option5_as").style.visibility = 'hidden';
 
 })
-*/
+
 $('#side_option1').mouseover(function(){
 
 	$('#side_text1').css('display', 'block');

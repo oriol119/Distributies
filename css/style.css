@@ -644,6 +644,7 @@ opacity: 0.9; }
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
   
    }
   .grey{
@@ -671,8 +672,9 @@ opacity: 0.9; }
 
 #aloe-vera {
   display: inline-block;
+  margin: 0;
 position: relative;
- 
+ right: 0;
   height: 100%;
   width: 50%;
   background: url("../IMG/deo_img.png");

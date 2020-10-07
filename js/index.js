@@ -1,6 +1,18 @@
 
-$('#menu-round').click(function(){
-    setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 550);
+function changeStateMenu(){
+  if( $('#menu-checkbox').prop('checked') ) {
+    closeMenu();
+    $( "#menu-checkbox" ).prop( "checked", false );
+  } else {
+    openMenu();
+    
+  }
+}
+
+
+
+function openMenu(){
+  setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
@@ -10,10 +22,28 @@ $('#menu-round').click(function(){
     setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 600);
 
     $('#list_round').css("display", "block");
+}
+
+function closeMenu(){
+   
+  $('#menu-round').animate({width:"100px", height:"100px", top:'25px', right:'50px'}, 600);
+  $('#close-btn').css( 'display','none');
+  $('#list_round').css("font-size", "0px");
+  $('#list_round').css("display", "none");
+  document.getElementById("menu-txt").style.display = "block";
+  
+}
+
+$('#menu-round').click(function(e){
+  if($(e.target).is("span") || $(e.target).attr("id") == "menu-txt") {
+    openMenu();
+  }
 
     
-    
-    
+})
+
+$('#close-btn').click(function(){
+  closeMenu();
 })
 
 $('#product-menu').mouseover(function(){
@@ -59,14 +89,7 @@ $('#aloe-vera').mouseout(function(){
 
 
 
-$('#close-btn').click(function(){
-    
-    $('#menu-round').animate({width:"60px", height:"60px", top:'25px', right:'50px'}, 600);
-    $('#close-btn').css( 'display','none');
-    $('#list_round').css("font-size", "0px");
-    $('#list_round').css("display", "none");
-    document.getElementById("menu-txt").style.display = "block";
-})
+
 
 $('#circle_arrow').click(function(){
    
@@ -204,41 +227,46 @@ $(window).scroll(function() {
  $('#who_menu').click(function(){
   
   document.getElementById('who-div').scrollIntoView({ block: 'end',  behavior: 'smooth' });
-  $( "#close-btn" ).click();
+  closeMenu();
+ 
  });
 
  
 
  $('#news-menu').click(function(){
   document.getElementById('news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
-  $( "#close-btn" ).click();
+  closeMenu();
  
  });
 
  
 
- $('#oliva_menu').click(function(){
+ $('#oliva_menu').click(function(e){
   document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById('option1').style.display = 'inline-block';
   $( "#option1" ).click();
-  
+  closeMenu();
  });
 
  $('#textured_menu').click(function(){
   document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById('option2').style.display = 'inline-block';
   $( "#option2" ).click();
-  
+  closeMenu();
  });
 
  $('#oil_menu').click(function(){
   document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById('option3').style.display = 'inline-block';
   $( "#option3" ).click();
-  
+  closeMenu();
  });
 
- $('#emolientes').click(function(){
+ $('#emolientes').click(function(e){
   document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById('option4').style.display = 'inline-block';
   $( "#option4" ).click();
-  
+  closeMenu();
  });
 
 
@@ -246,7 +274,7 @@ $(window).scroll(function() {
  
  $('#contact-menu').on('click', function() {
   document.getElementById('contact').scrollIntoView({ block: 'end',  behavior: 'smooth' });
-  $( "#close-btn" ).click();
+  closeMenu();
   
 });
 

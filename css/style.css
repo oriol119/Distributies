@@ -263,7 +263,7 @@ h3 {
   left: 50%; }
 
 .logo {
-  background-image: url("../IMG/logo_white_red2.png");
+ 
   line-height: 100px;
   float: left;
   text-transform: uppercase;
@@ -654,6 +654,7 @@ opacity: 0.9; }
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
   
    }
   .grey{
@@ -681,8 +682,9 @@ opacity: 0.9; }
 
 #aloe-vera {
   display: inline-block;
+  margin: 0;
 position: relative;
- 
+ right: 0;
   height: 100%;
   width: 50%;
   background: url("../IMG/deo_img.png");

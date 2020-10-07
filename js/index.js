@@ -59,9 +59,11 @@ $('#product-menu').mouseout(function(){
 })
 
 $('#sophim').mouseover(function(){
-
-    
-    $('#plus-btn').css("display",'block');
+    element = document.getElementById('sophim');
+    if (element.classList.contains('grey')){
+      $('#plus-btn').css("display",'block');
+    }
+   
 
 })
 
@@ -74,8 +76,10 @@ $('#sophim').mouseout(function(){
 
 $('#aloe-vera').mouseover(function(){
 
+  element = document.getElementById('sophim');
+  if (element.classList.contains('grey')){
     $('#plus-btn2').css("display",'block');
-
+  }
 
 })
 

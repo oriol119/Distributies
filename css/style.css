@@ -73,7 +73,7 @@ h3 {
   }
 
   .zoom_img {
-    webkit-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
     -o-transform: translate(-50%);
     -ms-transform: translate(-50%);
@@ -366,19 +366,57 @@ align-items: center; }
 
 
 /* COOKIES*/
-.cookies_div{
+#cookies_div{
 
   position: absolute;
-  top: 90%;
-  left: 30%;
-  width: 40%;
-  height: 30%;
+  bottom: 2%;
+  left: 38%;
+  width: 24%;
+  height: 5%;
+  background-color: white;
+  text-align: center;
+
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50%;
+  border-radius: 50px;
+
 }
 
+#stick{
+  width: 1%;
+  font-size: 20px;
+  padding: none;
+  border: none;
+}
 
+#pref {
 
+  left: 0%;
+  font-family: 'Text-choices';
+  font-size: 8pt ;
 
+}
 
+.cons_acep{
+  font-family: 'Text-choices';
+  width: 60px;
+  font-size: 11px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: 8pt ;
+  background-color: white;
+  
+}
+
+#x_cookies{
+  font-family: 'Text-choices';
+  height: 3%;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #959C7F;
+}
 
 
 
@@ -1737,46 +1775,7 @@ ul {
     right: 0;
   }
   
-.transparent-placeholder {
-  ::-webkit-input-placeholder {
-    /* WebKit browsers */
-     color: transparent;
-}
- :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-     color: transparent;
-}
- ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-     color: transparent;
-}
- :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-     color: transparent;
-}
- input::placeholder {
-     color: transparent;
-}
- textarea::-webkit-input-placeholder {
-    /* WebKit browsers */
-     color: transparent;
-}
- textarea:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-     color: transparent;
-}
- textarea::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-     color: transparent;
-}
- textarea:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-     color: transparent;
-}
- textarea::placeholder {
-     color: transparent;
-}
-}
+
 
 /* MEDIA */
 

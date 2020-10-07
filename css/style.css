@@ -540,8 +540,8 @@ align-items: center; }
 #content_who {
   position: relative;
   width: 100vw;
-  height: 85vh;
-  top: 7%;
+  height: 90vh;
+  top: 5%;
   background-color: #CCBA76;
   color: white; 
 opacity: 0.9;}

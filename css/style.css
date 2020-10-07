@@ -274,7 +274,7 @@ h3 {
 
 .menu {
   float: right;
-  margin-right: 170px;
+  margin-right: 100px;
   margin-top: 22px;
   line-height: 100px;
   width: 720px;
@@ -369,7 +369,7 @@ align-items: center; }
 #cookies_div{
 
   position: absolute;
-  bottom: 2%;
+  bottom: 0%;
   left: 38%;
   width: 24%;
   height: 5%;
@@ -447,12 +447,17 @@ align-items: center; }
 }
 
 #portfolio{
+
+  position: absolute;
+  top: 75%;
+  left: 41.5%;
+
+
   cursor: pointer;
   width: 250px;
   height: 40px;
-  display: block;
-  margin: auto;
-  margin-top: 100px;
+
+  
   z-index: 2;
   color: #8F9FA9;
   font-size: 12px;
@@ -506,7 +511,7 @@ align-items: center; }
   position: absolute;
   width: 50%;
   height: 4px;
-  top: 26%;
+  top: 20%;
   left: 10%;
   }
 
@@ -514,7 +519,10 @@ align-items: center; }
   position: absolute;
   width: 60%;
   left: 35%;
-  top: 20%; }
+  top: 18%; 
+  text-justify: auto;
+  width: 50%;
+}
 
 .subtext-div-who {
   position: absolute;
@@ -525,8 +533,8 @@ align-items: center; }
 #content_who {
   position: relative;
   width: 100vw;
-  height: 65vh;
-  top: 10%;
+  height: 85vh;
+  top: 7%;
   background-color: #CCBA76;
   color: white; 
 opacity: 0.9;}
@@ -535,6 +543,8 @@ opacity: 0.9;}
   font-family: 'Text-choices';
   font-size: 11pt;
   line-height: 25px;
+  text-justify: auto;
+  width: 80%;
   }
 
 /* PRODUCTS------------------------------------------------------------------------------ 1*/

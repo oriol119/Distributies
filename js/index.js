@@ -322,5 +322,8 @@ $('.close_all').click(function(){
 
 
 $('#button').click(function(){
-  
+  if ($('#company').val().length == 0 || $('#company_web').val().length == 0 || $('#name').val().length == 0
+        || $('#e-mail').val().length == 0 || $('#phone_number').val().length == 0){
+          alert("Falta llenar campos obligatorios");
+  }
 });

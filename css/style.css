@@ -1312,7 +1312,7 @@ textarea:focus, input:focus, input[type]:focus {
   background-color:#8F9FA9;
   border-color: transparent;
   color: white;
-  
+  border-left: 15px solid #8F9FA9;
 
 
 }
@@ -1355,6 +1355,8 @@ textarea:focus, input:focus, input[type]:focus {
   
   
 }
+
+
 /*--//PAGINAS----------------------------->*/
 /*--//PAGINAS----------------------------->*/
 /*--//PAGINAS----------------------------->*/

@@ -242,6 +242,13 @@ $(window).scroll(function() {
  
  });
 
+
+ $('#link-pro-menu').click(function(){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  closeMenu();
+ 
+ });
+
  
 
  $('#oliva_menu').click(function(e){
@@ -314,3 +321,6 @@ $('.close_all').click(function(){
  });
 
 
+$('#button').click(function(){
+  
+});

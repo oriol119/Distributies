@@ -27,13 +27,6 @@ $('#back-btn').click(function(){
 	document.getElementById('oliva').style.display = 'block';
 
 $('#option3').addClass('option3_photo');
-
-
-	
-
-
-
-	
 })
 
 $('#back-btn2').click(function(){
@@ -47,7 +40,7 @@ $('#back-btn2').click(function(){
 
 	
 	$('#sophim').animate({width:"50vw", height:"100vh"}, 0);
-	$('#aloe-vera').animate({width:"50vw", height:"100vh", right:"0", position:"absolute", top:"0"}, 0);
+	$('#aloe-vera').animate({width:"50vw", height:"100vh"}, 0);
 
 	$('#side_options_as').animate({left:"-30vw"}, 1000);
 
@@ -282,7 +275,7 @@ $('#plus-btn').click(function(){
 	$('#side_options_as').animate({left:"0"}, 1000);
 
 
-	$( "#aloe-vera" ).addClass( "clear-photo" );
+	$( "sophim" ).addClass( "clear-photo" );
 	
 	document.getElementById('side_options_as').style.background = "#959C7F";
 	document.getElementById('news-options').style.background = "#959C7F";

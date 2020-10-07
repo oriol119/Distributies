@@ -265,8 +265,8 @@ $('#plus-btn').click(function(){
 
 	
 
-	$('#aloe-vera').removeClass('grey');
-	$('#aloe-vera').addClass('color');
+	$('#sophim').removeClass('grey');
+	$('#sophim').addClass('color');
 	
 
 	document.getElementById('aloe-vera').style.display = 'none';

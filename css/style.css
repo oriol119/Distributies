@@ -649,6 +649,9 @@ opacity: 0.9; }
   .grey{
     filter: grayscale(100%);
   }
+  .grey:hover {
+    filter: grayscale(0%);
+  }
 
   .color{
     filter: grayscale(0%);

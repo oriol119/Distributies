@@ -80,6 +80,7 @@ $('#option1').click(function(){
 	$('#option1').animate({width:"100vw", height:"100vh"}, 600);
 
 	$( "#option1" ).addClass( "clear-photo" );
+	document.getElementById("back-btn").style.backgroundImage = "url('IMG/4x/flecha1@4x.png')";
 
 	document.getElementById('side_options').style.background = "#959C7F";
 	document.getElementById('container_products').style.background = "#959C7F";
@@ -122,10 +123,10 @@ $('#option2').click(function(){
 
 	$('#side_options').animate({left:"0"}, 600);
 
-
+	document.getElementById("back-btn").style.backgroundImage = "url('IMG/boto_enrera_groc.png')";
 	$( "#option2" ).addClass( "clear-photo" );
-	document.getElementById('side_options').style.background = "#959C7F";
-	document.getElementById('container_products').style.background = "#959C7F";
+	document.getElementById('side_options').style.background = "#BCAE72";
+	document.getElementById('container_products').style.background = "#BCAE72";
 	document.getElementById("side_title").innerHTML = "TEXTURIZADOS |";
 	document.getElementById("side_option1").innerHTML = "Phytowax";
 	document.getElementById("side_option2").innerHTML = "Vegeline";
@@ -177,7 +178,7 @@ $('#option3').click(function(){
 
 
 	$( "#option3" ).addClass( "clear-photo" );
-
+	document.getElementById("back-btn").style.backgroundImage = "url('IMG/boto_enrera_blau.png')";
 	document.getElementById('side_options').style.background = "#8F9FA9";
 	document.getElementById('container_products').style.background = "#8F9FA9";
 	document.getElementById("side_title").innerHTML = "ACEITES Y MANTECAS |";
@@ -221,8 +222,9 @@ $('#option4').click(function(){
 
 	$( "#option4" ).addClass( "clear-photo" );
 
-	document.getElementById('side_options').style.background = "#8F9FA9";
-	document.getElementById('container_products').style.background = "#8F9FA9";
+	document.getElementById('side_options').style.background = "#293501";
+	document.getElementById('container_products').style.background = "#293501";
+	document.getElementById("back-btn").style.backgroundImage = "url('IMG/boto_enrera_verd_fort.png')";
 	document.getElementById("side_title").innerHTML = "EMOLIENTES |";
 	document.getElementById("side_option1").innerHTML = "Phytosqualan";
 	document.getElementById("side_option2").innerHTML = "Insapolive";

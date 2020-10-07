@@ -41,8 +41,8 @@
     </ul>
 </div>
 
-  <h6 style="position: absolute; color: wheat; top: 52px; left: 643px; font-size: 6.14pt; font-family: 'Text-choices';">01</h6> 
-  <h6 style="position: absolute; color: wheat; top: 52px; left: 748px; font-size: 6.14pt; font-family: 'Text-choices';">02</h6> 
+  <h6 style="position: absolute; color: wheat; top: 52px; left: 50%; font-size: 6.14pt; font-family: 'Text-choices';">01</h6> 
+  <h6 style="position: absolute; color: wheat; top: 52px; left: 56%; font-size: 6.14pt; font-family: 'Text-choices';">02</h6> 
   <h6 style="position: absolute; color: wheat; top: 52px; left: 846px; font-size: 6.14pt; font-family: 'Text-choices';">03</h6> 
   <h6 style="position: absolute; color: wheat; top: 52px; left: 944px; font-size: 6.14pt; font-family: 'Text-choices';">04</h6> 
   <h6 style="position: absolute; color: wheat; top: 52px; left: 1020px; font-size: 6.14pt; font-family: 'Text-choices';">PAIS</h6> 
@@ -55,7 +55,7 @@
     
     <ul id="list_round" class="nav">
       <li class="menu_options2" id="who_menu">QUIENES SOMOS?</li>
-      <li class="menu_options2" id="product-menu" >PRODUCTOS
+      <li class="menu_options2" id="product-menu" > <h7 id="link-pro-menu">PRODUCTOS</h7>
         <ul style="margin-left: 30px;">
           <li id="oliva_menu" class="li_hover"><h3> de la oliva</h3></li>
           <li id="textured_menu" class="li_hover"><h3 href="">Agentes Texturizados</a></li>
@@ -71,7 +71,7 @@
 <section class="content">
 
   
-  <img id="linkedin_lateral" src="IMG/4x/linkedin_green@4x.png">
+  <a href="https://www.linkedin.com"><img id="linkedin_lateral" src="IMG/4x/linkedin_green@4x.png"></a>
   <h5 id="follow_lateral" >Síguenos en -</h5>
   <img id="plus_lateral" src="IMG/4x/plus_green@4x.png">
   
@@ -82,8 +82,8 @@
   <img src="IMG/4x/distributies@4x.png" style="position: absolute; top: 53%; left: 35%;  width: 450px;">
   <img src="IMG/4x/text_distributies@4x.png" style="position: absolute; top: 61%; left: 40%; width: 280px;">
       
-  <button id="portfolio">DESCARGAR PORTFOLIO</button>
-  <img src="IMG/4x/hojas@4x.png" style="position: absolute; width: 400px; height: auto; right: -100px; top: 130px; opacity: 0.7; ">
+  <button id="portfolio" >DESCARGAR PORTFOLIO</button>
+  <img src="IMG/4x/hojas@4x.png" style="position: absolute; width: 30%; height: auto; right: -100px; top: 130px; opacity: 0.7; ">
  </div>
   
     <!--//BLOQUE COOKIES-->
@@ -222,7 +222,7 @@
     
 
     <span id="option1"class="photo_products" >
-      <h3 id="oliva">OLIVA</h3>
+      <h3 id="oliva">DE LA OLIVA</h3>
     </span>
 
     <span id="option2"class="photo_products">
@@ -388,6 +388,7 @@
 
 
 <section id="contact">
+  <form action="process.php" method="post" name="formContacto">
   <div><input id="company" class="contact_inputs" type="text" placeholder="Empresa*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Empresa*'"></div>
   <div><input id="company_web" class="contact_inputs" type="url" placeholder="Sitio web empresa*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Sitio web empresa*'"></div>
   <div><input id="city" class="contact_inputs" type="text" placeholder="Ciudad" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Ciudad'"></div>
@@ -401,7 +402,10 @@
   <div><input id="phone_number" class="contact_inputs" type="tel" placeholder="Teléfono*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Teléfono*'"></div>
   <div><input id="message" type="text" placeholder="Mensaje" size=300 onfocus="this.placeholder = ''"onblur="this.placeholder = 'Mensaje'"></div>
   <div class="g-recaptcha" data-sitekey="6LdxpNIZAAAAADCozd0hN-BzJqpATZNcO9um_s1b" id="captcha"></div>
-  <div id="button"><a href="#">ENVIAR</a></div>
+  </form>
+  <div id="button" ><a href="#">ENVIAR
+
+  </a></div>
   
 
 

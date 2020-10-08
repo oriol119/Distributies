@@ -376,7 +376,7 @@ align-items: center; }
 #cookies_div{
 
   position: absolute;
-  bottom: 0%;
+  bottom: -4%;
   left: 38%;
   width: 24%;
   height: 5%;
@@ -414,6 +414,12 @@ align-items: center; }
   font-size: 8pt ;
   background-color: white;
   cursor: pointer;
+  
+}
+.cons_acep:active{
+  
+  outline: none;
+  
   
 }
 
@@ -470,13 +476,13 @@ align-items: center; }
   position: absolute;
   top: 75%;
   left: 41.5%;
-
+  border: none;
 
   cursor: pointer;
   width: 250px;
-  height: 40px;
+  height: 45px;
 
-  background: url('../IMG/4x/descargar_portfolio.png');
+  background: url('../IMG/4x/descargar_portfolio2.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1023,6 +1029,7 @@ cursor: default;
   margin-left: 100px;
   color: white;
   font-size: 11pt;
+  font-style: 'Light';
   
 }
 

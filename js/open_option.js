@@ -8,10 +8,10 @@ $('#back-btn').click(function(){
 	$( "#option4" ).removeClass( "clear-photo" );
 
 	
-	$('#option1').animate({width:"25vw", height:"100vh"}, 0);
-	$('#option2').animate({width:"25vw", height:"100vh"}, 0);
-	$('#option3').animate({width:"25vw", height:"100vh"}, 0);
-	$('#option4').animate({width:"25vw", height:"100vh"}, 0);
+	$('#option1').animate({width:"25vw", height:"100vh", top:"10%"}, 0);
+	$('#option2').animate({width:"25vw", height:"100vh", top:"1%"}, 0);
+	$('#option3').animate({width:"25vw", height:"100vh", top:"1%"}, 0);
+	$('#option4').animate({width:"25vw", height:"100vh", top:"1%"}, 0);
 	$('#side_options').animate({left:"-30vw"}, 1000);
 
 
@@ -85,10 +85,10 @@ $('#option1').click(function(){
 	document.getElementById('side_options').style.background = "#959C7F";
 	document.getElementById('container_products').style.background = "#959C7F";
 	document.getElementById("side_title").innerHTML = "DE LA OLIVA |";
-	document.getElementById("side_option1").innerHTML = "Phytosqualan";
+	document.getElementById("side_option1").innerHTML = "Phytosqualan ®";
 	document.getElementById("side_option2").innerHTML = "Insapolive";
-	document.getElementById("side_option3").innerHTML = "Biophytosebum";
-	document.getElementById("side_option4").innerHTML = "Phytowax";
+	document.getElementById("side_option3").innerHTML = "Biophytosebum ®";
+	document.getElementById("side_option4").innerHTML = "Phytowax ®";
 	document.getElementById("side_option5").innerHTML = "";
 
 	$('#side_options').animate({left:"0"}, 600);
@@ -128,7 +128,7 @@ $('#option2').click(function(){
 	document.getElementById('side_options').style.background = "#BCAE72";
 	document.getElementById('container_products').style.background = "#BCAE72";
 	document.getElementById("side_title").innerHTML = "TEXTURIZADOS |";
-	document.getElementById("side_option1").innerHTML = "Phytowax";
+	document.getElementById("side_option1").innerHTML = "Phytowax ®";
 	document.getElementById("side_option2").innerHTML = "Vegeline";
 	document.getElementById("side_option3").innerHTML = "MC30-MC300";
 	document.getElementById("side_option4").innerHTML = "";
@@ -226,9 +226,9 @@ $('#option4').click(function(){
 	document.getElementById('container_products').style.background = "#293501";
 	document.getElementById("back-btn").style.backgroundImage = "url('IMG/boto_enrera_verd_fort.png')";
 	document.getElementById("side_title").innerHTML = "EMOLIENTES |";
-	document.getElementById("side_option1").innerHTML = "Phytosqualan";
+	document.getElementById("side_option1").innerHTML = "Phytosqualan ®";
 	document.getElementById("side_option2").innerHTML = "Insapolive";
-	document.getElementById("side_option3").innerHTML = "Biophytosebum";
+	document.getElementById("side_option3").innerHTML = "Biophytosebum ®";
 	document.getElementById("side_option4").innerHTML = "Squapure";
 	document.getElementById("side_option5").innerHTML = "Sophiderm";
 	document.getElementById("side_option1").style.visibility = 'visible';

@@ -413,7 +413,13 @@ align-items: center; }
   outline: none;
   font-size: 8pt ;
   background-color: white;
+  cursor: pointer;
   
+}
+
+.cons_acep:hover{
+
+  color: #959C7F;
 }
 
 #x_cookies{
@@ -422,6 +428,12 @@ align-items: center; }
   text-decoration: none;
   border: none;
   outline: none;
+  color: black;
+  cursor: pointer;
+}
+
+#x_cookies:hover{
+
   color: #959C7F;
 }
 
@@ -550,9 +562,22 @@ opacity: 0.9;}
   font-family: 'Text-choices';
   font-size: 11pt;
   line-height: 25px;
-  text-justify: auto;
-  width: 80%;
+  text-align: justify;
+  width: 75%;
   }
+/* MATERIAS------------------------------------------------------------------------------ 1*/
+/* MATERIAS------------------------------------------------------------------------------ 1*/
+/* MATERIAS------------------------------------------------------------------------------ 1*/
+
+#materias-div {
+  background: url("../IMG/rama-olivo-hojas-aceitunas.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh; }
+
 
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
@@ -583,7 +608,9 @@ opacity: 0.9; }
 
 .text {
   font-family: 'Text';
-  font-size: 25pt; }
+  font-size: 25pt;
+  
+}
 
 .title-div {
   position: absolute;
@@ -664,6 +691,35 @@ opacity: 0.9; }
   margin: 0;
   
    }
+
+   .cne{
+    background: url("../IMG/oliva.png");
+    
+   }
+   .cne2{
+    background: url("../IMG/cream-3496778_1920.jpg");
+   }
+   .cne3{
+    background: url("../IMG/oliva_2.jpg");
+   }
+   .cne4{
+    background: url("../IMG/oliva.png");
+   }
+   .cne5{
+    background: url("../IMG/oliva.png");
+   }
+   .cne6{
+    background: url("../IMG/oliva.png");
+   }
+   .cne7{
+    background: url("../IMG/oliva.png");
+   }
+   .cne8{
+    background: url("../IMG/oliva.png");
+   }
+
+
+
   .grey{
     filter: grayscale(100%);
   }
@@ -1382,13 +1438,14 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 .allproducts_text{
-  width: 50%;
+  width: 45%;
   position: absolute;
   top: 63%;
   left: 35%;
   color: white;
   font-size: 11pt;
   font-family: 'Regular'; 
+  text-align: justify;
   
 }
 .allemul_div{
@@ -1489,8 +1546,8 @@ textarea:focus, input:focus, input[type]:focus {
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
-#container_nat_emul {
-  background: url("../IMG/cream-3496778_1920.jpg");
+.container_nat_emul {
+  
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1579,9 +1636,9 @@ textarea:focus, input:focus, input[type]:focus {
 #insapolive {
 
   display: inline-block; 
-height: 100%;
-width: 50%;
-  background: url('../IMG/sophim-007.jpg');
+  height: 100%;
+  width: 50%;
+  
 
 
   background-position: center center;

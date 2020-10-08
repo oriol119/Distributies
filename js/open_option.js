@@ -311,7 +311,6 @@ $('#plus-btn2').click(function(){
 	$('#sophim').off('mouseover');
 
 	
-	document.getElementById('sophim-text').style.display = 'none';
 	document.getElementById('plus-btn').style.display = 'none';
 	document.getElementById('plus-btn2').style.display = 'none';
 	

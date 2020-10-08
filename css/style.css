@@ -476,9 +476,12 @@ align-items: center; }
   width: 250px;
   height: 40px;
 
-  
+  background: url('../IMG/4x/descargar_portfolio.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 2;
-  color: #8F9FA9;
+
   font-size: 12px;
   background-color: white;
   outline: none;
@@ -732,6 +735,7 @@ opacity: 0.9; }
   }
 
 #sophim-text {
+  display: block;
   position: absolute;
   background-color: #8F9FA9;
   color: white;

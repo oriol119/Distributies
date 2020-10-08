@@ -322,8 +322,34 @@ $('.close_all').click(function(){
 
 
 $('#button').click(function(){
-  if ($('#company').val().length == 0 || $('#company_web').val().length == 0 || $('#name').val().length == 0
-        || $('#e-mail').val().length == 0 || $('#phone_number').val().length == 0){
-          alert("Falta llenar campos obligatorios");
+  if ($('#company').val().length == 0 ){
+    
+    $('#company').css('backgroundColor', 'red');
+    $('#company').css('borderColor', 'red');
+    $('#company').css('opacity', '0.9');
   }
+  if ($('#company_web').val().length == 0 ){
+    $('#company_web').css('backgroundColor', 'red');
+    $('#company_web').css('borderColor', 'red');
+    $('#company_web').css('opacity', '0.9');
+  }
+  if ($('#name').val().length == 0 ){
+    $('#name').css('backgroundColor', 'red');
+    $('#name').css('borderColor', 'red');
+    $('#name').css('opacity', '0.9');
+  }
+  if ($('#e-mail').val().length == 0 ){
+    $('#e-mail').css('backgroundColor', 'red');
+    $('#e-mail').css('borderColor', 'red');
+    $('#e-mail').css('opacity', '0.9');
+  }
+  if ($('#phone_number').val().length == 0 ){
+    $('#phone_number').css('backgroundColor', 'red');
+    $('#phone_number').css('borderColor', 'red');
+    $('#phone_number').css('opacity', '0.9');
+  }
+  else {
+    return true;
+  }
+  alert("Falta llenar campos obligatorios");
 });

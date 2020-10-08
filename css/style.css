@@ -697,7 +697,7 @@ opacity: 0.9; }
 
    .cne{
     background: url("../IMG/oliva.png");
-    
+
    }
    .cne2{
     background: url("../IMG/cream-3496778_1920.jpg");
@@ -706,21 +706,51 @@ opacity: 0.9; }
     background: url("../IMG/oliva_2.jpg");
    }
    .cne4{
-    background: url("../IMG/oliva.png");
+    background: url("../IMG/oliv_2.png");
    }
    .cne5{
-    background: url("../IMG/oliva.png");
+    background: url("../IMG/OIP.jpg");
    }
    .cne6{
-    background: url("../IMG/oliva.png");
+    background: url("../IMG/vegelin.jpg");
    }
    .cne7{
-    background: url("../IMG/oliva.png");
+    background: url("../IMG/beurre-argan-vign\ \(1\).jpg");
    }
    .cne8{
-    background: url("../IMG/oliva.png");
+    background: url("../IMG/");
    }
 
+   .mantecas {
+    background: url("../IMG/mantecas-vegetales.jpg");
+
+   }
+
+   .aceites{
+    background: url("../IMG/Aceites-vegetales-para-la-piel-V2.jpg");
+
+   }
+
+
+
+  
+
+   .aceite_mantecas {
+     width: 20%;
+     height: 30px;
+    position: absolute;
+    left: 35%;
+    top:75%;
+    font-size: 11pt ;
+    font-family: 'Text-choices';
+    background-color: white;
+    color: #8D9EA8;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+   }
 
 
   .grey{
@@ -1423,8 +1453,9 @@ textarea:focus, input:focus, input[type]:focus {
 
 
 .allproducts_title{
+  width: auto;
   position: absolute;
-  top: 22%;
+  top: 17%;
   left: 14%;
   right: 0;
   color: white;
@@ -1435,7 +1466,7 @@ textarea:focus, input:focus, input[type]:focus {
 .allproducts_subtitle{
   width: 50% ;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 35%;
   color:white;
   font-weight: bold;
@@ -1477,6 +1508,18 @@ textarea:focus, input:focus, input[type]:focus {
 
 }
 
+.blue_space {
+
+  position: absolute;
+  top: 75% ;
+  width: 100%;
+  height: 15%;
+  background-color: #8D9EA8;
+  color: #8D9EA8;
+  opacity: 80%;
+
+}
+
 #white_logo{
 
   position: absolute;
@@ -1496,6 +1539,9 @@ textarea:focus, input:focus, input[type]:focus {
   z-index: 2;
   cursor: pointer;
 }
+
+
+
 
 #text_insa_em {
   top:47%;

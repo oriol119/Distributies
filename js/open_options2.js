@@ -56,8 +56,8 @@ $('#plus-btn_sophim').click(function(){
 	$( "#option1_sophim" ).addClass( "clear-photo_sophim" );
 	document.getElementById("back-btn_sophim").style.backgroundImage = "url('IMG/4x/flecha1@4x.png')";
 
-	document.getElementById('side_options_sophim').style.background = "#959C7F";
-	document.getElementById('container_products_sophim').style.background = "#959C7F";
+	document.getElementById('side_options_sophim').style.background = "#8F9FA9";
+	document.getElementById('container_products_sophim').style.background = "#8F9FA9";
 	document.getElementById("side_title_sophim").innerHTML = "SOPHIM |";
 	document.getElementById("side_option1_sophim").innerHTML = "Phytosqualan";
 	document.getElementById("side_option2_sophim").innerHTML = "Insapolive";

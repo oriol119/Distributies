@@ -12,7 +12,7 @@ function changeStateMenu(){
 
 
 function openMenu(){
-  setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 550);
+  setTimeout(function(){  $('#list_round').css("font-size", "2vw"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
@@ -22,6 +22,7 @@ function openMenu(){
     setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 600);
 
     $('#list_round').css("display", "block");
+    $('#list_round').css("margin", "auto");
 }
 
 function closeMenu(){
@@ -55,6 +56,57 @@ $('#product-menu').mouseover(function(){
 $('#product-menu').mouseout(function(){
 
     $('#news-menu').css("margin-top",'25px');
+
+})
+$('#li-menu-h6').mouseover(function(){
+  $('#li-menu-h6').css("color",'#959C7F');
+  $('#li-menu-h6').css("backgroundColor",'white');
+  $('#li-menu-h6').css("padding",'2px 20px');
+
+})
+$('#li-menu-h6').mouseout(function(){
+
+  $('#li-menu-h6').css("backgroundColor",'#959C7F');
+  $('#li-menu-h6').css("color",'#444428');
+
+})
+$('#li2-menu-h6').mouseover(function(){
+  $('#li2-menu-h6').css("color",'#959C7F');
+  $('#li2-menu-h6').css("backgroundColor",'white');
+  $('#li2-menu-h6').css("padding",'2px 20px');
+
+
+})
+$('#li2-menu-h6').mouseout(function(){
+
+  $('#li2-menu-h6').css("backgroundColor",'#959C7F');
+  $('#li2-menu-h6').css("color",'#444428');
+
+})
+$('#li3-menu-h6').mouseover(function(){
+  $('#li3-menu-h6').css("color",'#959C7F');
+  $('#li3-menu-h6').css("backgroundColor",'white');
+  $('#li3-menu-h6').css("padding",'2px 20px');
+
+
+})
+$('#li3-menu-h6').mouseout(function(){
+
+  $('#li3-menu-h6').css("backgroundColor",'#959C7F');
+  $('#li3-menu-h6').css("color",'#444428');
+
+})
+$('#link-pro-menu').mouseover(function(){
+  $('#link-pro-menu').css("color",'#959C7F');
+  $('#link-pro-menu').css("backgroundColor",'white');
+  $('#link-pro-menu').css("padding",'2px 20px');
+
+
+})
+$('#link-pro-menu').mouseout(function(){
+
+  $('#link-pro-menu').css("backgroundColor",'#959C7F');
+  $('#link-pro-menu').css("color",'#444428');
 
 })
 
@@ -353,3 +405,5 @@ $('#button').click(function(){
   }
   alert("Falta llenar campos obligatorios");
 });
+
+

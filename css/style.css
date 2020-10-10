@@ -476,7 +476,7 @@ align-items: center; }
 
 #page{
 
-  position: absolute; width: 230px; height: 40px; left: 80vw; top: 190%; opacity: 0.7; 
+  position: absolute; width: 230px; height: 40px; left: 70vw; top: 374%; border:solid 1px #959C7F; 
 }
 
 .portfolio{
@@ -1582,6 +1582,7 @@ textarea:focus, input:focus, input[type]:focus {
 
 #tex_divv{
   background-color: #CCBA76;
+  
 }
 
 .tex_div2{

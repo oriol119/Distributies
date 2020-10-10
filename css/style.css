@@ -132,9 +132,11 @@ h3 {
   border-style: solid;
   border-width: 20px;
   border-color: white;
+  
  }
 .submenu-round {
   display: none;
+   
 }
   
   #list_round {
@@ -780,7 +782,7 @@ opacity: 0.9; }
   position: absolute;
   background-color: #8F9FA9;
   color: white;
-  width: 55%;
+  width: 58%;
   height: 58%;
   top: 20%;
   left: 22.5%;
@@ -816,13 +818,13 @@ position: relative;
 
 .title-options {
   position: relative;
-  font-family: 'Title';
+  font-family: 'Text';
   font-size: 25pt;
   top: 10%; }
 
 .text-options {
   position: relative;
-  font-family: 'Title';
+  font-family: 'Footer-titles';
   font-size: 11pt;
   line-height: 40px;
   top: 20%;

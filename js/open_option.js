@@ -148,6 +148,7 @@ $('#option2').click(function(){
 $('#option3').click(function(){
 
 	
+	
 	document.getElementById("option3").style.background = "#000000";
 
 

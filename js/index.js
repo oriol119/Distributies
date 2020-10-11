@@ -176,7 +176,7 @@ function scroll1() {
 
 
 function scroll2() {
-    document.getElementById('news-options').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    document.getElementById('container_products_sophim').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  }
 
 

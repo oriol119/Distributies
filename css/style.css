@@ -633,7 +633,7 @@ opacity: 0.9; }
   position: absolute;
   width: 300px;
   height: 4px;
-  top: 34%;
+  top: 97px;
   left: 10%; }
 
 .text-div {
@@ -678,14 +678,19 @@ opacity: 0.9; }
   position: absolute;
   width: 300px;
   height: 4px;
-  top: 34%;
+  top: 75px;
   left: 10%; }
 
 .text-div-news {
   position: absolute;
   width: 675px;
   left: 35%;
-  top: 28%; }
+  top: 67px; }
+  .text-div-contact {
+    position: absolute;
+    width: 675px;
+    left: 35%;
+    top: 70px; }
 
 /* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
 /* NEWS OPTIONS------------------------------------------------------------------------------ 1*/

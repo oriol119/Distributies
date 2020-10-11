@@ -284,11 +284,11 @@ h3 {
 
 .menu {
   float: right;
-  margin-right: 3%;
+  margin-right: 190px;
   margin-top: 1.5%;
   line-height: 100px;
-  width: 720px;
-font-size: 7.25pt;
+  width: 570px;
+  font-size: 7.25pt;
 
  }
 
@@ -321,7 +321,7 @@ margin-left: 5px;}
 .menu_options2 {
   margin: 1%;
   color: #8E9EA8; 
-  font-family: 'Text-choices';
+  font-family: 'Footer-titles';
   
 margin-left: 15px;
 justify-content: center; text-align: center;
@@ -476,7 +476,7 @@ align-items: center; }
 
 #page{
 
-  position: absolute; width: 230px; height: 40px; left: 70vw; top: 374%; border:solid 1px #959C7F; 
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 190%; opacity: 0.7; 
 }
 
 .portfolio{
@@ -547,7 +547,7 @@ align-items: center; }
   position: absolute;
   width: 50%;
   height: 4px;
-  top: 20%;
+  top: 137px;
   left: 10%;
   }
 
@@ -555,7 +555,7 @@ align-items: center; }
   position: absolute;
   width: 60%;
   left: 35%;
-  top: 18%; 
+  top: 132px; 
   text-justify: auto;
   width: 50%;
 }
@@ -782,10 +782,10 @@ opacity: 0.9; }
   position: absolute;
   background-color: #8F9FA9;
   color: white;
-  width: 58%;
-  height: 58%;
+  width: 58vh;
+  height: 58vh;
   top: 20%;
-  left: 22.5%;
+  left: 18%;
   justify-content: center;
   align-items: center;
   text-align: center; }
@@ -808,10 +808,10 @@ position: relative;
   position: absolute;
   background-color: #BCAE72;
   color: white;
-  width: 55%;
-  height: 58%;
+  width: 58vh;
+  height: 58vh;
   top: 20%;
-  left: 22.5%;
+  left: 18%;
   justify-content: center;
   align-items: center;
   text-align: center; }
@@ -1037,6 +1037,7 @@ cursor: default;
   color: white;
   font-size: 11pt;
   font-style: 'Light';
+  line-height: 17px;
   
 }
 
@@ -1413,7 +1414,7 @@ textarea:focus, input:focus, input[type]:focus {
   width: 65%;
   position: relative;
   left: 15%;
-  padding-bottom: 20vh;
+  height: 20vh;
   background-color:#8F9FA9;
   border-color: transparent;
   color: white;
@@ -1582,7 +1583,6 @@ textarea:focus, input:focus, input[type]:focus {
 
 #tex_divv{
   background-color: #CCBA76;
-  
 }
 
 .tex_div2{

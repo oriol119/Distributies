@@ -1956,23 +1956,6 @@ ul {
 
 @media screen and (max-width: 1100px )  {
 
-  #resp_log{
-
-    width: 130px;
-    left: 46%;
-    
-
-  }
-
-  #resp_log2{
-
-    width: 300px;
-
-    left: 39%;
-
-  }
- 
-
  .menu_options {
    visibility: hidden;
 
@@ -1999,36 +1982,6 @@ ul {
 
 @media screen and (max-width: 800px) {
 
-
-  #resp_log{
-
-    width: 130px;
-    left:40%;
-    
-
-  }
-
-  #resp_log2{
-
-    
-
-    left: 30%;
-
-  }
-  
-  
-  #resp_log3{
-
-    
-
-    left: 32%;
-
-  }
-
-.portfolio{
-
-  left: 35%;
-}
 
   .header {
 
@@ -2070,27 +2023,6 @@ ul {
     font-size: 15px;
   }
 
-  #resp_log{
-
-    width: 130px;
-    left:38%;
-  
-  }
-
-  #resp_log2{
-    left: 20%;
-
-  }
-  
-  
-  #resp_log3{
-    left: 22%;
-    
-  }
-
-.portfolio{
-
-  left: 25%;
-}
+ 
 
 }

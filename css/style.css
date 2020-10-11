@@ -380,14 +380,15 @@ align-items: center; }
 
   position: absolute;
   bottom: -4%;
-  left: 38%;
-  width: 24%;
+  left: 50%;
+  margin-left: -160px ;
+  width: 320px;
   height: 5%;
   background-color: white;
   text-align: center;
 
   -webkit-border-radius: 50px;
-  -moz-border-radius: 50%;
+  -moz-border-radius: 50px;
   border-radius: 50px;
 
 }
@@ -1737,16 +1738,16 @@ textarea:focus, input:focus, input[type]:focus {
   font-size: 12px; }
 
 #resp_log{
-  position: absolute; top: 25%; left: 45%; width: 150px;
+  position: absolute; top: 25%; left: 50%; width: 150px; margin-left: -75px;
 
 }
 #resp_log2{
 
-  position: absolute; top: 55%; left: 35%;  width: 450px;
+  position: absolute; top: 55%; left: 50%;  width: 450px; margin-left: -225px;
 }
 
 #resp_log3{
-  position: absolute; top: 63%; left: 40%; width: 280px;
+  position: absolute; top: 63%; left: 50%; width: 280px; margin-left: -140px;
 
 }
 

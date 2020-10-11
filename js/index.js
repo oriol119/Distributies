@@ -176,7 +176,7 @@ function scroll1() {
 
 
 function scroll2() {
-    document.getElementById('news-options').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    document.getElementById('container_products_sophim').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  }
 
 
@@ -407,9 +407,34 @@ $('#button').click(function(){
     $('#phone_number').css('opacity', '0.9');
   }
   else {
+
+    $(location).attr('href', 'mailto:Damelis.%20Lopez<damelis.lopez@distributies.com>?subject='
+                         + encodeURIComponent('DISTRIBUTIES WEB MAIL')
+                         + "&body=" 
+                         + encodeURIComponent("COMPANY:"+$('#company').val()+
+                         "\n\nCOMPANY WEB: "+$('#company_web').val()+
+                         "\n\nCITY WEB: "+$('#city').val()
+                         +"\n\nADRESS: "+$('#adress').val()
+                         +"\n\nPOSTAL CODE: "+$('#postal_code').val()
+                         +"\n\nCOUNTRY: "+$('#country').val()
+                         +"\n\nNAME: "+$('#name').val()
+                         +"\n\nE-MAIL: "+$('#e-mail').val()
+                         +"\n\nPHONE NUMBER: "+$('#phone_number').val()
+                         +"\n\nMENSAJE:\n "+$('#message').val())
+);
+
     return true;
   }
   alert("Falta llenar campos obligatorios");
 });
 
+function disableCookies(){
+  document.getElementById('cookies_div').style.display = 'none';
+}
 
+$('#acep_cookies').click(function(){
+  disableCookies();
+})
+$('#x_cookies').click(function(){
+  disableCookies();
+})

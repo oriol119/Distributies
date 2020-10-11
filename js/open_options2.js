@@ -188,7 +188,8 @@ $('#side_option1_sophim').mouseover(function(){
 $('#option1_sophim').mouseout(function(){
 
     if( $(this).toggleClass('color')){
-        $('#plus-btn_sophim').css("display",'none');
+		$('#plus-btn_sophim').css("display",'none');
+		$('#option1_sophim').removeClass("color");
       }
       
     
@@ -208,7 +209,8 @@ $('#option2_sophim').mouseover(function(){
 
 $('#option2_sophim').mouseout(function(){
     if( $(this).toggleClass('color')){
-        $('#plus-btn2_sophim').css("display",'none');
+		$('#plus-btn2_sophim').css("display",'none');
+		$('#option2_sophim').removeClass("color");
       }
    
    

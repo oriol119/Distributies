@@ -1260,6 +1260,11 @@ cursor: default;
     width: 80%;
 }
 
+#emulsionantes_div {
+  height: 52%;
+
+}
+
 /*  /SIDE OPTIONS */
 #back-btn {
   background: url("../IMG/4x/flecha1@4x.png");
@@ -1627,7 +1632,7 @@ textarea:focus, input:focus, input[type]:focus {
   top:47%;
 }
 
-#bio_em_text{
+.bio_em_text{
   top: 42%;
   width: 50%;
 }
@@ -1645,8 +1650,9 @@ textarea:focus, input:focus, input[type]:focus {
   top: 54%;
 }
 
-#tex_divv{
+.tex_divv{
   background-color: #CCBA76;
+  top:5%; height: 55%;
 }
 
 .tex_div2{
@@ -1658,7 +1664,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 #tex_text2 {
-  top: 55%;
+  top: 50%;
 }
 
 .r{
@@ -2203,7 +2209,7 @@ ul {
   }
 
   #white_logo{
-    top: 90%;
+    display: none;
   }
 
   #footer {
@@ -2217,6 +2223,7 @@ ul {
   top: 40%;
 
   }
+
   
   .subtext-div-who{
     top: 40%;
@@ -2231,4 +2238,21 @@ ul {
     height: 98%;
     top: 2%;
   }
+
+
+  .bio_em_text {
+  top: 37%;
+  width: 78%;
+
+  }
+
+  #emulsionantes_div {
+    height: 85%;
+    
+  }
+  
+#tex_text2 {
+  top: 40%;
+}
+
 }

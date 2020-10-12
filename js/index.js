@@ -1,4 +1,6 @@
 
+
+
 function changeStateMenu(){
   if( $('#menu-checkbox').prop('checked') ) {
     closeMenu();
@@ -36,6 +38,7 @@ function closeMenu(){
 }
 
 $('#menu-round').click(function(e){
+
   if($(e.target).is("span") || $(e.target).attr("id") == "menu-txt") {
     openMenu();
   }

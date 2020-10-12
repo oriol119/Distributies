@@ -67,13 +67,15 @@ $('.menu_options2').mouseout(function(){
 $('#product-menu').mouseover(function(){
  
   $('#news-menu').css("margin-top",'150px');
+  $('#contact-menu').css("margin-top",'150px');
 
 
 })
 $('#product-menu').mouseout(function(){
 
   
-  $('#news-menu').css("margin-top",'25px');
+   $('#news-menu').css("margin-top",'30px');
+   $('#contact-menu').css("margin-top",'30px');
 
   
 })

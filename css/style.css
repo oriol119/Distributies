@@ -236,6 +236,8 @@ h3 {
   .nav li:hover > ul {
     
     display:block;
+    left: 50%;
+    margin-left: -100px;
     
     
   }
@@ -256,7 +258,7 @@ h3 {
   #list_round > li {
     color: #444428;
     list-style:none;
-    width: 50vw;
+    width: auto;
     margin-top: 30px;
     justify-content: center;
     text-align: center;

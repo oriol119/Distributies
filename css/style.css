@@ -1660,10 +1660,10 @@ textarea:focus, input:focus, input[type]:focus {
 
 .r{
   font-size: 9pt;
-  position:absolute;
-  top: 24%;
-  left: 29% ;
+  display: inline;
   color: white;
+ 
+  
   
 }
 .barra{
@@ -1803,6 +1803,12 @@ textarea:focus, input:focus, input[type]:focus {
 
 #resp_log3{
   position: absolute; top: 63%; left: 50%; width: 280px; margin-left: -140px;
+
+}
+
+#allproducts_text_resp{ 
+
+  top: 53%;
 
 }
 
@@ -2078,6 +2084,56 @@ ul {
     font-size: 15px;
   }
 
+  .bblue_space{
+    display: none;
+  }
  
+  .allemul_div{
+    height: 80%;
+  }
 
+  .allproducts_title{
+  top: 10%;
+  left: 10%;
+
+  }
+
+  .allproducts_subtitle{
+
+      font-size: 20px;
+      left: 10%;
+      top: 23%;
+      width: 75%;
+      
+  }
+
+  .allproducts_text {
+
+    left: 10%;
+    top: 51%;
+    width: 75%;
+    
+  }
+
+  .close_all{
+    width: 60px;
+    left: 50% ;
+    margin-left: -24px;
+  }
+
+  #white_logo{
+    top: 90%;
+  }
+
+  #footer {
+    display: none;
+  }
+  .BR{
+    display: none;
+  }
+
+  #allproducts_text_resp{
+  top: 40%;
+
+  }
 }

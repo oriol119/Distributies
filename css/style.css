@@ -1265,6 +1265,11 @@ cursor: default;
 
 }
 
+#phyto_div {
+
+  height: 58%; top: 0%;
+}
+
 /*  /SIDE OPTIONS */
 #back-btn {
   background: url("../IMG/4x/flecha1@4x.png");
@@ -1637,7 +1642,7 @@ textarea:focus, input:focus, input[type]:focus {
   width: 50%;
 }
 #emul_divv{
-  background-color: #959C7F;
+  height: 50%;
 }
 
 .emul_div2{
@@ -2253,6 +2258,16 @@ ul {
   
 #tex_text2 {
   top: 40%;
+}
+
+#emul_divv{
+
+  height: 75%;
+  
+}
+#phyto_div {
+
+  height: 85%;
 }
 
 }

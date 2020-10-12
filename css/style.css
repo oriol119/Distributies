@@ -798,7 +798,7 @@ opacity: 0.9; }
   
 
    .aceite_mantecas {
-     width: 20%;
+     width: 250px;
      height: 30px;
     position: absolute;
     left: 35%;
@@ -1826,6 +1826,29 @@ textarea:focus, input:focus, input[type]:focus {
 
 }
 
+#aceites_div {
+
+  top:5%; height: 50%; background-color: #8D9EA8;
+}
+
+#section_aceites {
+
+  min-width: 100vw; min-height: 285vh;  
+
+}
+#close_aceites{
+
+top:115%; right: 5%; width: 70px; 
+}
+
+#ace_vege {
+  font-family: 'Title'; top: 51px; left: 21%; position: relative; font-size: 29pt; color: #959C7F;
+
+}
+
+#imagen_aceites {
+  position: absolute; top: 127%; right: 14%; width: 160px;
+}
 
 
 
@@ -2269,5 +2292,39 @@ ul {
 
   height: 85%;
 }
+
+#aceites_div {
+  top: 10%;
+height: 70%;
+
+}
+
+#portfolio_aceites{
+
+  left: 10%;
+}
+
+#section_aceites{
+min-width: 100vw; min-height: 150vh;
+}
+
+#page {
+  top: 240% ;
+  left:55%;
+}
+#close_aceites{
+
+  top:110%;
+}
+
+#ace_vege {
+  top: 125%; left: 10%; position: absolute; font-size: 29pt; color: #959C7F;
+
+}
+#imagen_aceites {
+  top: 137%; left: 10%; width: 100px;
+}
+
+
 
 }

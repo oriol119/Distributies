@@ -834,7 +834,8 @@ opacity: 0.9; }
   width: 58vh;
   height: 58vh;
   top: 20%;
-  left: 18%;
+  left: 50%;
+  margin-left: -29vh;
   justify-content: center;
   align-items: center;
   text-align: center; }
@@ -860,7 +861,8 @@ position: relative;
   width: 58vh;
   height: 58vh;
   top: 20%;
-  left: 18%;
+  left: 50%;
+  margin-left: -29vh;
   justify-content: center;
   align-items: center;
   text-align: center; }
@@ -1371,6 +1373,7 @@ top: 1%; }
     color: white;
     position: absolute;
     width: 100%;
+    
   text-align: center;
   bottom: 110px;
     z-index: 2; }
@@ -2023,6 +2026,10 @@ ul {
 
 @media screen and (max-width: 1100px )  {
 
+  .logo_content{
+    display: none;
+  }
+
  .menu_options {
    visibility: hidden;
 
@@ -2044,8 +2051,32 @@ ul {
   left: 10%;
   width: 80%;
 }
-}
 
+.title-div {
+  top: 13%;
+  left: 10%;
+  margin-left: -15px;
+  
+}
+.text-div{
+  left: 10%;
+  margin-left: -15px;
+}
+}
+@media screen and (max-width: 980px )  {
+#option1_sophim{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+#option2_sophim{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+#container_products_sophim{
+  height: 100vw !important;
+}
+ 
+ }
 
 @media screen and (max-width: 800px) {
 
@@ -2068,6 +2099,7 @@ ul {
 
   .subtext{
     font-size: 14px;
+    width: auto;
     
   }
   .subtext-div-who {
@@ -2076,6 +2108,55 @@ ul {
 
   .text{
     font-size: 33px;;
+  }
+
+  #oliva {
+    transform: rotate(270deg);
+  }
+  #textured {
+    transform: rotate(270deg);
+  }
+  #fixers {
+    transform: rotate(270deg);
+  }
+  #emulsifiers {
+    transform: rotate(270deg);
+  }
+  #content_who{
+    height:90%;
+  }
+  #linkedin_lateral {
+    position: absolute; 
+    top: 70vh; 
+    right: 50%;
+    margin-right: -10px; 
+  }
+  
+  #follow_lateral {
+  
+    top: 84vh; 
+    right: 50vw;
+    margin-right: -46px;  
+  }
+  
+  #plus_lateral{
+   
+    top: 92vh; 
+    right: 50%;
+    margin-right: -10px;    
+  }
+  .portfolio {
+    top: 105vh;
+  }
+
+  .content{
+    height: 118vh;
+  }
+  #cookies_div {
+    top: 118vh;
+  }
+  .text {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 560px){
@@ -2143,6 +2224,22 @@ ul {
 
   }
 
+  
+  .subtext-div-who{
+    top: 40%;
+  }
+  .title-div-who{
+    top: 5%;
+  }
+  .text-div-who{
+    top: 10%;
+  }
+  #content_who{
+    height: 98%;
+    top: 2%;
+  }
+
+
   .bio_em_text {
   top: 37%;
   width: 78%;
@@ -2157,4 +2254,5 @@ ul {
 #tex_text2 {
   top: 40%;
 }
+
 }

@@ -61,7 +61,7 @@ $('#back-btn2').click(function(){
 
 $('#option1').click(function(){
 
-	if($(window).width() < 767)
+	if($(window).width() < 1000)
 	{
 	   // change functionality for smaller screens
 		
@@ -176,7 +176,7 @@ $('#option1').click(function(){
 
 
 $('#option2').click(function(){
-	if($(window).width() > 767)
+	if($(window).width() > 1000)
 {
    // change functionality for smaller screens
    $('#side_option1').attr('href', "phytowax_vis.html");
@@ -280,7 +280,7 @@ $('#option2').click(function(){
 
 $('#option3').click(function(){
 
-	if($(window).width() < 767)
+	if($(window).width() < 1000)
 {
    // change functionality for smaller screens
    $('#side_option1').attr('href', "aceites.html");
@@ -389,7 +389,7 @@ $('#option3').click(function(){
 
 $('#option4').click(function(){
 
-	if($(window).width() < 767)
+	if($(window).width() < 1000)
 {
    // change functionality for smaller screens
    $('#side_option1').attr('href', "phytosqualan_em.html");

@@ -236,6 +236,8 @@ h3 {
   .nav li:hover > ul {
     
     display:block;
+    left: 50%;
+    margin-left: -100px;
     
     
   }
@@ -256,7 +258,7 @@ h3 {
   #list_round > li {
     color: #444428;
     list-style:none;
-    width: 50vw;
+    width: auto;
     margin-top: 30px;
     justify-content: center;
     text-align: center;
@@ -738,7 +740,23 @@ opacity: 0.9; }
     background: url("../IMG/beurre-argan-vign\ \(1\).jpg");
    }
    .cne8{
-    background: url("../IMG/");
+    background: url("../IMG/olivo-frutal-1.jpg");
+   }
+
+   .cne9{
+    background: url("../IMG/sophim-007.jpg");
+   }
+
+   .cne10{
+    background: url("../IMG/phytosqualan.jpg");
+   }
+
+   .cne11{
+    background: url("../IMG/sea_2.png");
+   }
+
+   .cne12{
+    background: url("../IMG/sea.png");
    }
 
    .mantecas {
@@ -1512,8 +1530,8 @@ textarea:focus, input:focus, input[type]:focus {
   width: 100vw;
   height: 45vh;
   top: 10%;
-  background-color: #293501;
-  color: #293501;
+  background-color: #899fa9;
+  color:#899fa9;
   opacity: 90%; 
 
 }
@@ -1538,6 +1556,18 @@ textarea:focus, input:focus, input[type]:focus {
   height: 15%;
   background-color: #8D9EA8;
   color: #8D9EA8;
+  opacity: 80%;
+
+}
+
+.bblue_space {
+
+  position: absolute;
+  top: 75% ;
+  width: 100%;
+  height: 15%;
+  background-color:#899fa9;
+  color: #899fa9;
   opacity: 80%;
 
 }
@@ -1570,7 +1600,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 #bio_em_text{
-  top: 55%;
+  top: 42%;
   width: 50%;
 }
 #emul_divv{

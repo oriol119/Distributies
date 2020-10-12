@@ -484,9 +484,9 @@ align-items: center; }
 
   position: absolute;
   top: 75%;
-  left: 41.5%;
+  left: 50%;
   border: none;
-
+  margin-left: -125px;
   cursor: pointer;
   width: 250px;
   height: 45px;

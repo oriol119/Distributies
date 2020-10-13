@@ -1,4 +1,11 @@
-
+$(window).resize(function(){
+  if $(window).width() > 550)
+	{
+  $(".primera_columna2").html(function (i, html) {
+    return html.replace(/&nbsp;/g, '');
+  });
+}
+});
 
 
 function changeStateMenu(){

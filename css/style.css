@@ -2144,6 +2144,7 @@ ul {
 
   left: 10%;
   width: 80%;
+  top: 84px;
 }
 
 .subtext-div-who {
@@ -2229,12 +2230,15 @@ ul {
 
   #oliva {
     transform: rotate(270deg);
+    width: 150px;
+    top: 77%;
   }
   #textured {
     transform: rotate(270deg);
   }
   #fixers {
     transform: rotate(270deg);
+    width: 150px;
   }
   #emulsifiers {
     transform: rotate(270deg);
@@ -2514,8 +2518,7 @@ min-width: 100vw; min-height: 150vh;
 
 #menu-round {
   transform: scale(0.7);
-  right: 100px;
-  top: 20px;
+  
 }
 
 

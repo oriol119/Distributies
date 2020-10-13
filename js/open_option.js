@@ -113,10 +113,14 @@ $('#option1').click(function(){
 	document.getElementById('side_option3').style.paddingRight= '10px';
 
 	document.getElementById('side_option4').style.paddingRight= '10px';
+	
+	if($(window).width() < 800)
+	{
+	$('#side_options').animate({position:"relative",left:"50vw", top: "515vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
+	} else {
+		$('#side_options').animate({position:"relative",left:"50vw", top: "500vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
 
-
-	$('#side_options').animate({position:"relative",left:"50vw", top: "500vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
-
+	}
 	// /mobile
 	document.getElementById("side_option5").innerHTML = "";
 	document.getElementById("side_option1").style.visibility = 'visible';
@@ -249,9 +253,13 @@ $('#option2').click(function(){
 
 	document.getElementById('side_option4').style.paddingRight= '10px';
 
+	if($(window).width() < 800)
+	{
+	$('#side_options').animate({position:"relative",left:"50vw", top: "515vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
+	} else {
+		$('#side_options').animate({position:"relative",left:"50vw", top: "500vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
 
-	$('#side_options').animate({position:"relative",left:"50%", top: "500%", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
-
+	}
 	// /mobile
 
 	document.getElementById("back-btn").style.backgroundImage = "url('IMG/boto_enrera_groc.png')";
@@ -325,9 +333,13 @@ $('#option3').click(function(){
 
 	document.getElementById('side_option4').style.paddingRight= '10px';
 
+	if($(window).width() < 800)
+	{
+	$('#side_options').animate({position:"relative",left:"50vw", top: "515vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
+	} else {
+		$('#side_options').animate({position:"relative",left:"50vw", top: "500vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
 
-	$('#side_options').animate({position:"relative",left:"50%", top: "500%", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
-
+	}
 	// /mobile
 
 	$( "#option3" ).addClass( "clear-photo" );
@@ -427,9 +439,13 @@ $('#option4').click(function(){
 
 	document.getElementById('side_option4').style.paddingRight= '10px';
 
+	if($(window).width() < 800)
+	{
+	$('#side_options').animate({position:"relative",left:"50vw", top: "515vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
+	} else {
+		$('#side_options').animate({position:"relative",left:"50vw", top: "500vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
 
-	$('#side_options').animate({position:"relative",left:"50%", top: "500%", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
-
+	}
 	// /mobile
 
 

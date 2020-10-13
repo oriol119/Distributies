@@ -1156,6 +1156,7 @@ cursor: default;
   position: relative;
   top: 170px;
   left: 10%;
+  width: 80%;
   font-family: "Footer-titles";
   font-size: 25.45pt;
   color: white;
@@ -2282,6 +2283,7 @@ ul {
     margin-top: -20px;
     margin-left: -20px;
   }
+ 
 }
 
 @media screen and (max-width: 560px){
@@ -2355,7 +2357,7 @@ ul {
     top: 5%;
   }
   .text-div-who{
-    top: 10%;
+    top: 12%;
   }
   #content_who{
     height: 98%;
@@ -2509,6 +2511,13 @@ min-width: 100vw; min-height: 150vh;
 #footer{
   height: 80vh;
 }
+
+#menu-round {
+  transform: scale(0.7);
+  right: 100px;
+  top: 20px;
+}
+
 
 #p1{
   

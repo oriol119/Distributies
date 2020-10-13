@@ -2,7 +2,8 @@
 #arrow1 {
   position: absolute;
   top: 94%;
-  left: 45%;
+  left: 50%;
+  margin-left: -45px;
   width: 90px;
   height: 90px;
   -moz-border-radius: 50%;
@@ -74,7 +75,9 @@ div.arrow {
 #arrow2 {
   position: absolute;
   top: 94%;
-  left: 45%;
+  margin-left: -45px;
+  left: 50%;
+  
   width: 90px;
   height: 90px;
   -moz-border-radius: 50%;

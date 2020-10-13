@@ -509,6 +509,7 @@ align-items: center; }
   position: absolute; width: 230px; height: 40px; left: 80vw; top: 375%; opacity: 0.7; 
 }
 
+
 .portfolio{
 
   position: absolute;
@@ -1900,7 +1901,15 @@ top:115%; right: 5%; width: 70px;
   top: 8%
 }
 
+#mantecas_resp{
 
+  top:5%; background-color: #8D9EA8; height: 53%;
+}
+
+#frase_mantecas {
+
+  font-family: 'Title'; top: 51px; left: 21%; position: relative; font-size: 29pt; color: #959C7F;
+}
 
 /*--//FOOTER----------------------------->*/
 /*--//FOOTER----------------------------->*/
@@ -2041,6 +2050,15 @@ ul {
     width: 120vw;
   }
 
+  #btn_portf{
+  top: 80%;
+  }
+
+  #tabla_mantecas {
+    
+    position: absolute; left:13%; top: 155%; width: 90%;
+
+  }
 
 
 
@@ -2566,5 +2584,32 @@ min-width: 100vw; min-height: 150vh;
 #text_div-contact {
   top: 35%;
 }
+
+#mantecas_resp{
+
+  top:5%; background-color: #8D9EA8; height: 75%;
+}
+
+#btn_portf{
+  top: 86%;
+  left: 10%;
+  }
+
+  
+  #tabla_mantecas {
+    
+    position: absolute; left:2%; top: 155%; width: 120%;
+
+  }
+
+  #frase_mantecas {
+
+   top: 100px; left: 7%;  font-size: 25pt; 
+  }
+
+  #close_mantecas{
+
+    top:110%; width: 60px;
+  }
 
 }

@@ -14,22 +14,45 @@ function changeStateMenu(){
 
 
 function openMenu(){
+
+  if($(window).width() > 550)
+	{
   setTimeout(function(){  $('#list_round').css("font-size", "2vw"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
-    $('#menu-round').animate({width:"50vw", height:"50vw", top:'4.5vh', right:'25%'}, 600);
+    $('#menu-round').animate({width:"50vw", height:"50vw",top: '50vh',
+    marginTop: '-25vw',
+    right: '50vw',
+    marginRight: '-25vw'}, 600);
     
    
     setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 600);
 
     $('#list_round').css("display", "block");
     $('#list_round').css("margin", "auto");
+  }
+  else {
+    setTimeout(function(){  $('#list_round').css("font-size", "2vw"); }, 550);
+    document.getElementById("menu-txt").style.display = "none";
+
+    
+    $('#menu-round').animate({width:"50vh", height:"50vh",top: '50vh',
+    marginTop: '-25vh',
+    right: '50vw',
+    marginRight: '-10vh'}, 600);
+    
+   
+    setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 600);
+
+    $('#list_round').css("display", "block");
+    $('#list_round').css("margin", "auto");
+  }
 }
 
 function closeMenu(){
    
-  $('#menu-round').animate({width:"100px", height:"100px", top:'25px', right:'50px'}, 600);
+  $('#menu-round').animate({width:"100px", height:"100px", top:'25px', right:'50px',   margin:"0"}, 600);
   $('#close-btn').css( 'display','none');
   $('#list_round').css("font-size", "0px");
   $('#list_round').css("display", "none");

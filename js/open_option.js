@@ -115,7 +115,7 @@ $('#option1').click(function(){
 	document.getElementById('side_option4').style.paddingRight= '10px';
 
 
-	$('#side_options').animate({position:"relative",left:"50%", top: "500%", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
+	$('#side_options').animate({position:"relative",left:"50vw", top: "500vh", marginLeft:"-190px", marginTop:"-150px",height:"380px", width:"380px"}, 600);
 
 	// /mobile
 	document.getElementById("side_option5").innerHTML = "";

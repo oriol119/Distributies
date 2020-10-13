@@ -2238,7 +2238,7 @@ ul {
   }
   #fixers {
     transform: rotate(270deg);
-    width: 150px;
+    
   }
   #emulsifiers {
     transform: rotate(270deg);
@@ -2548,6 +2548,22 @@ min-width: 100vw; min-height: 150vh;
   top:230px;
 
 }
+#resp_log2{
+  transform: scale(0.7);
+}
+#text-who-resp {
+  font-size: 20px;
+}
 
+#subtext-resp {
+  top: 27%;
+}
+
+#text_contact {
+  font-size:18pt;
+}
+#text_div-contact {
+  top: 35%;
+}
 
 }

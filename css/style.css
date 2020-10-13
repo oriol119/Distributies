@@ -504,7 +504,7 @@ align-items: center; }
 
 #page{
 
-  position: absolute; width: 230px; height: 40px; left: 80vw; top: 190%; opacity: 0.7; 
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 375%; opacity: 0.7; 
 }
 
 .portfolio{
@@ -1842,7 +1842,7 @@ textarea:focus, input:focus, input[type]:focus {
 top:115%; right: 5%; width: 70px; 
 }
 
-#ace_vege {
+.ace_vege {
   font-family: 'Title'; top: 51px; left: 21%; position: relative; font-size: 29pt; color: #959C7F;
 
 }
@@ -1851,6 +1851,48 @@ top:115%; right: 5%; width: 70px;
   position: absolute; top: 127%; right: 14%; width: 160px;
 }
 
+#primera_columna {
+
+  position: absolute; height: 50%; width: 20%; top: 40%; left: 33%;
+}
+
+#primera_columna2 {
+
+  font-size: 12pt; font-family: 'Text';
+
+}
+
+
+#segunda_columna{
+
+  position: absolute; height: 50%; width: 20%; top: 40%; left: 43%;
+}
+
+.segunda_columna2{
+
+  padding-top: 1; font-size: 15px;
+
+}
+
+#tercera_columna {
+
+  position: absolute; height: 50%; width: 33%; top: 40%; left: 50%;
+}
+
+#tercera_columna2 {
+
+  font-size: 11pt; font-family: 'Footer-titles';
+
+}
+
+#somos_resp {
+  top: 7%; left:31% ;
+
+}
+
+#materias{
+  top: 8%
+}
 
 
 /*--//FOOTER----------------------------->*/
@@ -2327,16 +2369,18 @@ min-width: 100vw; min-height: 150vh;
 }
 
 #page {
+  margin-top: 10%;
   top: 240% ;
   left:55%;
+  
 }
 #close_aceites{
 
-  top:110%;
+  top:110%; width: 60px;
 }
 
-#ace_vege {
-  top: 125%; left: 10%; position: absolute; font-size: 29pt; color: #959C7F;
+.ace_vege {
+  top: 125%; left: 10%; position: absolute; font-size: 25pt; 
 
 }
 #imagen_aceites {
@@ -2344,5 +2388,51 @@ min-width: 100vw; min-height: 150vh;
 }
 
 
+
+#somos_responsive {
+
+  font-size: 20px; top: 20%; width: 80%;
+}
+
+#somos_resp {
+  top: 15%; left:5% ; width: 90%
+
+}
+
+#primera_columna {
+
+  height: 50%; width: 20%; top: 39%; left: 5%;
+}
+
+
+
+#tercera_columna {
+
+ height: 50%; width: 55%; top: 39%; left:40%;
+}
+
+#primera_columna2 {
+
+  font-size: 10pt;
+}
+
+.segunda_columna2{
+  font-size: 9pt;
+
+
+}
+
+#tercera_columna2{
+
+  font-size: 9pt;
+}
+
+#materias {
+
+  top: 8%;
+  left: 5%;
+  width: 60%;
+
+}
 
 }

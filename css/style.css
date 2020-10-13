@@ -1861,7 +1861,7 @@ top:115%; right: 5%; width: 70px;
   position: absolute; height: 50%; width: 20%; top: 40%; left: 33%;
 }
 
-#primera_columna2 {
+.primera_columna2 {
 
   font-size: 12pt; font-family: 'Text';
 
@@ -1898,6 +1898,7 @@ top:115%; right: 5%; width: 70px;
 #materias{
   top: 8%
 }
+
 
 
 /*--//FOOTER----------------------------->*/
@@ -2448,7 +2449,7 @@ min-width: 100vw; min-height: 150vh;
  height: 50%; width: 55%; top: 39%; left:40%;
 }
 
-#primera_columna2 {
+.primera_columna2 {
 
   font-size: 10pt;
 }
@@ -2508,5 +2509,33 @@ min-width: 100vw; min-height: 150vh;
 #footer{
   height: 80vh;
 }
+
+#p1{
+  
+  position: absolute;
+  top:0%;
+}
+
+#p2{
+
+  position: absolute;
+  top: 24%;
+
+}
+
+#p3{
+
+  position: absolute;
+  top:52%;
+
+}
+
+#p4{
+
+  position: absolute;
+  top:76%;
+
+}
+
 
 }

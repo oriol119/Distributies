@@ -2452,7 +2452,7 @@ min-width: 100vw; min-height: 150vh;
 
 #tercera_columna {
 
- height: 50%; width: 55%; top: 39%; left:40%;
+ height: 46%; width: 58%; top: 39%; left:36%;
 }
 
 .primera_columna2 {
@@ -2529,23 +2529,23 @@ min-width: 100vw; min-height: 150vh;
 }
 
 #p2{
-
+  
   position: absolute;
-  top: 24%;
+  top: 73px;
 
 }
 
 #p3{
-
+  
   position: absolute;
-  top:52%;
+  top:158px;
 
 }
 
 #p4{
-
+  
   position: absolute;
-  top:76%;
+  top:230px;
 
 }
 

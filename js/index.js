@@ -204,47 +204,6 @@ function scroll2() {
  }
 
 
-// MIRAR SCROLL (NO FUNCIONA) IMPORTANT
- $(window).scroll(function(event) {
-    var scrollTop = $(window).scrollTop();
-    
-
-    if (scrollTop > 94) {
-        $('.zoom_img').css({
-            width: (100 + scroll/5) + "%"
-        })
-    } else if (scrollTop > 885){
-        $('#go_top').fadeOut(100);
-        }
-  });
-
-//FUNCIONA PERO HAARIA D'ANAR L'ALTRE
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    $(".zoom_img").css({
-        width: (100 + scroll/5) + "%"
-    })
-})
-
-
-/*
-$(window).scroll(function() {
-
-   
-
-    if($(window).scrollTop() >= 50){
-        $("#who-div").addClass('transition');
-        $("#who-div").removeClass('transition2');
-
-    } else {
-        $("#who-div").removeClass('transition');
-        $("#who-div").addClass('transition2');
-    }
-    
-
-  });
-  */
-
 
   /*SLIDER*/
 

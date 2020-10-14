@@ -876,10 +876,7 @@ position: relative;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
+  
   
  }
 
@@ -1171,7 +1168,7 @@ cursor: default;
   z-index: 10;
   position: absolute;
   left: -60vh;
-  top: 400vh; 
+  top: 0vh; 
 cursor: default;
 }
 

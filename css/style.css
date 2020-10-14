@@ -1152,7 +1152,7 @@ cursor: default;
   z-index: 10;
   position: absolute;
   left: -60vh;
-  top: 400vh; 
+  top: 0; 
 cursor: default;
 }
 
@@ -2541,8 +2541,8 @@ min-width: 100vw; min-height: 150vh;
 
 #captcha {
   transform: scale(0.7);
-  margin-left: -221px;
-  left: 50%;
+  
+  left: 5%;
   padding: 0;
   
 }
@@ -2572,7 +2572,7 @@ min-width: 100vw; min-height: 150vh;
   margin-left: -115px;
 }
 #footer{
-  height: 80vh;
+  height: 85vh;
 }
 
 #menu-round {
@@ -2669,6 +2669,13 @@ min-width: 100vw; min-height: 150vh;
   margin-top: -20px;
   margin-left: -20px;
   border-width: 10px;
+}
+
+#menu-round {
+  left: 55%;
+}
+#contact {
+  height: 110vh;
 }
 
 }

@@ -1140,7 +1140,7 @@ cursor: default;
 #side_options {
   background-color: #BCAE72;
   height: 101vh;
-  width: 30vw;
+  width: 300px;
   z-index: 10;
   position: absolute;
   left: -60vh;
@@ -1175,7 +1175,6 @@ cursor: default;
   left: 25%;
   
   padding-right: 170px;
-  padding-left: 3%;
   padding-top: 3px;
   padding-bottom: 3px;
 
@@ -1265,6 +1264,7 @@ cursor: default;
 
 .side_li {
     width: 80%;
+    margin: 0;
 }
 
 #emulsionantes_div {

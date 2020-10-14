@@ -1,12 +1,38 @@
-// $(window).resize(function(){
-//   if $(window).width() > 550)
-// 	{
-//   $(".primera_columna2").html(function (i, html) {
-//     return html.replace(/&nbsp;/g, '');
-//   });
-//   $('.primera_columna2').html($(this).html().replace(/&nbsp;/gi,''));
-// }
-// });
+window.onload = function() {
+  if ($(window).width() < 700)
+	{
+    document.getElementById("p1").innerHTML = "Proximidad |";
+    document.getElementById("p2").innerHTML = "Flexibilidad |";
+    document.getElementById("p3").innerHTML = "Competividad |";
+    document.getElementById("p4").innerHTML = "Trazabilidad |";
+
+} 
+ if ($(window).width() < 600 ){
+  document.getElementById("p1").innerHTML = "Proximidad";
+    document.getElementById("p2").innerHTML = "Flexibilidad";
+  document.getElementById("p3").innerHTML = "Competividad";
+  document.getElementById("p4").innerHTML = "Trazabilidad";
+
+}
+};
+
+$(window).resize(function(){
+  if ($(window).width() < 700)
+	{
+    document.getElementById("p1").innerHTML = "Proximidad |";
+    document.getElementById("p2").innerHTML = "Flexibilidad |";
+    document.getElementById("p3").innerHTML = "Competividad |";
+    document.getElementById("p4").innerHTML = "Trazabilidad |";
+
+} 
+ if ($(window).width() < 600 ){
+  document.getElementById("p1").innerHTML = "Proximidad";
+    document.getElementById("p2").innerHTML = "Flexibilidad";
+  document.getElementById("p3").innerHTML = "Competividad";
+  document.getElementById("p4").innerHTML = "Trazabilidad";
+
+}
+});
 
 
 function changeStateMenu(){

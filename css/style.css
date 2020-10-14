@@ -510,6 +510,14 @@ align-items: center; }
   position: absolute; width: 230px; height: 40px; left: 80vw; top: 375%; opacity: 0.7; 
 }
 
+#portf_mantecas {
+
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 260%; opacity: 0.7;
+
+
+}
+
+
 .portfolio{
 
   position: absolute;
@@ -603,6 +611,15 @@ align-items: center; }
   height: 90vh;
   top: 5%;
   background-color: #CCBA76;
+  color: white; 
+opacity: 0.9;}
+
+#content_materias {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  top: 5%;
+  background-color: #959C7F;
   color: white; 
 opacity: 0.9;}
 
@@ -1145,7 +1162,7 @@ cursor: default;
   z-index: 10;
   position: absolute;
   left: -60vh;
-  top: 0; 
+  top: 400vh; 
 cursor: default;
 }
 
@@ -1889,12 +1906,39 @@ top:115%; right: 5%; width: 70px;
 
 #tercera_columna {
 
-  position: absolute; height: 50%; width: 33%; top: 40%; left: 50%;
+  position: absolute; height: 50%; width: 33%; top: 40%; left: 48%;
 }
 
 #tercera_columna2 {
 
-  font-size: 11pt; font-family: 'Footer-titles';
+  margin-top: 1%;
+  position: relative;
+  font-size: 11pt;
+  font-family: 'Footer-titles';
+
+}
+#tercera_columna3 {
+
+  position: relative;
+  margin-top: 7%;
+  font-size: 11pt;
+  font-family: 'Footer-titles';
+
+}
+#tercera_columna4 {
+
+  position: relative;
+  margin-top: 7%;
+  font-size: 11pt;
+  font-family: 'Footer-titles';
+
+}
+#tercera_columna5 {
+
+  position: relative;
+  margin-top: 13%;
+  font-size: 11pt;
+  font-family: 'Footer-titles';
 
 }
 
@@ -1908,7 +1952,20 @@ top:115%; right: 5%; width: 70px;
   top: 8%
 }
 
+#mantecas_resp{
 
+  top:5%; background-color: #8D9EA8; height: 53%;
+}
+
+#frase_mantecas {
+
+  font-family: 'Title'; top: 51px; left: 21%; position: relative; font-size: 29pt; color: #959C7F;
+}
+
+#frutos-secos-almendras {
+
+  position: absolute; top: 135%; right: 14%; width: 200px;
+}
 
 /*--//FOOTER----------------------------->*/
 /*--//FOOTER----------------------------->*/
@@ -2054,6 +2111,20 @@ ul {
     width: 120vw;
   }
 
+  #btn_portf{
+  top: 80%;
+  }
+
+  #tabla_mantecas {
+    
+    position: absolute; left:13%; top: 155%; width: 90%;
+
+  }
+
+  #section_mantecas{
+
+    min-width: 100vw; min-height: 165vh;
+  }
 
 
 
@@ -2123,7 +2194,12 @@ ul {
 
 
 
-@media screen and (max-width: 1100px )  {
+@media screen and (max-width: 1110px )  {
+
+.BR_1000{
+
+  display: none;
+}
 
   .logo_content{
     display: none;
@@ -2137,7 +2213,36 @@ ul {
  .title-div-who{
 
   top: 10%;
+}
+
+#tercera_columna2 {
+
+  margin-top: 3%;
+  font-size: 11pt;
+  }
+
+#tercera_columna3 {
+
  
+  margin-top: 6%;
+  font-size: 11pt;
+ 
+
+}
+#tercera_columna4 {
+
+  
+  margin-top: 8%;
+  font-size: 11pt;
+  
+
+}
+#tercera_columna5 {
+
+  margin-top: 11%;
+  font-size: 11pt;
+
+
 }
 
 .title-div-news{
@@ -2146,7 +2251,10 @@ ul {
  
 }
 
-
+#materias{
+  top: 8%;
+  left: 5%;
+}
 
 .text-div-who {
 
@@ -2190,11 +2298,11 @@ ul {
 
 #primera_columna {
 
-  height: 50%;  left: 5%;
+  height: 50%;  left: 12%;
 }
 #tercera_columna {
 
-  height: 46%; width: 58%; top: 39%; left:36%;
+  height: 40%; width: 58%; top: 39%; left:36%;
  }
  
 
@@ -2229,7 +2337,62 @@ ul {
   margin-left: -210px;
   
 }
+
+#tercera_columna {
+
+  position: absolute; height: 70%; width: 83%; top: 31%; left: 5%;
+}
+
+#tercera_columna2 {
+
+  margin-top: 30px;
+  font-size: 11pt;
+  left: 0%;
+  }
+
+#tercera_columna3 {
+
+  margin-top: 50px;
+  font-size: 11pt;
+  
+}
+#tercera_columna4 {
+
+  margin-top: 50px;
+  font-size: 11pt;
  
+}
+#tercera_columna5 {
+
+  margin-top:70px;
+  font-size: 11pt;
+}
+
+#p1{
+  margin-top: 70px;
+  
+}
+
+
+#p2{
+  margin-top: 60px;
+  
+}
+
+#p3 {
+  margin-top: 70px;
+}
+
+#p4 {
+  margin-top: 10px;
+}
+
+#primera_columna {
+
+  height: 60%;  left: 5%; top: 20%;
+}
+
+
  }
 
 @media screen and (max-width: 800px) {
@@ -2252,6 +2415,8 @@ ul {
 
 
   }
+
+ 
 
   .subtext{
     font-size: 14px;
@@ -2470,6 +2635,7 @@ height: 70%;
 #portfolio_aceites{
 
   left: 10%;
+  top: 80%;
 }
 
 #section_aceites{
@@ -2481,6 +2647,19 @@ min-width: 100vw; min-height: 150vh;
   top: 240% ;
   left:55%;
   
+}
+
+#section_mantecas{
+
+  min-width: 100vw; min-height: 100vh;
+}
+
+#portf_mantecas {
+
+  margin-top: 10%;
+  top: 190% ;
+  left:55%;
+
 }
 #close_aceites{
 
@@ -2495,7 +2674,9 @@ min-width: 100vw; min-height: 150vh;
   top: 137%; left: 10%; width: 100px;
 }
 
-
+#primera_columna {
+  top: 190px;
+}
 
 
 
@@ -2518,6 +2699,18 @@ min-width: 100vw; min-height: 150vh;
 
   font-size: 9pt;
 }
+#tercera_columna3{
+
+  font-size: 9pt;
+}
+#tercera_columna4{
+
+  font-size: 9pt;
+}
+#tercera_columna5{
+
+  font-size: 9pt;
+}
 
 #materias {
 
@@ -2530,8 +2723,8 @@ min-width: 100vw; min-height: 150vh;
 
 #captcha {
   transform: scale(0.7);
-  
-  left: 5%;
+  margin-left: -221px;
+  left: 50%;
   padding: 0;
   
 }
@@ -2561,7 +2754,11 @@ min-width: 100vw; min-height: 150vh;
   margin-left: -115px;
 }
 #footer{
+<<<<<<< HEAD
   height: 110vh;
+=======
+  height: 80vh;
+>>>>>>> c83066c9a2c10de27087c93dbfe47087a9402573
 }
 
 #menu-round {
@@ -2616,6 +2813,40 @@ min-width: 100vw; min-height: 150vh;
 #text_div-contact {
   top: 35%;
 }
+
+#mantecas_resp{
+
+  top:5%; background-color: #8D9EA8; height: 75%;
+}
+
+#btn_portf{
+  top: 86%;
+  left: 10%;
+  }
+
+  
+  #tabla_mantecas {
+    
+    position: absolute; left:2%; top: 145%; width: 120%;
+
+  }
+
+  #frase_mantecas {
+
+   top: 100px; left: 7%;  font-size: 25pt; 
+  }
+
+  #close_mantecas{
+
+    top:110%; width: 60px;
+  }
+
+  #frutos-secos-almendras {
+
+     top: 135%; right:  5px; width: 100px;
+  }
+
+
 #close-btn {
   top: 37vh;
   left: 22vw;
@@ -2625,6 +2856,7 @@ min-width: 100vw; min-height: 150vh;
   margin-left: -20px;
   border-width: 10px;
 }
+<<<<<<< HEAD
 #contact {
   height: 110vh;
 }
@@ -2653,5 +2885,7 @@ min-width: 100vw; min-height: 150vh;
   top: 103%;
   left: 70%;
 }
+=======
+>>>>>>> c83066c9a2c10de27087c93dbfe47087a9402573
 
 }

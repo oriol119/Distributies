@@ -2578,5 +2578,13 @@ min-width: 100vw; min-height: 150vh;
 #text_div-contact {
   top: 35%;
 }
-
+#close-btn {
+  top: 37vh;
+  left: 22vw;
+  height: 50px;
+  width: 50px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border-width: 10px;
+}
 }

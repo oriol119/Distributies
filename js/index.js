@@ -51,7 +51,7 @@ function openMenu(){
 
   if($(window).width() > 550)
 	{
-  setTimeout(function(){  $('#list_round').css("font-size", "2vw"); }, 550);
+  setTimeout(function(){  $('#list_round').css("font-size", "27px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
@@ -67,7 +67,7 @@ function openMenu(){
     $('#list_round').css("margin", "auto");
   }
   else {
-    setTimeout(function(){  $('#list_round').css("font-size", "2vw"); }, 550);
+    setTimeout(function(){  $('#list_round').css("font-size", "15px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
@@ -207,7 +207,7 @@ function scroll2() {
 // MIRAR SCROLL (NO FUNCIONA) IMPORTANT
  $(window).scroll(function(event) {
     var scrollTop = $(window).scrollTop();
-    console.log("Vertical "+scrollTop);
+    
 
     if (scrollTop > 94) {
         $('.zoom_img').css({

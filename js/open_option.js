@@ -468,7 +468,7 @@ $('#option4').click(function(){
 
 	$('#option4').animate({width:"70vw", height:"100vh", left:'30%'}, 600);
 
-	$('#side_options').animate({left:"0"}, 600);
+	$('#side_options').animate({left:"0", top:'0vh'}, 600);
 
 
 	$( "#option4" ).addClass( "clear-photo" );

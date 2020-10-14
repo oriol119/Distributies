@@ -2233,6 +2233,19 @@ ul {
 
 @media screen and (max-width: 1110px )  {
 
+  #page{
+
+   left: 55%; top: 235%; margin-top: 5%; 
+  }
+  
+  #page2{
+  
+    left: 80vw; top: 175%; opacity: 0.7; 
+  }
+
+
+  
+
 
 
   #imagen_aceites {

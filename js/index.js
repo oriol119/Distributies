@@ -1,4 +1,38 @@
+window.onload = function() {
+  if ($(window).width() < 700)
+	{
+    document.getElementById("p1").innerHTML = "Proximidad |";
+    document.getElementById("p2").innerHTML = "Flexibilidad |";
+    document.getElementById("p3").innerHTML = "Competividad |";
+    document.getElementById("p4").innerHTML = "Trazabilidad |";
 
+} 
+ if ($(window).width() < 600 ){
+  document.getElementById("p1").innerHTML = "Proximidad";
+    document.getElementById("p2").innerHTML = "Flexibilidad";
+  document.getElementById("p3").innerHTML = "Competividad";
+  document.getElementById("p4").innerHTML = "Trazabilidad";
+
+}
+};
+
+$(window).resize(function(){
+  if ($(window).width() < 700)
+	{
+    document.getElementById("p1").innerHTML = "Proximidad |";
+    document.getElementById("p2").innerHTML = "Flexibilidad |";
+    document.getElementById("p3").innerHTML = "Competividad |";
+    document.getElementById("p4").innerHTML = "Trazabilidad |";
+
+} 
+ if ($(window).width() < 600 ){
+  document.getElementById("p1").innerHTML = "Proximidad";
+    document.getElementById("p2").innerHTML = "Flexibilidad";
+  document.getElementById("p3").innerHTML = "Competividad";
+  document.getElementById("p4").innerHTML = "Trazabilidad";
+
+}
+});
 
 
 function changeStateMenu(){
@@ -17,7 +51,7 @@ function openMenu(){
 
   if($(window).width() > 550)
 	{
-  setTimeout(function(){  $('#list_round').css("font-size", "2vw"); }, 550);
+  setTimeout(function(){  $('#list_round').css("font-size", "27px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
@@ -33,7 +67,7 @@ function openMenu(){
     $('#list_round').css("margin", "auto");
   }
   else {
-    setTimeout(function(){  $('#list_round').css("font-size", "2vw"); }, 550);
+    setTimeout(function(){  $('#list_round').css("font-size", "15px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
@@ -173,7 +207,7 @@ function scroll2() {
 // MIRAR SCROLL (NO FUNCIONA) IMPORTANT
  $(window).scroll(function(event) {
     var scrollTop = $(window).scrollTop();
-    console.log("Vertical "+scrollTop);
+    
 
     if (scrollTop > 94) {
         $('.zoom_img').css({

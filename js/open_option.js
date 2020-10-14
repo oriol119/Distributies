@@ -164,7 +164,7 @@ $('#option1').click(function(){
 	document.getElementById("side_option4").innerHTML = "Phytowax ®";
 	document.getElementById("side_option5").innerHTML = "";
 
-	$('#side_options').animate({position:"relative", top:'448.7vh',height:"100vh", width:"30vw"}, 0);
+	$('#side_options').animate({position:"absolute", top:'0',height:"100vh", width:"30vw", margin: '0'}, 0);
 	$('#side_options').animate({left:"0"}, 600);
 
 	

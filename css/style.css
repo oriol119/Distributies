@@ -1891,7 +1891,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 #close_aceites{
 
-top:115%; right: 5%; width: 70px; 
+top:15%; right: 5%; width: 70px; 
 }
 
 .ace_vege {
@@ -1900,7 +1900,7 @@ top:115%; right: 5%; width: 70px;
 }
 
 #imagen_aceites {
-  position: absolute; top: 127%; right: 14%; width: 160px;
+  position: absolute; top: 27%; right: 10%; width: 160px;
 }
 
 #primera_columna {
@@ -2666,7 +2666,7 @@ height: 70%;
 }
 
 #section_aceites{
-min-width: 100vw; min-height: 150vh;
+width: 100vw; height: 100vh;
 }
 
 #page {

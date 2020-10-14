@@ -969,17 +969,22 @@ outline: none;}
 .photo_products {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+
   filter: grayscale(100%); }
 
 .photo_products:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  
   filter: grayscale(0%); }
 
 .clear-photo {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
-  filter: grayscale(0%); }
+  -moz-filter: grayscale(0%);
+}
 /*  SIDE OPTIONS  */
 #side_options_as {
   background-color: #BCAE72;
@@ -1342,7 +1347,7 @@ cursor: pointer; }
   display: inline-block;
   position: relative;
   width: 25%;
-  height: 100%;
+  height: 100% ;
 top: 1%; }
 
 #option2 {
@@ -1891,7 +1896,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 #close_aceites{
 
-top:15%; right: 5%; width: 70px; 
+top:15%; right: 5%; width: 70px; position: absolute;
 }
 
 .ace_vege {
@@ -1991,7 +1996,7 @@ top:15%; right: 5%; width: 70px;
 
 #frutos-secos-almendras {
 
-  position: absolute; top: 135%; right: 14%; width: 200px;
+  position: absolute; top: 35%; right: 14%; width: 200px;
 }
 
 /*--//FOOTER----------------------------->*/
@@ -2150,7 +2155,7 @@ ul {
 
   #section_mantecas{
 
-    min-width: 100vw; min-height: 165vh;
+    min-width: 100vw; min-height: 170vh;
   }
 
 
@@ -2690,16 +2695,14 @@ width: 100vw; height: 100vh;
 }
 #close_aceites{
 
-  top:110%; width: 60px;
+  top:10%; width: 60px;
 }
 
 .ace_vege {
-  top: 125%; left: 10%; position: absolute; font-size: 25pt; 
+  top: 25%; left: 10%; position: absolute; font-size: 25pt; 
 
 }
-#imagen_aceites {
-  top: 137%; left: 10%; width: 100px;
-}
+
 
 #primera_columna {
   top: 190px;

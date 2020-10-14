@@ -1,11 +1,12 @@
-$(window).resize(function(){
-  if $(window).width() > 550)
-	{
-  $(".primera_columna2").html(function (i, html) {
-    return html.replace(/&nbsp;/g, '');
-  });
-}
-});
+// $(window).resize(function(){
+//   if $(window).width() > 550)
+// 	{
+//   $(".primera_columna2").html(function (i, html) {
+//     return html.replace(/&nbsp;/g, '');
+//   });
+//   $('.primera_columna2').html($(this).html().replace(/&nbsp;/gi,''));
+// }
+// });
 
 
 function changeStateMenu(){

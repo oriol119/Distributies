@@ -45,6 +45,7 @@ h3 {
   font-size: 40px;
   
  }
+ button:focus {outline:none;}
 
 .header {
   height: 120px;
@@ -162,7 +163,7 @@ h3 {
     padding:0px 4px;
     display: block;
     font-size: 20px;
-    font-family: 'Light';
+    font: 'Light';
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -406,7 +407,7 @@ align-items: center; }
 #cookies_div{
 
   position: absolute;
-  bottom: -4%;
+  bottom: -6%;
   left: 50%;
   margin-left: -160px ;
   width: 320px;
@@ -1092,8 +1093,8 @@ cursor: default;
   width: 64%;
   margin-left: 100px;
   color: white;
-  font-size: 11pt;
-  font-style: 'Light';
+  font: 11pt 'Light';
+
   line-height: 17px;
   
 }
@@ -1140,7 +1141,7 @@ cursor: default;
 #side_options {
   background-color: #BCAE72;
   height: 101vh;
-  width: 300px;
+  width: 30vw;
   z-index: 10;
   position: absolute;
   left: -60vh;
@@ -1173,8 +1174,7 @@ cursor: default;
   cursor: pointer;
   text-decoration:none;
   left: 25%;
-  
-  padding-right: 170px;
+  padding-right: 10vw;
   padding-top: 3px;
   padding-bottom: 3px;
 
@@ -1192,7 +1192,8 @@ cursor: default;
   top: 12px;
   text-decoration:none;
   left: 25%;
-  padding-right: 170px;
+  padding-right: 10vw;
+
   padding-left: 3%;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1211,7 +1212,8 @@ cursor: default;
   top: 24px;
   text-decoration:none;
   left: 25%;
-  padding-right: 170px;
+  padding-right: 10vw;
+
   padding-left: 3%;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1231,7 +1233,8 @@ cursor: default;
   top: 36px;
   text-decoration:none;
   left: 25%;
-  padding-right: 170px;
+  padding-right: 10vw;
+
   padding-left: 3%;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1633,9 +1636,10 @@ textarea:focus, input:focus, input[type]:focus {
 .close_all{
 
   position: absolute;
-  top: 1.5%;
+  top: 2.5%;
   width: 4%;
-  right: 48%;
+  left: 50%;
+  margin-left: -2%;
   z-index: 2;
   cursor: pointer;
 }
@@ -1920,7 +1924,12 @@ section .section-title {
 
 #footer {
   background: #959C7F !important; }
-
+  #logo_footer {
+    height: 110px; width: 420px; position: absolute;right: 20%; margin-right:-84px;top:65%;
+  }
+#footer_lkd {
+  height: 27px; width: 27px; position: absolute; top: 44%; right: 18.5%; margin-left: -13.5px;
+}
 #footer h5 {
   padding-left: 10px;
   border-left: 3px solid #eeeeee;
@@ -2213,10 +2222,12 @@ ul {
   top: 40%;
 }
 #footer_lkd{
-  display: none;
+  top: 34%;
 }
 #logo_footer{
-  display: none;
+  left: 50%;
+  margin-left: -210px;
+  
 }
  
  }
@@ -2257,17 +2268,44 @@ ul {
 
   #oliva {
     transform: rotate(270deg);
-    
+    width: 190px;
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+
+bottom: 125px;
+
+
   }
   #textured {
     transform: rotate(270deg);
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+   
+
   }
   #fixers {
     transform: rotate(270deg);
-    
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+
+bottom: 175px;
+
+
   }
   #emulsifiers {
     transform: rotate(270deg);
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+
+
+
   }
   #content_who{
     height:90%;
@@ -2523,7 +2561,7 @@ min-width: 100vw; min-height: 150vh;
   margin-left: -115px;
 }
 #footer{
-  height: 85vh;
+  height: 110vh;
 }
 
 #menu-round {
@@ -2587,10 +2625,33 @@ min-width: 100vw; min-height: 150vh;
   margin-left: -20px;
   border-width: 10px;
 }
-#menu-round {
-  left: 55%;
-}
 #contact {
   height: 110vh;
 }
+
+
+.contact_inputs{
+  width: 75%;
+  margin-left: -37.5vw;
+}
+#message {
+  width: 75%;
+  margin-left: -37.5vw;
+
+}
+::-webkit-input-placeholder { color: white;  font-family: "Text-choices"; font-size: 12px; } 
+
+::-moz-placeholder { color: white;  font-family: "Text-choices"; font-size: 12px;} 
+
+::-ms-input-placeholder { color: white;  font-family: "Text-choices"; font-size:12px;}
+
+#logo_footer {
+  top: 85vh;
+  transform: scale(0.7);
+}
+#footer_lkd{
+  top: 103%;
+  left: 70%;
+}
+
 }

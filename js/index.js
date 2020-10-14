@@ -200,7 +200,7 @@ function scroll1() {
 
 
 function scroll2() {
-    document.getElementById('container_products_sophim').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    document.getElementById('option1_sophim').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  }
 
 
@@ -435,15 +435,9 @@ $('#button').click(function(){
     $(location).attr('href', 'mailto:Damelis.%20Lopez<damelis.lopez@distributies.com>?subject='
                          + encodeURIComponent('DISTRIBUTIES WEB MAIL')
                          + "&body=" 
-                         + encodeURIComponent("COMPANY:"+$('#company').val()+
-                         "\n\nCOMPANY WEB: "+$('#company_web').val()+
-                         "\n\nCITY WEB: "+$('#city').val()
-                         +"\n\nADRESS: "+$('#adress').val()
-                         +"\n\nPOSTAL CODE: "+$('#postal_code').val()
-                         +"\n\nCOUNTRY: "+$('#country').val()
+                         + encodeURIComponent("COMPANY:"+$('#company').val()
                          +"\n\nNAME: "+$('#name').val()
                          +"\n\nE-MAIL: "+$('#e-mail').val()
-                         +"\n\nPHONE NUMBER: "+$('#phone_number').val()
                          +"\n\nMENSAJE:\n "+$('#message').val())
 );
 

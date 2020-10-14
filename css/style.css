@@ -507,7 +507,12 @@ align-items: center; }
 
 #page{
 
-  position: absolute; width: 230px; height: 40px; left: 80vw; top: 375%; opacity: 0.7; 
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 275%; opacity: 0.7; 
+}
+
+#page2{
+
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 155%; opacity: 0.7; 
 }
 
 #portf_mantecas {
@@ -1891,10 +1896,10 @@ textarea:focus, input:focus, input[type]:focus {
 
 #section_aceites {
 
-  min-width: 100vw; min-height: 285vh;  
+  min-width: 100vw; min-height: 290vh;  
 
 }
-#close_aceites{
+.close_aceites{
 
 top:15%; right: 5%; width: 70px; position: absolute;
 }
@@ -2671,15 +2676,22 @@ height: 70%;
 }
 
 #section_aceites{
-width: 100vw; height: 100vh;
+min-width: 100vw; min-height: 170vh;
 }
 
 #page {
   margin-top: 10%;
-  top: 240% ;
+  top: 140% ;
   left:55%;
   
 }
+
+#page2{
+
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 55%; opacity: 0.7; 
+}
+
+
 
 #section_mantecas{
 
@@ -2693,7 +2705,7 @@ width: 100vw; height: 100vh;
   left:55%;
 
 }
-#close_aceites{
+.close_aceites{
 
   top:10%; width: 60px;
 }
@@ -2870,7 +2882,7 @@ width: 100vw; height: 100vh;
 
   #frutos-secos-almendras {
 
-     top: 135%; right:  5px; width: 100px;
+     top: 45%; right:  8%; width: 80px;
   }
 
 

@@ -509,6 +509,13 @@ align-items: center; }
   position: absolute; width: 230px; height: 40px; left: 80vw; top: 375%; opacity: 0.7; 
 }
 
+#portf_mantecas {
+
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 260%; opacity: 0.7;
+
+
+}
+
 
 .portfolio{
 
@@ -1911,6 +1918,11 @@ top:115%; right: 5%; width: 70px;
   font-family: 'Title'; top: 51px; left: 21%; position: relative; font-size: 29pt; color: #959C7F;
 }
 
+#frutos-secos-almendras {
+
+  position: absolute; top: 135%; right: 14%; width: 200px;
+}
+
 /*--//FOOTER----------------------------->*/
 /*--//FOOTER----------------------------->*/
 /*--//FOOTER----------------------------->*/
@@ -2058,6 +2070,11 @@ ul {
     
     position: absolute; left:13%; top: 155%; width: 90%;
 
+  }
+
+  #section_mantecas{
+
+    min-width: 100vw; min-height: 165vh;
   }
 
 
@@ -2437,6 +2454,19 @@ min-width: 100vw; min-height: 150vh;
   left:55%;
   
 }
+
+#section_mantecas{
+
+  min-width: 100vw; min-height: 100vh;
+}
+
+#portf_mantecas {
+
+  margin-top: 10%;
+  top: 190% ;
+  left:55%;
+
+}
 #close_aceites{
 
   top:110%; width: 60px;
@@ -2598,7 +2628,7 @@ min-width: 100vw; min-height: 150vh;
   
   #tabla_mantecas {
     
-    position: absolute; left:2%; top: 155%; width: 120%;
+    position: absolute; left:2%; top: 145%; width: 120%;
 
   }
 
@@ -2610,6 +2640,11 @@ min-width: 100vw; min-height: 150vh;
   #close_mantecas{
 
     top:110%; width: 60px;
+  }
+
+  #frutos-secos-almendras {
+
+     top: 135%; right:  5px; width: 100px;
   }
 
 }

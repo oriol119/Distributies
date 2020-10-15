@@ -1172,7 +1172,7 @@ cursor: default;
   width: 30vw;
   z-index: 10;
   position: absolute;
-  left: -60vh;
+  left: -60vw;
   top: 0vh; 
 cursor: default;
 }

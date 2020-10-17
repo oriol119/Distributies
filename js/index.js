@@ -1,72 +1,180 @@
+window.onload = function() {
+  if ($(window).width() < 700)
+	{
+    document.getElementById("p1").innerHTML = "Proximidad |";
+    document.getElementById("p2").innerHTML = "Flexibilidad |";
+    document.getElementById("p3").innerHTML = "Competividad |";
+    document.getElementById("p4").innerHTML = "Trazabilidad |";
 
-$('#menu-round').click(function(){
-    setTimeout(function(){  $('#list_round').css("font-size", "40px"); }, 550);
+} 
+ if ($(window).width() < 600 ){
+  document.getElementById("p1").innerHTML = "Proximidad";
+    document.getElementById("p2").innerHTML = "Flexibilidad";
+  document.getElementById("p3").innerHTML = "Competividad";
+  document.getElementById("p4").innerHTML = "Trazabilidad";
+
+}
+};
+
+$(window).resize(function(){
+  if ($(window).width() < 700)
+	{
+    document.getElementById("p1").innerHTML = "Proximidad |";
+    document.getElementById("p2").innerHTML = "Flexibilidad |";
+    document.getElementById("p3").innerHTML = "Competividad |";
+    document.getElementById("p4").innerHTML = "Trazabilidad |";
+
+} 
+ if ($(window).width() < 600 ){
+  document.getElementById("p1").innerHTML = "Proximidad";
+    document.getElementById("p2").innerHTML = "Flexibilidad";
+  document.getElementById("p3").innerHTML = "Competividad";
+  document.getElementById("p4").innerHTML = "Trazabilidad";
+
+}
+});
+
+
+function changeStateMenu(){
+  if( $('#menu-checkbox').prop('checked') ) {
+    closeMenu();
+    $( "#menu-checkbox" ).prop( "checked", false );
+  } else {
+    openMenu();
+    
+  }
+}
+
+
+
+function openMenu(){
+
+  if($(window).width() > 550)
+	{
+  setTimeout(function(){  $('#list_round').css("font-size", "27px"); }, 550);
     document.getElementById("menu-txt").style.display = "none";
 
     
-    $('#menu-round').animate({width:"50vw", height:"50vw", top:'4.5vh', right:'25%'}, 1000);
+    $('#menu-round').animate({width:"50vw", height:"50vw",top: '50vh',
+    marginTop: '-25vw',
+    right: '50vw',
+    marginRight: '-25vw'}, 600);
     
    
-    setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 800);
+    setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 600);
 
     $('#list_round').css("display", "block");
+    $('#list_round').css("margin", "auto");
+  }
+  else {
+    setTimeout(function(){  $('#list_round').css("font-size", "15px"); }, 550);
+    document.getElementById("menu-txt").style.display = "none";
 
     
+    $('#menu-round').animate({width:"50vh", height:"50vh",top: '50vh',
+    marginTop: '-25vh',
+    right: '50vw',
+    marginRight: '-10vh'}, 600);
     
+   
+    setTimeout(function(){  $('#close-btn').css( 'display','block'); }, 600);
+
+    $('#list_round').css("display", "block");
+    $('#list_round').css("margin", "auto");
+  }
+}
+
+function closeMenu(){
+   
+  $('#menu-round').animate({width:"100px", height:"100px", top:'25px', right:'50px',   margin:"0"}, 600);
+  $('#close-btn').css( 'display','none');
+  $('#list_round').css("font-size", "0px");
+  $('#list_round').css("display", "none");
+  document.getElementById("menu-txt").style.display = "block";
+  
+}
+
+$('#menu-round').click(function(e){
+
+  if($(e.target).is("span") || $(e.target).attr("id") == "menu-txt") {
+    openMenu();
+  }
+
     
 })
 
+$('#close-btn').click(function(){
+  closeMenu();
+})
+
+
+
+
+$('.menu_options2').mouseover(function(){
+  $(this).css("color",'#959C7F');
+  $(this).css("backgroundColor",'white');
+  $(this).css("padding",'2px 20px');
+
+
+})
+$('.menu_options2').mouseout(function(){
+
+  $(this).css("backgroundColor",'#959C7F');
+  $(this).css("color",'#444428');
+ 
+
+})
 $('#product-menu').mouseover(function(){
+ 
+  $('#news-menu').css("margin-top",'150px');
+  $('#contact-menu').css("margin-top",'150px');
 
-    $('#news-menu').css("margin-top",'100px');
 
 })
-
 $('#product-menu').mouseout(function(){
 
-    $('#news-menu').css("margin-top",'25px');
+  
+   $('#news-menu').css("margin-top",'30px');
+   $('#contact-menu').css("margin-top",'30px');
 
+  
 })
 
 $('#sophim').mouseover(function(){
-
-    $('#sophim').css("filter",'grayscale(0%)');
-    $('#plus-btn').css("display",'block');
+    element = document.getElementById('sophim');
+    if (element.classList.contains('grey')){
+      $('#plus-btn').css("display",'block');
+    }
+   
 
 })
 
 $('#sophim').mouseout(function(){
 
-    $('#sophim').css("filter",'grayscale(100%)');
+    
     $('#plus-btn').css("display",'none');
 
 })
 
 $('#aloe-vera').mouseover(function(){
 
-    $('#aloe-vera').css("filter",'grayscale(0%)');
+  element = document.getElementById('sophim');
+  if (element.classList.contains('grey')){
     $('#plus-btn2').css("display",'block');
-
+  }
 
 })
 
 $('#aloe-vera').mouseout(function(){
 
-    $('#aloe-vera').css("filter",'grayscale(100%)');
+   
     $('#plus-btn2').css("display",'none');
 
 })
 
 
 
-$('#close-btn').click(function(){
-    
-    $('#menu-round').animate({width:"60px", height:"60px", top:'25px', right:'50px'}, 1000);
-    $('#close-btn').css( 'display','none');
-    $('#list_round').css("font-size", "0px");
-    $('#list_round').css("display", "none");
-    document.getElementById("menu-txt").style.display = "block";
-})
+
 
 $('#circle_arrow').click(function(){
    
@@ -77,7 +185,7 @@ $('#circle_arrow').click(function(){
 $('#circle_arrow2').click(function(){
    
     scroll2();
-
+    
 })
 
 
@@ -92,50 +200,9 @@ function scroll1() {
 
 
 function scroll2() {
-    document.getElementById('news-options').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+    document.getElementById('option1_sophim').scrollIntoView({ block: 'end',  behavior: 'smooth' });
  }
 
-
-// MIRAR SCROLL (NO FUNCIONA) IMPORTANT
- $(window).scroll(function(event) {
-    var scrollTop = $(window).scrollTop();
-    console.log("Vertical "+scrollTop);
-
-    if (scrollTop > 94) {
-        $('.zoom_img').css({
-            width: (100 + scroll/5) + "%"
-        })
-    } else if (scrollTop > 885){
-        $('#go_top').fadeOut(100);
-        }
-  });
-
-//FUNCIONA PERO HAARIA D'ANAR L'ALTRE
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    $(".zoom_img").css({
-        width: (100 + scroll/5) + "%"
-    })
-})
-
-
-/*
-$(window).scroll(function() {
-
-   
-
-    if($(window).scrollTop() >= 50){
-        $("#who-div").addClass('transition');
-        $("#who-div").removeClass('transition2');
-
-    } else {
-        $("#who-div").removeClass('transition');
-        $("#who-div").addClass('transition2');
-    }
-    
-
-  });
-  */
 
 
   /*SLIDER*/
@@ -201,3 +268,150 @@ $(window).scroll(function() {
    return relevantChildren;
  }
  
+ $('#who_menu').click(function(){
+  
+  document.getElementById('who-div').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  closeMenu();
+ 
+ });
+
+ 
+
+ $('#news-menu').click(function(){
+  document.getElementById('news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  closeMenu();
+ 
+ });
+
+
+ $('#link-pro-menu').click(function(){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  closeMenu();
+ 
+ });
+
+ 
+
+ $('#oliva_menu').click(function(e){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById('option1').style.display = 'inline-block';
+  $( "#option1" ).click();
+  closeMenu();
+ });
+
+ $('#textured_menu').click(function(){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById('option2').style.display = 'inline-block';
+  $( "#option2" ).click();
+  closeMenu();
+ });
+
+ $('#oil_menu').click(function(){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById('option3').style.display = 'inline-block';
+  $( "#option3" ).click();
+  closeMenu();
+ });
+
+ $('#emolientes').click(function(e){
+  document.getElementById('container_products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  document.getElementById('option4').style.display = 'inline-block';
+  $( "#option4" ).click();
+  closeMenu();
+ });
+
+
+
+ 
+ $('#contact-menu').on('click', function() {
+  document.getElementById('contact').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  closeMenu();
+  
+});
+
+ $('#who_menu_st').click(function(){
+  document.getElementById('who-div').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+  
+ });
+
+ $('#who_products_st').click(function(){
+  document.getElementById('products').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+  
+  
+ });
+
+ $('#who_news_st').click(function(){
+  document.getElementById('news').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+  
+ });
+
+ $('#who_contact_st').click(function(){
+  document.getElementById('contact').scrollIntoView({ block: 'end',  behavior: 'smooth' });
+  
+  
+ });
+ 
+
+
+
+$('.close_all').click(function(){
+  window.history.back();
+ });
+
+
+$('#button').click(function(){
+  if ($('#company').val().length == 0 ){
+    
+    $('#company').css('backgroundColor', 'red');
+    $('#company').css('borderColor', 'red');
+    $('#company').css('opacity', '0.9');
+  }
+  if ($('#company_web').val().length == 0 ){
+    $('#company_web').css('backgroundColor', 'red');
+    $('#company_web').css('borderColor', 'red');
+    $('#company_web').css('opacity', '0.9');
+  }
+  if ($('#name').val().length == 0 ){
+    $('#name').css('backgroundColor', 'red');
+    $('#name').css('borderColor', 'red');
+    $('#name').css('opacity', '0.9');
+  }
+  if ($('#e-mail').val().length == 0 ){
+    $('#e-mail').css('backgroundColor', 'red');
+    $('#e-mail').css('borderColor', 'red');
+    $('#e-mail').css('opacity', '0.9');
+  }
+  if ($('#phone_number').val().length == 0 ){
+    $('#phone_number').css('backgroundColor', 'red');
+    $('#phone_number').css('borderColor', 'red');
+    $('#phone_number').css('opacity', '0.9');
+  }
+  else {
+
+    $(location).attr('href', 'mailto:Damelis.%20Lopez<damelis.lopez@distributies.com>?subject='
+                         + encodeURIComponent('DISTRIBUTIES WEB MAIL')
+                         + "&body=" 
+                         + encodeURIComponent("COMPANY:"+$('#company').val()
+                         +"\n\nNAME: "+$('#name').val()
+                         +"\n\nE-MAIL: "+$('#e-mail').val()
+                         +"\n\nMENSAJE:\n "+$('#message').val())
+);
+
+    return true;
+  }
+  alert("Falta llenar campos obligatorios");
+});
+
+function disableCookies(){
+  document.getElementById('cookies_div').style.display = 'none';
+}
+
+$('#acep_cookies').click(function(){
+  disableCookies();
+})
+$('#x_cookies').click(function(){
+  disableCookies();
+})

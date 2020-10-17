@@ -3,7 +3,7 @@
 @font-face {
   font-family: Title;
   src: url("../fonts/Raleway-Bold.ttf");
-  font-weight: bold; }
+   }
 @font-face {
   font-family: Text;
   src: url("../fonts/Raleway-ExtraBold.ttf"); }
@@ -19,9 +19,13 @@
 @font-face {
   font-family: Footer-titles;
   src: url("../fonts/Raleway-Medium.ttf"); }
+@font-face {
+  font-family: Regular;
+  src: url("../fonts/Raleway-Regular.ttf"); }
   @font-face {
-    font-family: Regular;
-    src: url("../fonts/Raleway-Regular.ttf"); }
+    font-family: Light;
+    src: url("../fonts/Raleway-Light.ttf"); }
+    
 /*  TOP MENU */
 * {
   margin: 0;
@@ -34,12 +38,14 @@ h1 {
 
 h2 {
   color: white;
-  font-weight: bold;
   font-size: 40px; }
 
 h3 {
   color: #9d9d9d;
-  font-size: 40px; }
+  font-size: 40px;
+  
+ }
+ button:focus {outline:none;}
 
 .header {
   height: 120px;
@@ -67,7 +73,7 @@ h3 {
   }
 
   .zoom_img {
-    webkit-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
     -o-transform: translate(-50%);
     -ms-transform: translate(-50%);
@@ -75,6 +81,11 @@ h3 {
 
   }
 
+  .es_fr{
+
+    font-size: 14px;
+    font-family: 'Footer-titles';
+  }
  
   #content {
     position: relative;
@@ -88,6 +99,19 @@ h3 {
     
 }
 
+#white-round-menu {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 90px;
+  height: 90px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: black;
+  z-index: 99;
+}
+
 #menu-round {
   position: fixed;
   display: flex;
@@ -98,45 +122,108 @@ h3 {
   border-style: none;
   color: white;
   cursor: pointer;
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   -webkit-border-radius: 50%;
   -moz-border-radius:50%;
   border-radius: 50%;
   background-color: #959C7F;
   top: 50px;
   right: 50px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: white;
+  
  }
-
+.submenu-round {
+  display: none;
+   
+}
+  
   #list_round {
     
     color: white;
     font-size: 0px;
     display: none;
-    position: relative;
-    left: 20%;
+    
+   
+   
   }
 
   .nav > li {
     float:left;
-    
+   
     
   }
   
-  .nav li a {
+  .nav li h3 {
     
     color:#fff;
     text-decoration:none;
-    padding:10px 12px;
+    padding:0px 4px;
+    display: block;
+    font-size: 20px;
+    font: 'Light';
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  .nav li h3:hover {
+    
+    color:#444428;
+    text-decoration:none;
+    padding:0px 4px;
     display:block;
     font-size: 20px;
+    font-family: 'Text-choices';
     
     
   }
-  
-  .nav li a:hover {
-    color:#434343;
-    
+
+ #es{
+   font-size: 10pt;
+ }
+ #fr{
+  font-size: 7.5pt;
+}
+  #es:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #fr:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #who_menu_st {
+    cursor: pointer;
+  }
+  #who_products_st {
+    cursor: pointer;
+  }
+  #who_news_st {
+    cursor: pointer;
+  }
+  #who_contact_st {
+    cursor: pointer;
+  }
+
+  #who_menu_st:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #who_products_st:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #who_news_st:hover {
+    background-color: #8F9FA9;
+    color: white;
+  }
+  #who_contact_st:hover {
+    background-color: #8F9FA9;
+    color: white;
   }
   
   .nav li ul {
@@ -150,6 +237,8 @@ h3 {
   .nav li:hover > ul {
     
     display:block;
+    left: 50%;
+    margin-left: -100px;
     
     
   }
@@ -157,35 +246,37 @@ h3 {
   .nav li ul li {
     
     position:relative;
+
   }
   
   .nav li ul li ul {
     right:-140px;
     top:0px;
+    
   }
 
 
   #list_round > li {
     color: #444428;
     list-style:none;
-    width: 420px;
+    width: 300px;
     margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    
+    
   }
 
-  #list_round > li:hover {
-    background-color: white;
-    color: #959C7F;
-  }
 
   
 
 .menu-round_transition {
-  height: 50%;
-  width: 50%;
+  height: 500px;
+  width: 500px;
   left: 50%; }
 
 .logo {
-  background-image: url("../IMG/logo_white_red2.png");
+ 
   line-height: 100px;
   float: left;
   text-transform: uppercase;
@@ -196,11 +287,12 @@ h3 {
 
 .menu {
   float: right;
-  margin-right: 200px;
-  margin-top: 22px;
+  margin-right: 190px;
+  margin-top: 1.5%;
   line-height: 100px;
-  width: 720px;
-font-size: 15px;
+  width: 570px;
+  font-size: 7.25pt;
+
  }
 
 .menu a {
@@ -211,25 +303,58 @@ font-size: 15px;
   padding: 0 10px;
   transition: 0.4s; }
 
+  .menu a:hover {
+    color: white;
+    background-color: #C6B406;
+  }
+
 .menu_options {
   display: inline;
   padding: 3px;
   margin: 1%;
   color: #8E9EA8; 
-  font-family: 'Text-choices';
+  font-family: 'Title';
   text-align: left;
 margin-left: 5px;}
+
+.menu_options:hover {
+  
+}
 
 .menu_options2 {
   margin: 1%;
   color: #8E9EA8; 
-  font-family: 'Text-choices';
-  text-align: left;
-margin-left: 15px;}
+  font-family: 'Footer-titles';
+  
 
-.menu_options2:hover {
-  padding-left: 30px; 
+justify-content: center; text-align: center;
 }
+
+#product-menu {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-left: -150px;
+}
+#news-menu {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  margin-left: -150px;
+}
+#who_menu {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  margin-left: -150px;
+}
+#contact-menu {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  margin-left: -150px;
+}
+
 
 
 .show-menu-btn, .hide-menu-btn {
@@ -279,47 +404,89 @@ align-items: center; }
 
 
 /* COOKIES*/
-#barraaceptacion {
-  display: none;
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 20px;
-  width: 100%;
-  text-align: center;
-  min-height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  z-index: 99999; }
+#cookies_div{
 
-.inner {
-  width: 100%;
   position: absolute;
-  padding-left: 5px;
-  font-family: verdana;
-  font-size: 12px;
-  top: 30%; }
+  bottom: -6%;
+  left: 50%;
+  margin-left: -160px ;
+  width: 320px;
+  height: 5%;
+  background-color: white;
+  text-align: center;
 
-.inner a.ok {
-  padding: 4px;
-  color: #C6B406;
-  text-decoration: none; }
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
 
-.inner a.info {
-  padding-left: 5px;
+}
+
+#stick{
+  width: 1%;
+  font-size: 20px;
+  padding: none;
+  border: none;
+}
+
+#pref {
+
+  left: 0%;
+  font-family: 'Text-choices';
+  font-size: 8pt ;
+
+}
+
+.cons_acep{
+  font-family: 'Text-choices';
+  width: 60px;
+  font-size: 11px;
   text-decoration: none;
-  color: #C6B406; }
+  border: none;
+  outline: none;
+  font-size: 8pt ;
+  background-color: white;
+  cursor: pointer;
+  
+}
+.cons_acep:active{
+  
+  outline: none;
+  
+  
+}
 
-.inner a.ok:hover {
-  color: white; }
+.cons_acep:hover{
 
-.inner a.info:hover {
-  color: white; }
+  color: #959C7F;
+}
+
+#x_cookies{
+  font-family: 'Text-choices';
+  height: 3%;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+}
+
+#x_cookies:hover{
+
+  color: #959C7F;
+}
+
+
+
+
+
+
+
+
+
 
 #close-btn {
   display: none;
-  background: url("../IMG/4x/close@4x.png");
+  background: url("../IMG/4x/4x/close_ok@4x.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,28 +494,59 @@ align-items: center; }
   border-style: none;
   outline:none;
   position: fixed; 
-  top: 9.5vh; left: 30vw; 
+  top: 21vh; left: 31vw; 
+  margin-top: -5vh;
+  margin-left: -5vh;
   z-index: 900; 
-  width: 70px; height: 70px; 
+  width: 10vw; height: 10vw; 
   border-radius: 50%;
+  border-style: solid;
+  border-width: 20px;
+  border-color: white;
+}
+
+#page{
+
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 275%; opacity: 0.7; 
+}
+
+#page2{
+
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 175%; opacity: 0.7; 
+}
+
+#portf_mantecas {
+
+  position: absolute; width: 230px; height: 40px; left: 80vw; top: 260%; opacity: 0.7;
+
 
 }
 
-#portfolio{
+
+.portfolio{
+
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  border: none;
+  margin-left: -125px;
   cursor: pointer;
   width: 250px;
-  height: 40px;
-  display: block;
-  margin: auto;
-  margin-top: 100px;
+  height: 45px;
+
+  background: url('../IMG/4x/descargar_portfolio2.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 2;
-  color: #8F9FA9;
+
   font-size: 12px;
   background-color: white;
+  outline: none;
 }
 
 #linkedin_lateral {
-  position: fixed; 
+  position: absolute; 
   top: 35vh; 
   right: 65px; 
   width: 26px;
@@ -357,7 +555,7 @@ align-items: center; }
 
 #follow_lateral {
 
-  position: fixed;
+  position: absolute;
   top: 49vh; 
   right: 30px; 
   transform: rotate(-90deg); 
@@ -369,7 +567,7 @@ align-items: center; }
 }
 
 #plus_lateral{
-  position: fixed; 
+  position: absolute; 
   top: 57vh; 
   right: 70px; 
   width: 20px;
@@ -393,15 +591,18 @@ align-items: center; }
   position: absolute;
   width: 50%;
   height: 4px;
-  top: 26%;
+  top: 137px;
   left: 10%;
   }
 
 .text-div-who {
   position: absolute;
-  width: 60%;
+
   left: 35%;
-  top: 20%; }
+  top: 132px; 
+  text-justify: auto;
+  width: 50%;
+}
 
 .subtext-div-who {
   position: absolute;
@@ -412,16 +613,41 @@ align-items: center; }
 #content_who {
   position: relative;
   width: 100vw;
-  height: 65vh;
-  top: 10%;
+  height: 90vh;
+  top: 5%;
   background-color: #CCBA76;
-  color: white; }
+  color: white; 
+opacity: 0.9;}
+
+#content_materias {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  top: 5%;
+  background-color: #959C7F;
+  color: white; 
+opacity: 0.9;}
 
 .subtext {
-  font-family: 'Subtext';
-  font-size: 15px;
+  font-family: 'Regular';
+  font-size: 11pt;
   line-height: 25px;
+  text-align: justify;
+  width: 75%;
   }
+/* MATERIAS------------------------------------------------------------------------------ 1*/
+/* MATERIAS------------------------------------------------------------------------------ 1*/
+/* MATERIAS------------------------------------------------------------------------------ 1*/
+
+#materias-div {
+  background: url("../IMG/rama-olivo-hojas-aceitunas.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh; }
+
 
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
 /* PRODUCTS------------------------------------------------------------------------------ 1*/
@@ -442,27 +668,30 @@ align-items: center; }
   height: 40vh;
   top: 35%;
   background-color: #959C7F;
-  color: white; }
+  color: white;
+opacity: 0.9; }
 
 .title {
   position: relative;
-  font-family: 'Title';
-  font-size: 20px; }
+  font-family: 'Text-choices';
+  font-size: 15pt; }
 
 .text {
   font-family: 'Text';
-  font-size: 35px; }
+  font-size: 25pt;
+  
+}
 
 .title-div {
   position: absolute;
   width: 300px;
   height: 4px;
-  top: 34%;
+  top: 97px;
   left: 10%; }
 
 .text-div {
   position: absolute;
-  width: 675px;
+  width: 70%;
   left: 35%;
   top: 28%; }
 
@@ -487,20 +716,35 @@ align-items: center; }
   top: 7%;
   background-color: #8F9FA9;
   color: white;
+  opacity:0.9;
    }
-
+   #content_news2 {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    top: 7%;
+    background-color: #8F9FA9;
+    color: white;
+     }
+  
 .title-div-news {
   position: absolute;
-  width: 300px;
+  width: 65%;
   height: 4px;
-  top: 34%;
+  top: 75px;
   left: 10%; }
+
 
 .text-div-news {
   position: absolute;
   width: 675px;
   left: 35%;
-  top: 28%; }
+  top: 67px; }
+  .text-div-contact {
+    position: absolute;
+    width: 675px;
+    left: 35%;
+    top: 70px; }
 
 /* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
 /* NEWS OPTIONS------------------------------------------------------------------------------ 1*/
@@ -520,56 +764,150 @@ align-items: center; }
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+  margin: 0;
+  
    }
 
+   .cne{
+    background: url("../IMG/oliva.png");
+
+   }
+   .cne2{
+    background: url("../IMG/cream-3496778_1920.jpg");
+   }
+   .cne3{
+    background: url("../IMG/oliva_2.jpg");
+   }
+   .cne4{
+    background: url("../IMG/oliv_2.png");
+   }
+   .cne5{
+    background: url("../IMG/OIP.jpg");
+   }
+   .cne6{
+    background: url("../IMG/vegelin.jpg");
+   }
+   .cne7{
+    background: url("../IMG/beurre-argan-vign\ \(1\).jpg");
+   }
+   .cne8{
+    background: url("../IMG/olivo-frutal-1.jpg");
+   }
+
+   .cne9{
+    background: url("../IMG/sophim-007.jpg");
+   }
+
+   .cne10{
+    background: url("../IMG/phytosqualan.jpg");
+   }
+
+   .cne11{
+    background: url("../IMG/sea_2.png");
+   }
+
+   .cne12{
+    background: url("../IMG/sea.png");
+   }
+
+   .mantecas {
+    background: url("../IMG/mantecas-vegetales.jpg");
+
+   }
+
+   .aceites{
+    background: url("../IMG/Aceites-vegetales-para-la-piel-V2.jpg");
+
+   }
+  
+
+  
+
+   .aceite_mantecas {
+     width: 250px;
+     height: 30px;
+    position: absolute;
+    left: 35%;
+    top:75%;
+    font-size: 11pt ;
+    font-family: 'Text-choices';
+    background-color: white;
+    color: #8D9EA8;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+   }
+
+
+  .grey{
+    filter: grayscale(100%);
+  }
+  .grey:hover {
+    filter: grayscale(0%);
+  }
+
+  .color{
+    filter: grayscale(0%);
+  }
+
 #sophim-text {
+  display: block;
   position: absolute;
   background-color: #8F9FA9;
   color: white;
-  width: 55%;
-  height: 58%;
+  width: 58vh;
+  height: 58vh;
   top: 20%;
-  left: 22.5%;
+  left: 50%;
+  margin-left: -29vh;
   justify-content: center;
   align-items: center;
   text-align: center; }
 
 #aloe-vera {
   display: inline-block;
+  margin: 0;
 position: relative;
- 
+ right: 0;
   height: 100%;
   width: 50%;
   background: url("../IMG/deo_img.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
+  
+  
  }
 
 #aloe-text {
   position: absolute;
   background-color: #BCAE72;
   color: white;
-  width: 55%;
-  height: 58%;
+  width: 58vh;
+  height: 58vh;
   top: 20%;
-  left: 22.5%;
+  left: 50%;
+  margin-left: -29vh;
   justify-content: center;
   align-items: center;
   text-align: center; }
 
 .title-options {
   position: relative;
-  font-family: 'Regular';
-  font-size: 30px;
+  font-family: 'Text';
+  font-size: 25pt;
   top: 10%; }
 
 .text-options {
   position: relative;
-  font-family: 'Regular';
-  font-size: 15px;
+  font-family: 'Footer-titles';
+  font-size: 11pt;
   line-height: 40px;
   top: 20%;
   margin-right: 20px;
@@ -589,7 +927,7 @@ position: relative;
   width: 50px;
   top: 85%;
   left: 46%;
-  background: url("../IMG/plus.png");
+  background: url("../IMG/boto_mes.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -606,7 +944,7 @@ outline: none;}
     width: 50px;
     top: 85%;
     right: 46%;
-    background: url("../IMG/plus.png");
+    background: url("../IMG/boto_mes.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -627,6 +965,7 @@ outline: none;}
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   cursor: pointer;
   width: 100vw;
   height: 100vh;
@@ -635,42 +974,229 @@ outline: none;}
 .photo_products {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+
   filter: grayscale(100%); }
 
 .photo_products:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  
   filter: grayscale(0%); }
 
 .clear-photo {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
-  filter: grayscale(0%); }
+  -moz-filter: grayscale(0%);
+}
 /*  SIDE OPTIONS  */
-#side_options {
+#side_options_as {
   background-color: #BCAE72;
   height: 100vh;
   width: 30vw;
   z-index: 10;
   position: absolute;
   left: -60vh;
-  top: 400; 
+  top: 600; 
 cursor: default;
 }
 
-#side_list {
+
+#side_list_as {
   position: relative;
   top: 35%;
   
   
 }
 
-#side_title {
+#side_title_as {
   position: relative;
+  color: white;
   top: 30%;
   left: 10%;
   font-family: "Footer-titles";
   font-size: 25.45pt;
+}
+
+#side_option1_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  text-decoration:none;
+  left: 25%;
+  
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}
+#side_option1_as:hover {
+  color: black;
+  background-color: white;
+}
+#side_option2_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  top: 12px;
+  text-decoration:none;
+  left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#side_option2_as:hover {
+  color: black;
+  background-color: white;
+}
+.BR_inversa{
+
+  display: none;
+} 
+#side_option3_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  top: 24px;
+  text-decoration:none;
+  left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#side_option3_as:hover {
+  color: black;
+  background-color: white;
+
+}
+
+#side_option4_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+  top: 36px;
+  text-decoration:none;
+  left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#side_option4_as:hover {
+  color: black;
+  background-color: white;
+
+}
+
+#side_option5_as {
+  color: white;
+  font-family: "Footer-titles";
+  font-size: 12pt;
+  position: relative;
+  cursor: pointer;
+ top: 48px;
+ text-decoration:none;
+  left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#side_option5_as:hover {
+  color: black;
+  background-color: white;
+
+}
+
+.side_text-class {
+  display: none;
+  position: relative;
+  width: 64%;
+  margin-left: 100px;
+  color: white;
+  font: 11pt 'Light';
+
+  line-height: 17px;
+  
+}
+
+
+#side_text1_as {
+  margin-top: 15px;
+}
+
+#side_text2_as {
+  margin-top: 23px;
+}
+#side_text3_as {
+  margin-top: 31px;
+}
+#side_text4_as {
+  margin-top: 39px;
+}
+#side_text5_as {
+  margin-top: 47px;
+}
+
+#side_text1 {
+  margin-top: 15px;
+}
+
+#side_text2 {
+  margin-top: 23px;
+}
+#side_text3 {
+  margin-top: 31px;
+}
+#side_text4 {
+  margin-top: 39px;
+}
+#side_text5 {
+  margin-top: 47px;
+}
+
+
+
+/* SIDE OPTIONS ALOE-VERA Y SOPHIM */
+
+#side_options {
+  background-color: #BCAE72;
+  height: 101vh;
+  width: 30vw;
+  z-index: 10;
+  position: absolute;
+  left: -60vh;
+  top: 0vh; 
+cursor: default;
+}
+
+#side_list {
+  position: relative;
+  top: 200px;
+  
+  
+}
+
+#side_title {
+  position: relative;
+  top: 170px;
+  left: 10%;
+  width: 80%;
+  font-family: "Footer-titles";
+  font-size: 25.45pt;
+  color: white;
 }
 
 #side_option1 {
@@ -681,6 +1207,10 @@ cursor: default;
   cursor: pointer;
   text-decoration:none;
   left: 25%;
+  padding-right: 10vw;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
 }
 #side_option1:hover {
   color: black;
@@ -695,6 +1225,11 @@ cursor: default;
   top: 12px;
   text-decoration:none;
   left: 25%;
+  padding-right: 10vw;
+
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option2:hover {
   color: black;
@@ -710,6 +1245,11 @@ cursor: default;
   top: 24px;
   text-decoration:none;
   left: 25%;
+  padding-right: 10vw;
+
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option3:hover {
   color: black;
@@ -726,6 +1266,11 @@ cursor: default;
   top: 36px;
   text-decoration:none;
   left: 25%;
+  padding-right: 10vw;
+
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option4:hover {
   color: black;
@@ -742,6 +1287,10 @@ cursor: default;
  top: 48px;
  text-decoration:none;
   left: 25%;
+  padding-right: 50%;
+  padding-left: 3%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 #side_option5:hover {
   color: black;
@@ -749,62 +1298,112 @@ cursor: default;
 
 }
 
+.side_li {
+    width: 80%;
+    margin: 0;
+}
 
+#emulsionantes_div {
+  height: 52%;
+
+}
+
+#phyto_div {
+
+  height: 58%; top: 0%;
+}
 
 /*  /SIDE OPTIONS */
 #back-btn {
-  background: url("../IMG/back-arrow.png");
+  background: url("../IMG/4x/flecha1@4x.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  position: relative;
   border-style: none;
-  margin-top: 30px;
-  margin-left: 10px; }
+  top: 120px;
+ left: 20px;
+outline: none;
+cursor: pointer; }
+
+  #back-btn2 {
+    background: url("../IMG/4x/flecha1@4x.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    margin-top: 30px;
+    margin-left: 10px; 
+  outline: none;}
 
 #option1 {
   background: url("../IMG/olive-oil-968657_1920.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
   display: inline-block;
   position: relative;
   width: 25%;
-  height: 100%; }
+  height: 100% ;
+top: 1%; }
 
 #option2 {
-  background: url("../IMG/SOPHIM/beurre-de-karite-sophim.jpg");
+  background: url("../IMG/4x/option2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%; }
 
 #option3 {
-  background: url("../IMG/SOPHIM/water-life-crop.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
+  
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%; }
 
+  .option3_photo {
+    background-image: url("../IMG/option3.jpg");
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+  }
+
   #option4 {
-    background: url("../IMG/SOPHIM/beurre-de-karite-sophim.jpg");
+    background: url("../IMG/option4.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
     display: inline-block;
     position: relative;
     width: 25%;
     height: 100%; }
 
 #emulsifiers {
-  font-size: 25px;
+  font-size: 16.77pt;
   font-family: "Title";
   color: white;
   position: absolute;
@@ -814,7 +1413,7 @@ cursor: default;
   z-index: 2; }
 
 #textured {
-  font-size: 25px;
+  font-size: 16.77pt;
   font-family: "Title";
   color: white;
   position: absolute;
@@ -824,7 +1423,7 @@ cursor: default;
   z-index: 2; }
 
 #fixers {
-  font-size: 25px;
+  font-size: 16.77pt;
   font-family: "Title";
   color: white;
   position: absolute;
@@ -833,11 +1432,12 @@ cursor: default;
   bottom: 110px;
   z-index: 2; }
 #oliva {
-    font-size: 25px;
+    font-size: 16.77pt;
     font-family: "Title";
     color: white;
     position: absolute;
     width: 100%;
+    
   text-align: center;
   bottom: 110px;
     z-index: 2; }
@@ -856,19 +1456,26 @@ cursor: default;
 }
 
 .contact_inputs {
-  width: 65%;
+  width: 65vw;
   position: relative;
-  left: 15%;
+  left: 50%;
+  margin-left: -32.5vw;
   background-color: #959C7F;
-  border-color: transparent;
+  
  color: white;
+ font-size: 11.75pt;
+ font-family: 'Text-choices';
+ border-left: 15px solid #959C7F;
+ border-top: none;
+ border-right: none;
+ border-bottom: none;
   
 }
-::-webkit-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px; } 
+::-webkit-input-placeholder { color: white;  font-family: "Text-choices"; font-size: 14px; } 
 
-::-moz-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;} 
+::-moz-placeholder { color: white;  font-family: "Text-choices"; font-size: 14px;} 
 
-::-ms-input-placeholder { color: white; padding: 12px; font-family: "Text-choices"; font-size: 14px;}
+::-ms-input-placeholder { color: white;  font-family: "Text-choices"; font-size: 14px;}
 
 textarea:focus, input:focus, input[type]:focus {
     outline: 0 none;
@@ -877,65 +1484,82 @@ textarea:focus, input:focus, input[type]:focus {
 #company {
   
   top: 3vh;
+  padding-left: 0.2%;
 }
 
 #company_web {
    top: 4vh;
-
+   padding-left: 0.2%;
 }
 
 #city{
   top: 5vh;
-
+  padding-left: 0.2%;
 }
 
 #adress{
   top: 6vh;
+  padding-left: 0.2%;
 }
 
 #postal_code{
   top: 7vh;
+  padding-left: 0.2%;
 
 }
 
 #country {
   top: 8vh;
+  padding-left: 0.2%;
 
 }
 
 #name{
   top:14vh;
+  padding-left: 0.2%;
 
 }
 
 #e-mail{
   top: 15vh;
+  padding-left: 0.2%;
 }
 
 #phone_number {
 
   top: 16vh;
+  padding-left: 0.2%;
 }
 
 #message {
   top: 22vh;
-  width: 65%;
+  width: 65vw;
   position: relative;
-  left: 15%;
+  left: 50%;
+  margin-left: -32.5vw;
   height: 20vh;
   background-color:#8F9FA9;
   border-color: transparent;
   color: white;
+  border-left: 15px solid #8F9FA9;
 
+
+}
+
+#captcha {
+  position: relative;
+  top: 26vh;
+  left: 17.5%;
 
 }
 
 #button{
   position: relative;
   top: 28%; 
-  left:45%;
+  left:50%;
   width:60px;
   height:60px;
+  margin-left: -30px ;
   background-color:#959C7F;
  cursor: pointer;
   -webkit-border-radius: 50px;
@@ -963,12 +1587,172 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 
+/*--//PAGINAS----------------------------->*/
+/*--//PAGINAS----------------------------->*/
+/*--//PAGINAS----------------------------->*/
+
+
+.allproducts_title{
+  width: auto;
+  position: absolute;
+  top: 17%;
+  left: 14%;
+  right: 0;
+  color: white;
+  font-family: 'Text-choices';
+  font-size: 20pt; 
+}
+
+.allproducts_subtitle{
+  width: 50% ;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  color:white;
+  font-weight: bold;
+  font-family: 'Text';
+  font-size: 25pt; 
+}
+
+.allproducts_text{
+  width: 45%;
+  position: absolute;
+  top: 63%;
+  left: 35%;
+  color: white;
+  font-size: 11pt;
+  font-family: 'Regular'; 
+  text-align: justify;
+  
+}
+.allemul_div{
+  position: relative;
+  width: 100vw;
+  height: 45vh;
+  top: 10%;
+  background-color: #899fa9;
+  color:#899fa9;
+  opacity: 90%; 
+
+}
+
+.green_space {
+
+  position: absolute;
+  top: 75% ;
+  width: 100%;
+  height: 15%;
+  background-color: #293501;
+  color: #293501;
+  opacity: 80%;
+
+}
+
+.blue_space {
+
+  position: absolute;
+  top: 75% ;
+  width: 100%;
+  height: 15%;
+  background-color: #8D9EA8;
+  color: #8D9EA8;
+  opacity: 80%;
+
+}
+
+.bblue_space {
+
+  position: absolute;
+  top: 75% ;
+  width: 100%;
+  height: 15%;
+  background-color:#899fa9;
+  color: #899fa9;
+  opacity: 80%;
+
+}
+
+#white_logo{
+
+  position: absolute;
+  top: 76%;
+  width: 5%;
+  right: 11%;
+  z-index: 2;
+
+}
+
+.close_all{
+
+  position: absolute;
+  top: 2.5%;
+  width: 4%;
+  left: 50%;
+  margin-left: -2%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+
+
+#text_insa_em {
+  top:47%;
+}
+
+.bio_em_text{
+  top: 42%;
+  width: 50%;
+}
+#emul_divv{
+  height: 50%;
+}
+
+.emul_div2{
+  background-color: #959C7F;
+}
+#phy_esc_txt {
+  top: 44%;
+}
+#bio_esc_txt {
+  top: 54%;
+}
+
+.tex_divv{
+  background-color: #CCBA76;
+  top:5%; height: 55%;
+}
+
+.tex_div2{
+  background-color:#CCBA76;
+}
+
+#tex_text {
+  top: 46.3%;
+}
+
+#tex_text2 {
+  top: 50%;
+}
+
+.r{
+  font-size: 9pt;
+  display: inline;
+  color: white;
+ 
+  
+  
+}
+.barra{
+  left: 30%;
+}
+
 
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
 /*--//EMULSIONES----------------------------->*/
-#container_nat_emul {
-  background: url("../IMG/cream-3496778_1920.jpg");
+.container_nat_emul {
+  
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -985,14 +1769,17 @@ textarea:focus, input:focus, input[type]:focus {
   color: white;
   opacity: 85%; }
 
-#natural_emulsions {
+
+
+  #natural_emulsions {
   position: absolute;
   top: 30%;
   left: 5%;
   right: 0;
   color: grey;
   font-family: 'Title';
-  font-size: 13px; }
+  font-size: 13px; 
+}
 
 #escualan {
   position: absolute;
@@ -1054,9 +1841,9 @@ textarea:focus, input:focus, input[type]:focus {
 #insapolive {
 
   display: inline-block; 
-height: 100%;
-width: 50%;
-  background: url('../IMG/sophim-007.jpg');
+  height: 100%;
+  width: 50%;
+  
 
 
   background-position: center center;
@@ -1082,6 +1869,141 @@ width: 50%;
   height: auto;
   font-size: 12px; }
 
+#resp_log{
+  position: absolute; top: 25%; left: 50%; width: 150px; margin-left: -75px;
+
+}
+#resp_log2{
+
+  position: absolute; top: 55%; left: 50%;  width: 450px; margin-left: -225px;
+}
+
+#resp_log3{
+  position: absolute; top: 63%; left: 50%; width: 280px; margin-left: -140px;
+
+}
+
+#allproducts_text_resp{ 
+
+  top: 53%;
+
+}
+
+#aceites_div {
+
+  top:5%; height: 50%; background-color: #8D9EA8;
+}
+
+#section_aceites {
+
+  min-width: 100vw; min-height: 290vh;  
+
+}
+.close_aceites{
+
+top:15%; right: 5%; width: 70px; position: absolute;
+}
+
+.ace_vege {
+  font-family: 'Title'; top: 51px; left: 21%; position: relative; font-size: 29pt; color: #959C7F;
+
+}
+
+#imagen_aceites {
+  position: absolute; top: 25%; right: 8%; width: 160px;
+}
+
+#primera_columna {
+
+  position: absolute; height: 50%; width: 20%; top: 32%; left: 33%;
+}
+
+.primera_columna2 {
+
+  font-size: 12pt; font-family: 'Text';   margin-top: 60px;
+
+}
+
+.primera_columna2_2 {
+
+  font-size: 12pt; font-family: 'Text';   margin-top: 60px;
+}
+
+
+#segunda_columna{
+
+  position: absolute; height: 50%; width: 20%; top: 40%; left: 43%;
+}
+
+.segunda_columna2{
+
+  padding-top: 1; font-size: 15px;
+
+}
+
+#tercera_columna {
+
+  position: absolute; height: 50%; width: 33%; top: 40%; left: 48%;
+}
+
+#tercera_columna2 {
+
+  margin-top: 1%;
+  position: relative;
+  font-size: 11pt;
+  font-family: 'Regular';
+
+}
+#tercera_columna3 {
+
+  position: relative;
+  margin-top: 7%;
+  font-size: 11pt;
+  font-family: 'Regular';
+
+}
+#tercera_columna4 {
+
+  position: relative;
+  margin-top: 7%;
+  font-size: 11pt;
+  font-family: 'Regular';
+
+}
+#tercera_columna5 {
+
+  position: relative;
+  margin-top: 13%;
+  font-size: 11pt;
+  font-family: 'Regular';
+
+}
+
+#somos_resp {
+  top: 7%; left:31% ;
+
+}
+
+
+#materias{
+  top: 8%
+}
+
+#mantecas_resp{
+
+  top:5%; background-color: #8D9EA8; height: 53%;
+}
+
+#frase_mantecas {
+
+  font-family: 'Title'; top: 51px; left: 21%; position: relative; font-size: 29pt; color: #959C7F;
+}
+
+#frutos-secos-almendras {
+
+  position: absolute; top: 35%; right: 7%; width: 200px;
+}
+
 /*--//FOOTER----------------------------->*/
 /*--//FOOTER----------------------------->*/
 /*--//FOOTER----------------------------->*/
@@ -1096,7 +2018,12 @@ section .section-title {
 
 #footer {
   background: #959C7F !important; }
-
+  #logo_footer {
+    height: 110px; width: 420px; position: absolute;right: 20%; margin-right:-84px;top:65%;
+  }
+#footer_lkd {
+  height: 27px; width: 27px; position: absolute; top: 44%; right: 18.5%; margin-left: -13.5px;
+}
 #footer h5 {
   padding-left: 10px;
   border-left: 3px solid #eeeeee;
@@ -1150,12 +2077,19 @@ i {
   display: flex;
   justify-content: center; }
 
-.footer-list {
+.container_footer {
   position: relative;
+  width: 100vw;
+  height: 450px;
+  display: flex;
+  justify-content: center; }
+
+.footer-list {
+  position: absolute;
   top: 30px;
   list-style: none;
   color: white;
-  line-height: 28px;
+  
   min-width: 230px; }
 
 .footer-list > .title {
@@ -1163,29 +2097,29 @@ i {
   font-family: 'Footer-titles'; }
 
 .footer-elements {
-  font-size: 14px;
-  font-family: 'Footer-titles';
+  font-size: 9pt;
+  font-family: 'Regular';
   position: relative;
   cursor: pointer;
-  left: 25%; }
+  left: 50px; }
 
 #list1 {
   width: 200px;
   height: 180px;
-  position: relative;
-  left: 0%;
+  position: absolute;
+  left: 2%;
   top: 15%; }
 
 #list2 {
   width: 200px;
   height: 200px;
-  position: relative;
-  
+  position: absolute;
+  left: 18%;
   top: 15%; }
 
 #list3 {
-  position: relative;
-  
+  position: absolute;
+  left: 35%;
   top: 15%;
   width: 200px;
   height: 180px; }
@@ -1193,16 +2127,17 @@ i {
 #list4 {
   width: 200px;
   height: 180px;
-  position: relative;
-  
+  position: absolute;
+  left:50%;
   top: 15%; }
 
 #list5 {
   width: 200px;
   height: 180px;
-  position: relative;
-  left: 10%;
-  top: 15%; }
+  position: absolute;
+  right: 10%;
+  top: 15%;
+margin-right: -30px; }
 
 ul {
   flex-direction: column; }
@@ -1213,6 +2148,20 @@ ul {
     width: 120vw;
   }
 
+  #btn_portf{
+  top: 80%;
+  }
+
+  #tabla_mantecas {
+    
+    position: absolute; left:13%; top: 155%; width: 90%;
+
+  }
+
+  #section_mantecas{
+
+    min-width: 100vw; min-height: 170vh;
+  }
 
 
 
@@ -1280,7 +2229,38 @@ ul {
 
 /* MEDIA */
 
-@media screen and (max-width: 1100px) {
+
+
+@media screen and (max-width: 1110px )  {
+
+  #page{
+
+   left: 55%; top: 235%; margin-top: 5%; 
+  }
+  
+  #page2{
+  
+    left: 80vw; top: 175%; opacity: 0.7; 
+  }
+
+
+  
+
+
+
+  #imagen_aceites {
+   top: 31%; right: 7%; width: 130px;
+  }
+
+.BR_1000{
+
+  display: none;
+}
+
+  .logo_content{
+    display: none;
+  }
+
  .menu_options {
    visibility: hidden;
 
@@ -1289,7 +2269,18 @@ ul {
  .title-div-who{
 
   top: 10%;
+}
+
+
+.title-div-news{
+
+  top: 10%;
  
+}
+
+#materias{
+  top: 8%;
+  left: 5%;
 }
 
 .text-div-who {
@@ -1297,18 +2288,160 @@ ul {
   left: 10%;
   width: 80%;
 }
+.text-div-news {
+
+  left: 10%;
+  width: 80%;
+  top: 84px;
+}
 
 .subtext-div-who {
   left: 10%;
   width: 80%;
 }
+
+.title-div {
+  top: 13%;
+  left: 10%;
+  margin-left: -15px;
+  
+}
+.text-div{
+  left: 10%;
+  margin-left: -15px;
+}
+
+#close-btn {
+  top: 26vh;
+}
+#somos_responsive {
+
+  font-size: 20px; top: 20%; width: 80%;
+}
+#somos_resp {
+  top: 15%; left:5% ; width: 90%
+
+}
+
+#primera_columna {
+
+  height: 50%;  left: 12%;
+}
+#tercera_columna {
+
+  height: 40%; width: 58%; top: 39%; left:36%;
+ }
+ 
+
+
+.BR_1000 {
+  display: none;
+}
+}
+@media screen and (max-width: 990px )  {
+
+  #frutos-secos-almendras {
+
+    position: absolute; top: 38%; right: 7%; width: 140px;
+  }
+
+#option1_sophim{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+#option2_sophim{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+#container_products_sophim{
+  height: 100vw !important;
+}
+#list2 {
+  top: 40%;
+}
+#list4{
+  top: 40%;
+}
+#footer_lkd{
+  top: 34%;
+}
+#logo_footer{
+  left: 50%;
+  margin-left: -210px;
+  
+}
+
+#tercera_columna {
+
+  position: absolute; height: 70%; width: 83%; top: 31%; left: 5%;
+}
+
+#tercera_columna2 {
+
+  margin-top: 30px;
+  font-size: 11pt;
+  left: 0%;
+  }
+
+#tercera_columna3 {
+
+  margin-top: 50px;
+  font-size: 11pt;
+  
+}
+#tercera_columna4 {
+
+  margin-top: 67px;
+  font-size: 11pt;
+ 
+}
+#tercera_columna5 {
+
+  margin-top:55px;
+  font-size: 11pt;
+}
+
+#p1{
+  margin-top: 70px;
+  
 }
 
 
+#p2{
+  margin-top: 75px;
+  
+}
+
+#p3 {
+  margin-top: 70px;
+}
+
+#p4 {
+  margin-top: 10px;
+}
+
+#primera_columna {
+
+  height: 60%;  left: 5%; top: 20%;
+}
+
+
+ }
+
 @media screen and (max-width: 800px) {
 
+  #frutos-secos-almendras {
 
-  
+    position: absolute; top: 40%; right: 7%; width: 110px;
+  }
+
+  #imagen_aceites {
+    position: absolute; top: 34%; right: 7%; width: 110px;
+  }
+
+  .BR_800 {
+    display: none;
+  }
   .header {
 
     height: 90px;
@@ -1325,8 +2458,11 @@ ul {
 
   }
 
+ 
+
   .subtext{
     font-size: 14px;
+    width: auto;
     
   }
   .subtext-div-who {
@@ -1336,9 +2472,101 @@ ul {
   .text{
     font-size: 33px;;
   }
-}
-@media screen and (max-width: 560px){
 
+  #oliva {
+    transform: rotate(270deg);
+    width: 190px;
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+
+bottom: 125px;
+
+
+  }
+  #textured {
+    transform: rotate(270deg);
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+   
+
+  }
+  #fixers {
+    transform: rotate(270deg);
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+
+bottom: 175px;
+
+
+  }
+  #emulsifiers {
+    transform: rotate(270deg);
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+
+
+
+  }
+  #content_who{
+    height:90%;
+  }
+  #linkedin_lateral {
+    position: absolute; 
+    top: 70vh; 
+    right: 50%;
+    margin-right: -10px; 
+  }
+  
+  #follow_lateral {
+  
+    top: 84vh; 
+    right: 50vw;
+    margin-right: -46px;  
+  }
+  
+  #plus_lateral{
+   
+    top: 92vh; 
+    right: 50%;
+    margin-right: -10px;    
+  }
+  .portfolio {
+    top: 105vh;
+  }
+
+  .content{
+    height: 118vh;
+  }
+  #cookies_div {
+    top: 118vh;
+  }
+  .text {
+    font-size: 30px;
+  }
+  #close-btn {
+    top: 26vh;
+    left: 7vw;
+    height: 80px;
+    width: 80px;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+ 
+}
+
+
+@media screen and (max-width: 564px){
+
+  #imagen_aceites {
+    position: absolute; top: 40%; right: 7%; width: 80px;
+  }
   .subtext{
     font-size: 12px;
     
@@ -1349,7 +2577,381 @@ ul {
     font-size: 15px;
   }
 
+  .bblue_space{
+    display: none;
+  }
+ 
+  .allemul_div{
+    height: 80%;
+  }
 
+  .allproducts_title{
+  top: 10%;
+  left: 10%;
+
+  }
+
+  .allproducts_subtitle{
+
+      font-size: 20px;
+      left: 10%;
+      top: 23%;
+      width: 75%;
+      
+  }
+
+  .allproducts_text {
+
+    left: 10%;
+    top: 51%;
+    width: 75%;
+    
+  }
+
+  .close_all{
+    width: 60px;
+    left: 50% ;
+    margin-left: -24px;
+  }
+
+  #white_logo{
+    display: none;
+  }
+
+  
+  .BR{
+    display: none;
+  }
+
+  #allproducts_text_resp{
+  top: 40%;
+
+  }
+
+  
+  .subtext-div-who{
+    top: 40%;
+  }
+  .title-div-who{
+    top: 5%;
+  }
+  .text-div-who{
+    top: 12%;
+  }
+  #content_who{
+    height: 98%;
+    top: 2%;
+  }
+
+
+  .bio_em_text {
+  top: 37%;
+  width: 78%;
+
+  }
+
+  #emulsionantes_div {
+    height: 85%;
+    
+  }
+  
+#tex_text2 {
+  top: 40%;
+}
+#content_news {
+  height: 40vh;;
+}
+
+#emul_divv{
+
+  height: 75%;
+  
+}
+#phyto_div {
+
+  height: 85%;
+}
+
+#aceites_div {
+  top: 10%;
+height: 70%;
+
+}
+
+#portfolio_aceites{
+
+  left: 10%;
+  top: 80%;
+}
+
+#section_aceites{
+min-width: 100vw; min-height: 165vh;
+}
+
+#page {
+  margin-top: 10%;
+  top: 140% ;
+  left:55%;
+  
+}
+
+#page2{
+
+ height: 40px; left: 55%; top: 97%; margin-top: 10%;
+}
+
+
+
+#section_mantecas{
+
+  min-width: 100vw; min-height: 120vh;
+}
+
+#portf_mantecas {
+
+  margin-top: 10%;
+  top: 190% ;
+  left:55%;
+
+}
+.close_aceites{
+
+  top:10%; width: 60px;
+}
+
+.ace_vege {
+  top: 25%; left: 10%; position: absolute; font-size: 25pt; 
+
+}
+
+
+#primera_columna {
+  top: 190px;
+}
+
+
+
+
+
+
+
+.primera_columna2 {
+
+  font-size: 10pt;
+}
+
+.segunda_columna2{
+  font-size: 9pt;
+
+
+}
+
+#tercera_columna2{
+
+  font-size: 9pt;
+}
+#tercera_columna3{
+
+  font-size: 9pt;
+}
+#tercera_columna4{
+
+  font-size: 9pt;
+}
+#tercera_columna5{
+
+  font-size: 9pt;
+}
+
+#materias {
+
+  top: 8%;
+  left: 5%;
+  width: 60%;
+
+}
+
+
+#captcha {
+  transform: scale(0.7);
+  margin-left: -221px;
+  left: 50%;
+  padding: 0;
+  
+}
+#list1 {
+  top: 5%;
+  left: 50%;
+  margin-left: -115px;
+}
+#list2 {
+  top: 25%;
+  left: 50%;
+  margin-left: -115px;
+}
+#list3 {
+  top: 53%;
+  left: 50%;
+  margin-left: -115px;
+}
+#list4 {
+  top: 69%;
+  left: 50%;
+  margin-left: -115px;
+}
+#list5 {
+  top: 89%;
+  left: 50%;
+  margin-left: -115px;
+}
+#footer{
+  height: 110vh;
+
+}
+
+#menu-round {
+  transform: scale(0.7);
+  
+}
+
+
+#p1{
+  
+  position: absolute;
+  top:0%;
+  margin-top: 43px;
+  
+}
+
+#p2{
+  
+  position: absolute;
+  top: 68px;
+  
+
+}
+
+#p3{
+  
+  position: absolute;
+  top:158px;
+  margin-top: 68px;
+}
+
+#p4{
+  
+  position: absolute;
+  top:230px;
+  margin-top: 60px;
+}
+#resp_log2{
+  transform: scale(0.7);
+}
+#text-who-resp {
+  font-size: 20px;
+}
+
+#subtext-resp {
+  top: 27%;
+}
+
+#text_contact {
+  font-size:18pt;
+}
+#text_div-contact {
+  top: 35%;
+}
+
+#mantecas_resp{
+
+  top:5%; background-color: #8D9EA8; height: 75%;
+}
+
+#btn_portf{
+  top: 86%;
+  left: 10%;
+  }
+
+  
+  #tabla_mantecas {
+    
+    position: absolute; left:2%; top: 145%; width: 120%;
+
+  }
+
+  #frase_mantecas {
+
+   top: 100px; left: 7%;  font-size: 25pt; 
+  }
+
+  #close_mantecas{
+
+    top:110%; width: 60px;
+  }
+
+  #frutos-secos-almendras {
+
+     top: 45%; right:  4%; width: 80px;
+  }
+
+
+#close-btn {
+  top: 37vh;
+  left: 22vw;
+  height: 50px;
+  width: 50px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border-width: 10px;
+}
+
+#contact {
+  height: 110vh;
+}
+
+
+.contact_inputs{
+  width: 75%;
+  margin-left: -37.5vw;
+}
+#message {
+  width: 75%;
+  margin-left: -37.5vw;
+
+}
+::-webkit-input-placeholder { color: white;  font-family: "Text-choices"; font-size: 12px; } 
+
+::-moz-placeholder { color: white;  font-family: "Text-choices"; font-size: 12px;} 
+
+::-ms-input-placeholder { color: white;  font-family: "Text-choices"; font-size:12px;}
+
+#logo_footer {
+  top: 85vh;
+  transform: scale(0.7);
+}
+#footer_lkd{
+  top: 103%;
+  left: 70%;
+}
+.BR_inversa {
+  display: block;
+}
+#tercera_columna2 {
+  margin-top: 5px;
+}
+#tercera_columna3 {
+  margin-top: 5px;
+}
+#tercera_columna4 {
+  margin-top: 5px;
+}
+#tercera_columna5 {
+  margin-top: 5px;
+}
+.primera_columna2_2{
+  margin-top: 20px;
+  display: block;
+}
 
 
 }

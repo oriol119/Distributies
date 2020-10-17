@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-scss.css">
+    <link rel="stylesheet" href="css/sophim.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
@@ -14,8 +15,8 @@
   </head>
   <body style="overflow-x: hidden;">
 
-  <div class="header">
-    <h2 class="logo"></h2>
+<div class="header">
+    <img class="logo" src="IMG/4x/logo@4x.png"></img>
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-ellipsis-h"></i>
@@ -24,42 +25,50 @@
 
     <!--//GIF CARGA-->
    
-   <div class="loader"><img src="IMG/loader.gif" style="width: 110vw;height: 110vh; position: absolute; top: -10px; left: 0;"alt="Loading..."></div>
+   <div class="loader" style="background-color: white; height: 100%; width: 100%; text-align:center; vertical-align:middle;">
+    <img src="IMG/loading_ok.gif" style="margin: auto; display:block; width:40px; height: 40px; position: relative;text-align:center; left:50vw; margin-left:-20px;top:50vh;margin-top: -20px;"alt="Loading...">
+  </div>
 
-    <!--//BLOQUE COOKIES-->
-<div id="barraaceptacion" style="display: block;">
-    <div class="inner">
-        Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
-        Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
-        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>Aceptar</b></a> | 
-        <a href="http://politicadecookies.com" target="_blank" class="info">Consultar</a>
-    </div>
-</div>
- 
+
 <!--//FIN BLOQUE COOKIES-->
 
     <ul class="menu" >
-      <li class="menu_options"><a class=" menu_mediaQ" href="#">Quienes somos?</a></li>
-      <li class="menu_options"><a class=" menu_mediaQ" href="#">Productos</a></li>
-      <li class="menu_options"><a class=" menu_mediaQ" href="#">Novedades</a></li>
-      <li class="menu_options"><a class=" menu_mediaQ" href="#">Contacto</a></li>
-      <li class="menu_options" ><h5 class="menu_options menu_mediaQ es_fr" href="#" style="margin-right: 0; cursor:default " ><a class="es_fr" href="#es" style="margin-left: 0;">ES</a> |<a  class="es_fr" href="#fr" style="margin-left: 0;">Fr</a></h5></li>
+      <li class="menu_options"><a class=" menu_mediaQ" id="who_menu_st">Quienes somos?</a>
+  <h6 style="position: absolute; color: wheat; top: 50px; right: 660px; font-size: 6.14pt; font-family: 'Text-choices';">01</h6> 
+</li>
+      <li class="menu_options"><a class=" menu_mediaQ" id="who_products_st">Productos</a>
+  <h6 style="position: absolute; color: wheat; top: 50px; right: 557px; font-size: 6.14pt; font-family: 'Text-choices';">02</h6> 
+</li>
+      <li class="menu_options"><a class=" menu_mediaQ" id="who_news_st">Novedades</a>
+  <h6 style="position: absolute; color: wheat; top: 50px; right: 455px; font-size: 6.14pt; font-family: 'Text-choices';">03</h6> 
+</li>
+      <li class="menu_options"><a class=" menu_mediaQ" id="who_contact_st">Contacto</a>
+  <h6 style="position: absolute; color: wheat; top: 50px; right: 360px; font-size: 6.14pt; font-family: 'Text-choices';">04</h6> 
+</li>
+      <li class="menu_options" ><h5 class="menu_options menu_mediaQ es_fr" href="#" style="margin-right: 0; cursor:default " ><a class="es_fr" href="#es" style="margin-left: 0;" id="es">ES</a> |<a id="fr" class="es_fr" href="#fr" style="margin-left: 0;">Fr</a></h5>
+  <h6 style="position: absolute; color: wheat; top: 50px; right: 255px; font-size: 6.14pt; font-family: 'Text-choices';">PAIS</h6> 
+</li>
       <label for="chk" class="hide-menu-btn">
         <i id="suspension" class="fas fa-times"></i>
       </label>
     </ul>
-  </div>
+</div>
+
 
   <button id="close-btn" ></button>
+  
+    
+  <input type="checkbox" checked="checked" id="menu-checkbox">
   <span id="menu-round"><h1 id="menu-txt" style="display: block; position: absolute; font-size: 10pt; margin-top: 8px; font-family: 'Text-choices';">Menú</h1>
-    <ul id="list_round" class="nav">
-      <li class="menu_options2">QUIENES SOMOS?</li>
+    
+    <ul id="list_round" class="nav" >
+      <li class="menu_options2" id="who_menu" >QUIENES SOMOS?</li>
       <li class="menu_options2" id="product-menu" >PRODUCTOS
-        <ul style="margin-left: 30px;">
-          <li><a href="emulsiones.html">Emulsionantes Naturales</a></li>
-          <li><a href="">Agentes Texturizados</a></li>
-          <li><a href="">Agentes Fijadores</a></li>
-          <li><a href="">Aceites Vegetales Orgánicos Cosméticos</a>
+        <ul class="submenu-round">
+          <li id="oliva_menu" class="li_hover"><h3> de la oliva</h3></li>
+          <li id="textured_menu" class="li_hover"><h3 >Agentes Texturizados</h3></li>
+          <li id="oil_menu" class="li_hover"><h3>Aceites y Mantecas</h3></li>
+          <li id="emolientes" class="li_hover"><h3> Emolientes</h3>
           </ul>
       </li>
       <li class="menu_options2" id="news-menu">NOVEDADES</li>
@@ -69,22 +78,35 @@
 
 <section class="content">
 
-
-  <img id="linkedin_lateral" src="IMG/4x/linkedin_green@4x.png">
+  
+  <a href="https://www.linkedin.com"><img id="linkedin_lateral" src="IMG/4x/linkedin_green@4x.png"></a>
   <h5 id="follow_lateral" >Síguenos en -</h5>
   <img id="plus_lateral" src="IMG/4x/plus_green@4x.png">
   
    
-   
-  <img src="IMG/4x/logo@4x.png" style="display: block; margin: auto; margin-top: 200px; width: 150px;">
+   <div id="first">
+  <img id="resp_log" src="IMG/4x/logo@4x.png" >
       
-  <img src="IMG/4x/distributies@4x.png" style="display: block; margin: auto; margin-top: 40px;  width: 450px;">
-  <img src="IMG/4x/text_distributies@4x.png" style="display: block; margin: auto; margin-top: 20px; width: 280px;">
-      
-  <button id="portfolio">DESCARGAR PORTFOLIO</button>
-   
-  
+  <img id="resp_log2" src="IMG/4x/distributies@4x.png" >
+  <img id="resp_log3" src="IMG/4x/text_distributies@4x.png" >
+     
+</div>
+<form method="get" action="pdfs/ficha_aceites.pdf">
+  <button class="portfolio" ></button>
+</form>
+ 
+  <img src="IMG/4x/hojas@4x.png" style="position: absolute; width: 30%; height: auto; right: -100px; top: 130px; opacity: 0.7; ">
 
+  
+    <!--//BLOQUE COOKIES-->
+<div id="cookies_div" > 
+  <a id="pref">Preferencias de privacidad</a>
+  <button class="cons_acep">Consultar</button>
+  <span id="stick">|</span>
+  <button id='acep_cookies'class="cons_acep"> Aceptar</button>
+  
+  <button id="x_cookies">x</button>
+</div>
 
 </section>
 <br><br><br><br>
@@ -103,22 +125,70 @@
     
     <div id="who_sentence">
       <span id="title_div_who" class="title-div-who">
-      <h1 class="title">QUIENES SOMOS </h1>
+      <h1 class="title" >QUIENES SOMOS |</h1>
     </span>
     <span class="text-div-who">
-      <h2 class="text">Su proveedor global de ingredientes naturales para la industria cosmética.</h2>
+      <h2 class="text" id="text-who-resp">Tu partner ideal para la elaboración de fórmulas naturales y ecoresponsables.</h2>
     </span>
 
-    <span class="subtext-div-who">
-      <h2 class="subtext"><b>Distributies</b> se centra en la distribución en Suiza de <b>ingredientes naturales </b> especiales para la industria cosmética. Con sede en Prangins, cerca de Ginebra, almacenamos artículos disponibles para suministrar en todo el país con poca antelación en unos días.
-Distributies se enorgullece de su servicio al cliente, centrándose en la entrega rápida y eficiente de los pedidos con entregas realizadas a tiempo para adaptarse a los requisitos de los clientes. Si necesita muestras, soporte técnico o tiene alguna consulta o pregunta, no dude en llamar a nuestro equipo están a su disposición y aquí para ayudar.</h2>
+    <span class="subtext-div-who" id="subtext-resp">
+      <h2 class="subtext" id="subtext-who-resp"><b>DISTRIBUTIES</b> es una pequeña empresa familiar creada en 2018, epecializada en la distribución de ingredientes naturales para la industria cosmética. Con sede en Barcelona y Suiza, DISTRIBUTIES es su aliado de referencia para su suministro de materias primas de calidad, con certificaciones COSMOS. <br><br class="BR"><br>Nuestro negocio principal se basa en la búsqueda de fabricantes de ingredientes innovadores de origen natural para la industria cosmética; elaborados a partir de materias primas renovables siendo respetuosos con el planeta, con el fin de ofrecer a nuestros clientes alternativas naturales y sostenibles para la composición de sus formulaciones.</h2>
     </span>
+  <img class="logo_content"src="IMG/white_logo.png" style="position: absolute; width: 40px; height: auto; top: 50%; left:18%;">
       
     </div>
   </div>
 
 </section>
 <br><br><br><br>
+<!--materias primas----------------------------->
+<!--materias primas----------------------------->
+<!--materias primas----------------------------->
+
+<section id="materias-div" >
+
+  <div id="content_materias" >
+    
+    <div id="who_sentence">
+      <span  class="title-div-who"  id="materias">
+      <h1 class="title" >MATERIAS PRIMAS |</h1>
+    </span>
+    <span class="text-div-who" id="somos_resp" >
+      <h2 class="text" id="somos_responsive" >Somos distribudores de materias primas de origen natural y vegetal para fabricantes de cosméticos.</h2>
+    </span>
+
+    <span class="subtext-div-who" style="top: 30%; left:31%">
+      <h2 class="BR_1000  subtext" style="font-size: 15pt; font-family: 'Title'">Nuestro compromiso por una industria cosmética sostenible</h2> 
+    </span>
+
+    <span id="primera_columna">  
+      <h2 class="primera_columna2" ></h2><h2 id="p1" class="primera_columna2 BR" >Proximidad &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</h2><h2 id="p2" class="primera_columna2 BR" >Flexibilidad &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</h2><h2 id="p3" class="primera_columna2 BR"  >Competitividad &nbsp&nbsp| </h2> <h2 id="p4" class="primera_columna2 BR" style="margin-top: 80px;">Trazabilidad &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</h2> </h2>
+    </span>
+
+    <!--<span id="segunda_columna" >
+      <h2 class="segunda_columna2 BR">|</h2 > <br><br><h2 class="segunda_columna2 BR" >|</h2><br><br><br><h2 class="segunda_columna2 BR" >|</h2><br><br><h2 class="segunda_columna2 BR" >|</h2></h2>
+    </span>-->
+
+    <span id="tercera_columna"> 
+      <h2 class="primera_columna2_2 BR_inversa">Proximidad</h2>
+      <h2 id="tercera_columna2">Nuestro equipo de profesionales ofrecen un soporte diario a nuestros clientes con altos estándares de calidad y capacidad de respuesta </h2> 
+      <h2 class="primera_columna2_2 BR_inversa">Flexibilidad</h2>
+      <h2 id="tercera_columna3">Nuestra especialización en el sector de la cosmética y nuestra ubicación cercana a los clientes nos permite comprender mejor sus necesidades específicas.</h2>
+      <h2 class="primera_columna2_2 BR_inversa">Competitividad</h2>
+      <h2 id="tercera_columna4">Buscamos estar lo más cerca posible de los productores para garantizar materias primas de óptima calidad y al mejor precio.</h2> 
+      <h2 class="primera_columna2_2 BR_inversa">Trazabilidad</h2>
+      <h2 id="tercera_columna5">Una rigurosa selección de nuestros proveedores y la optimización de nuestros procesos nos permiten garantizar el origen y la calidad de los ingredientes ofertados.</h2>
+    </span>
+    
+      
+    </div>
+  </div>
+
+</section>
+<br><br><br><br>
+
+
+
 
 <!--//PRODUCTS----------------------------->
 <!--//PRODUCTS----------------------------->
@@ -130,10 +200,10 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
     
     <div id="product_sentence">
       <span class="title-div">
-      <h1 class="title">NUESTROS PRODUCTOS </h1>
+      <h1 class="title">NUESTROS PRODUCTOS |</h1>
     </span>
     <span class="text-div">
-      <h2 class="text">Seleccionamos y elaboramos lo mejor de la naturaleza.</h2>
+      <h2 class="text" id="seleccionamos">Seleccionamos y elaboramos lo mejor de la naturaleza.</h2>
     </span>
       
     </div>
@@ -161,7 +231,7 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 <!--//PRODUCTS-2----------------------------->
 
 
-  <section id=container_products>
+  <section id='container_products'>
     
     
     
@@ -169,13 +239,13 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
     
 
     <span id="option1"class="photo_products" >
-      <h3 id="oliva">OLIVA</h3>
+      <h3 id="oliva">DE LA OLIVA</h3>
     </span>
 
     <span id="option2"class="photo_products">
       <h3 id="textured">TEXTURIZADOS</h3>
     </span>
-    <span id="option3"class="photo_products">
+    <span id="option3"class="photo_products option3_photo">
       <h3 id="fixers">ACEITES Y MANTECAS</h3>
     </span>
     <span id="option4"class="photo_products">
@@ -184,19 +254,37 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 
     <span id="side_options"> 
       
-      <!--<button id="back-btn"> </button>-->
+      <button id="back-btn"> </button>
       <h1 id="side_title">DE LA OLIVA</h1>
       <ul id="side_list">
-      <li><a id="side_option1"  >Phytosqualan</a></li>
-      <li><a id="side_option2" >Insapolive</a></li>
-      <li><a id="side_option3" >Biophytosebum</a></li>
-      <li><a id="side_option4" >Phytowax</a></li>
+      <li class="side_li" style="margin-right: 0; margin-left: 10px;"><a id="side_option1"  >Phytosqualan®</a>
+       
+          <li id='side_text1'class="side_text-class">  Emoliente natural de alta calidad que aporta optimo confort a la piel. </li>
+        
+      </li>
+      <li class="side_li"><a id="side_option2"  >Insapolive</a>
+        <li id='side_text2'class="side_text-class">Fracción insaponificable de la oliva.</li>
+      </li>
+      <li class="side_li"><a id="side_option3" >Biophytosebum</a>
+        <li id='side_text3'class="side_text-class"> Emoliente natural activo de características no grasosas. Ofrece un sensorial premium en la piel.  </li>
+      </li>
+      <li class="side_li"><a id="side_option4" >Phytowax </a>
+        <li id='side_text4' class="side_text-class"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas. </li>
+      </li>
+      <li class="side_li"><a id="side_option5">Phytowax</a>
+        <li id='side_text5' class="side_text-class"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas.</li>
+      </li>
       </ul>
+
+      <img id='logo_side'src="IMG/white_logo.png" style="position: absolute; width: 60px; height: auto; float: right; right: 60px; top: 83%;">
      
 
     </span> 
   
   </section>
+
+    
+
   <br><br><br>
   
 
@@ -209,7 +297,7 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
     
     <div id="news_sentence">
       <span class="title-div-news">
-      <h1 class="title">NOVEDADES</h1>
+      <h1 class="title">NOVEDADES |</h1>
     </span>
     <span class="text-div-news">
       <h2 class="text">Distributies acuerda una alianza estratégica con Sophim.</h2>
@@ -230,35 +318,70 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
    
 
 
-<br><br>
-<br><br>
+<br><br class="BR">
+<br><br class="BR">
 
 <!--//NEWS2----------------------------->
 <!--//NEWS2----------------------------->
 <!--//NEWS2----------------------------->
 
 
-<section id="news-options">
-  <span id="sophim">
 
-    <span id="sophim-text">
+<section id='container_products_sophim'>
+    
+    
+    
+
+    
+
+  <span id="option1_sophim"class="photo_products_sophim grey" >
+    <span id="sophim-text" >
       <h1 class="title-options">SOPHIM</h1>
       <h2 class="text-options">DISTRIBUTIES se enorgullecen de anunciar la distribución única y exclusiva para Suiza en nombre de Sophim (Sophim.com), un fabricante mundial líder europeo de ingredientes naturales para la industria cosmética.</h2>
     </span>
       
-      <button id="plus-btn"></button>
-
+      <!--<button id="plus-btn_sophim"></button>-->
   </span>
 
-  <span id="aloe-vera">
-       <span id="aloe-text">
+  <span id="option2_sophim"class="photo_products_sophim grey">
+    <span id="aloe-text">
       <h1 class="title-options">ALOE VERA LINE</h1>
       <h2 class="text-options" id="aloe-margin">La serie DEO ALOE VERA. Linia de formulación basada en Alcohol compuesto orgánico de aloe vera y agua termal, seduce en la muestra de Farma Forum de madrid.</h2>
     </span>
 
-    <button id="plus-btn2"></button>
-
+    <!--<button id="plus-btn2_sophim"></button>-->
   </span>
+  
+
+  <span id="side_options_sophim"> 
+    
+    <button id="back-btn_sophim"> </button>
+    <h1 id="side_title_sophim">DE LA OLIVA</h1>
+    <ul id="side_list_sophim">
+    <li class="side_li_sophim"><a id="side_option1_sophim"  >Phytosqualan</a>
+     
+        <li id='side_text1_sophim'class="side_text-class_sophim">  Emoliente natural de alta calidad que aporta optimo confort a la piel. </li>
+      
+    </li>
+    <li class="side_li_sophim"><a id="side_option2_sophim"  >Insapolive</a>
+      <li id='side_text2_sophim'class="side_text-class_sophim">Fracción insaponificable de la oliva.</li>
+    </li>
+    <li class="side_li_sophim"><a id="side_option3_sophim" >Biophytosebum</a>
+      <li id='side_text3_sophim'class="side_text-class_sophim"> Emoliente natural activo de características no grasosas. Ofrece un sensorial premium en la piel.  </li>
+    </li>
+    <li class="side_li_sophim"><a id="side_option4_sophim" >Phytowax </a>
+      <li id='side_text4_sophim' class="side_text-class_sophim"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas. </li>
+    </li>
+    <li class="side_li_sophim"><a id="side_option5_sophim">Phytowax</a>
+      <li id='side_text5_sophim' class="side_text-class_sophim"> Ceras de origen natural procedentes de la Oliva. Ofrecen propiedades sensoriales únicas.</li>
+    </li>
+    </ul>
+
+    <img src="IMG/white_logo.png" style="position: absolute; width: 60px; height: auto; float: right; right: 60px; top: 83%;">
+   
+
+  </span> 
+
 </section>
 
 <br><br>
@@ -268,22 +391,22 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 <!--//CONTACT----------------------------->
 <!--//CONTACT----------------------------->
 
-<div id="content_news" style="background-color: #959C7F;">
+<div id="content_news2" style="background-color: #959C7F;">
     
     <div id="news_sentence">
       <span class="title-div-news">
-        <h1 class="title">CONTACT</h1>
+        <h1 class="title">CONTACTO |</h1>
       </span>
-      <span class="text-div-news">
-        <h2 class="text" style="font-size: 25pt;">No dude en contactarnos
+      <span class="text-div-news" id='text_div-contact'>
+        <h2 class="text" id='text_contact'>No dude en contactarnos
           para cualquier información.
           
           </h2>
-          <h2 style="font-size: 22pt;">Le atenderemos a la mayor brevedad posible</h2>
+          <h2 class='BR'style="font-size: 22pt; font-family: 'regular';" >Le atenderemos a la mayor brevedad posible</h2>
       </span>
       
     </div>
-    <img src="IMG/4x/logo@4x.png" style="position: absolute; top: 40vh; left: 5vw; width: 50px;">
+    <img src="IMG/4x/logo@4x.png" class='BR_800'style="position: absolute; top: 40vh; left: 5vw; width: 50px;">
   </div>
 
 
@@ -293,18 +416,24 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 
 
 <section id="contact">
-  <div><input id="company" class="contact_inputs" type="text" placeholder="Empresa*"></div>
-  <div><input id="company_web" class="contact_inputs" type="url" placeholder="Sitio web empresa*"></div>
-  <div><input id="city" class="contact_inputs" type="text" placeholder="Ciudad"></div>
-  <div><input id="adress" class="contact_inputs" type="text" placeholder="Dirección"></div>
-  <div><input id="postal_code" class="contact_inputs" type="text" placeholder="Código postal"></div>
-  <div><input id="country" class="contact_inputs" type="text" placeholder="Pais"></div>
+  <form action="process.php" method="post" name="formContacto">
+  <div><input id="company" class="contact_inputs necesary" type="text" placeholder="Empresa*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Empresa*'"></div>
+  <div><input id="company_web" class="contact_inputs necesary" type="url" placeholder="Sitio web empresa*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Sitio web empresa*'"></div>
+  <div><input id="city" class="contact_inputs" type="text" placeholder="Ciudad" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Ciudad'"></div>
+  <div><input id="adress" class="contact_inputs" type="text" placeholder="Dirección" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Dirección'"></div>
+  <div><input id="postal_code" class="contact_inputs" type="text" placeholder="Código postal" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Código postal'"></div>
+  <div><input id="country" class="contact_inputs" type="text" placeholder="Pais" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Pais'"></div>
+
   
-  <div><input id="name" class="contact_inputs" type="text" placeholder="Nombre de contacto*"></div>
-  <div><input id="e-mail" class="contact_inputs" type="email" placeholder="e-mail*"></div>
-  <div><input id="phone_number" class="contact_inputs" type="tel" placeholder="Teléfono*"></div>
-  <div><input id="message" type="text" placeholder="Mensaje" size=300></div>
-  <div id="button"><a href="#">ENVIAR</a></div>
+  <div><input id="name" class="contact_inputs necesary" type="text" placeholder="Nombre de contacto*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Nombre de contacto'"></div>
+  <div><input id="e-mail" class="contact_inputs necesary" type="email" placeholder="e-mail*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'e-mail*'"></div>
+  <div><input id="phone_number" class="contact_inputs necesary" type="tel" placeholder="Teléfono*" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Teléfono*'"></div>
+  <div><textarea cols="46" rows="3" id="message" type="text" placeholder="Mensaje" size=300 onfocus="this.placeholder = ''"onblur="this.placeholder = 'Mensaje'"></textarea></div>
+  <div class="g-recaptcha" data-sitekey="6LdxpNIZAAAAADCozd0hN-BzJqpATZNcO9um_s1b" id="captcha"></div>
+  </form>
+  <div id="button" ><a >ENVIAR
+
+  </a></div>
   
 
 
@@ -318,23 +447,22 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
   
 <!-- Footer -->
   <section id="footer">
-    <div class="container">
+    <div class="container_footer">
 
       <ul class="footer-list" id="list1">
         <li class="title">| NOSOTROS </li>
       <li class="footer-elements">Historia </li>
-      <li class="footer-elements">Misión y Valores </li>
-      <li class="footer-elements">Testimonios </li>
-      <li class="footer-elements">Galería </li>
+      <li class="footer-elements">Compromiso </li>
+      
       </ul>
 
        <ul class="footer-list" id="list2">
        
       <li class="title">| PRODUCTOS </li>
-      <li class="footer-elements">Emulsionantes Naturales </li>
-      <li class="footer-elements">Agentes Texturizados </li>
-      <li class="footer-elements">Agentes Fijadores </li>
-      <li class="footer-elements">Aceites Vegetales </li>
+      <li class="footer-elements">de la Oliva </li>
+      <li class="footer-elements">Agentes Texturizantes </li>
+      <li class="footer-elements">Aceites y mantecas </li>
+      <li class="footer-elements">Emolientes </li>
       </ul>
 
        <ul class="footer-list" id="list3">
@@ -345,7 +473,8 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 
        <ul class="footer-list" id="list4">
       <li class="title">| PRIVACIDAD </li>
-      <li class="footer-elements">politica de privacidad cokies </li>
+      <li class="footer-elements">politica de privacidad </li>
+      <li class="footer-elements">cokies </li>
       </ul>
 
        <ul class="footer-list" id="list5">
@@ -355,8 +484,8 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
       <li class="footer-elements">España </li>
       </ul>
 
-      <img src="IMG/Captura de pantalla 2020-09-11 a las 11.42.40.png" style="height: 110px; width: 420px; position: absolute;left: 70%; top:40vh; display: block; ">
-      <img src="IMG/linkedin.png" style="height: 27px; width: 27px; position: absolute; top: 43%; right: 2%;  ">
+      <img id='logo_footer'src="IMG/Captura de pantalla 2020-09-11 a las 11.42.40.png">
+      <img id='footer_lkd'src="IMG/linkedin.png">
 
     </div>
   </section>
@@ -369,10 +498,12 @@ Distributies se enorgullece de su servicio al cliente, centrándose en la entreg
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
  
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/cookies.js"></script>
+<script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
   <script type="text/javascript" src="js/open_option.js"></script>
    <script type="text/javascript" src="js/gif_carga.js"></script>
    <script type="text/javascript" src="js/index.js"></script>
+   <script type="text/javascript" src="js/open_options2.js"></script>
 
-
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+   <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 </html>
